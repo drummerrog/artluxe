@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Caudex';
+    src: local('Caudex Regular'), local('Caudex-Regular'), url('caudexregular.woff2') format('woff2'), url('caudexregular.woff') format('woff'), url('caudexregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Caudex';
+    src: local('Caudex Italic'), local('Caudex-Italic'), url('caudexitalic.woff2') format('woff2'), url('caudexitalic.woff') format('woff'), url('caudexitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Caudex';
+    src: local('Caudex Bold'), local('Caudex-Bold'), url('caudexbold.woff2') format('woff2'), url('caudexbold.woff') format('woff'), url('caudexbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Caudex';
+    src: local('Caudex Bold Italic'), local('Caudex-BoldItalic'), url('caudexbolditalic.woff2') format('woff2'), url('caudexbolditalic.woff') format('woff'), url('caudexbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

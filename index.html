@@ -6,36 +6,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Театр драмы и комедии Art-Luxe</title>
+  <!-- Стили -->
   <link rel="stylesheet" href="public/dist/css/style.css">
   <link rel="stylesheet" href="public/assets/fonts/caudex/caudex.css">
+  <!-- Скрипты -->
+  <script src="public/dist/js/main.js" defer></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="header-top">
-      <ul class="header__menu">
-        <li class="header__menu-item" href="#">Главная</li>
-        <li class="header__menu-item" href="#">Афиша</li>
-        <li class="header__menu-item" href="#">Репертуар</li>
-        <li class="header__menu-item" href="#">О театре</li>
-        <li class="header__menu-item" href="#">Школа кино</li>
-        <li class="header__menu-item" href="#">Театральная студия</li>
-        <li class="header__menu-item" href="#">Вакансии</li>
-        <li class="header__menu-item" href="#">Контакты</li>
+    <div class="navbar">
+      <ul class="navbar__menu">
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="#" class="navbar__menu-link">Главная</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="#" class="navbar__menu-link">Афиша</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="#" class="navbar__menu-link">Репертуар</a>
+        </li>
+        <li class="dropdown dropdown--mobile_hidden">
+          <button class="dropbtn" onclick="myFunction()">
+            О театре
+            <img class="dropdown__caret" src="public/assets/img/icons/caret-down.svg" alt="каретка" />
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a class="dropdown-content__link" href="#">О театре</a>
+            <a class="dropdown-content__link" href="#">Труппа</a>
+            <a class="dropdown-content__link" href="#">Люди</a>
+            <a class="dropdown-content__link" href="#">Новости</a>
+          </div>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="#" class="navbar__menu-link">Школа кино</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="#" class="navbar__menu-link">Театральная студия</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="#" class="navbar__menu-link">Вакансии</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="#" class="navbar__menu-link">Контакты</a>
+        </li>
       </ul>
     </div>
-    <!-- /.header-top -->
+    <!-- /.navbar -->
     <div class="container">
-      <div class="header-bottom">
-        <img class="header-bottom__logo" src="public/assets/img/logo.jpg" alt="логотип">
-        <h1 class="header-bottom__title">До счастья всего лишь миг!</h1>
-        <p class="header-bottom__text">
+      <div class="navbar-bottom">
+        <img class="navbar-bottom__logo" src="public/assets/img/logo.jpg" alt="логотип">
+        <h1 class="navbar-bottom__title">До счастья всего лишь миг!</h1>
+        <p class="navbar-bottom__text">
           Всем привет! Вы когда-нибудь были на большом сайте самого маленького театра России? Нет?
           Тогда, добро пожаловать! Мы
           очень рады, что вы нас заметили, самое время познакомиться. У нас очень уютно, тепло и хватит места каждому.
         </p>
       </div>
-      <!-- /.header-bottom -->
+      <!-- /.navbar-bottom -->
     </div>
     <!-- /.container -->
   </header>

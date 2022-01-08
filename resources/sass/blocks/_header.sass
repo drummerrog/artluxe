@@ -1,36 +1,97 @@
-.header
-  top: 0
-  &-top
-    height: 130px
-    background-color: $color-header
-    display: flex
-    align-items: center
-    justify-content: space-evenly
-  &__menu
-    width: 1670px
-    display: flex
-    justify-content: space-between
-    list-style: none
+.navbar
+  height: 130px
+  background-color: $color-header
+  display: flex
+  align-items: center
+  justify-content: space-evenly
   &-bottom
+    margin-bottom: 90px
     &__logo
       width: 770px
       height: 100px
       margin-top: 70px
+      margin-left: 100px
     &__title
       font-style: italic
       font-weight: normal
-      font-size: 32px
+      font-size: 28px
       line-height: 45px
       letter-spacing: 0.305em
+      margin: 0
       margin-top: 50px
+      margin-right: 75px
       display: flex
       justify-content: flex-end
     &__text
       width: 1210px
       font-style: normal
       font-weight: normal
-      font-size: 36px
+      font-size: 28px
       line-height: 53px
       text-align: center
       letter-spacing: 0.055em
       margin: auto
+      margin-top: 80px
+  &__menu
+    width: 1400px
+    display: flex
+    justify-content: space-between
+    list-style: none
+    &-item
+      cursor: pointer
+    &-link
+      color: #fff
+      text-decoration: none
+      &::after
+        content: ''
+        display: block
+        height: 1px
+        background-color: #fff
+        transition: 0.2s
+        width: 0%
+      &:hover
+        &::after
+          width: 70%
+.dropdown
+  float: left
+  overflow: hidden
+  padding: 0 10px
+  &--mobile
+    &_visible
+      display: none
+  &__caret
+    width: 12px
+    height: 15px
+  &-content
+    display: none
+    position: absolute
+    min-width: 130px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5)
+    &__link
+      color: #fff
+      font-size: 20px
+      text-decoration: none
+      padding: 8px 10px
+.dropbtn
+  color: #fff
+  text-decoration: none
+  border: none
+  outline: none
+  cursor: pointer
+  background-color: inherit
+  margin: 0
+  padding: 0
+  &:focus
+    &::after
+      content: ''
+      display: block
+      height: 1px
+      background-color: #fff
+      transition: 0.2s
+      width: 0%
+    &:hover
+      &::after
+        width: 70%
+.show
+  display: block
+  background-color: inherit

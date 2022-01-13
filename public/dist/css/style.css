@@ -19,6 +19,48 @@ body {
   margin: auto;
 }
 
+.button {
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  background: #4E565F;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button-pay {
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.065em;
+  padding: 12px 5px;
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-forward {
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.065em;
+  padding: 12px 46px;
+}
+
+.line {
+  margin: 30px 0;
+}
+
+.line-bottom {
+  margin: 60px 0 30px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -508,5 +550,72 @@ template {
 .show {
   display: block;
   background-color: inherit;
+}
+
+.preview {
+  padding-bottom: 150px;
+}
+
+.preview-wrapper {
+  background: #131415;
+  border: 2px solid #F1F1F1;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+  padding: 50px 80px 20px;
+}
+
+.preview__title {
+  font-weight: normal;
+  font-size: 50px;
+  letter-spacing: 0.065em;
+  margin: 0 0 50px;
+}
+
+.preview-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preview-card__title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 52px;
+  letter-spacing: 0.065em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.preview-card__image {
+  width: 250px;
+  height: 185px;
+}
+
+.preview-card__text {
+  width: 220px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.065em;
+}
+
+.preview-card__age {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 53px;
+  letter-spacing: 0.065em;
+}
+
+.preview-date {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.065em;
 }
 /*# sourceMappingURL=style.css.map */

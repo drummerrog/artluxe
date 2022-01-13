@@ -405,8 +405,6 @@ template {
 }
 
 .navbar {
-  height: 130px;
-  background-color: #1A1F23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,6 +414,8 @@ template {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  height: 130px;
+  background-color: #1A1F23;
 }
 
 .navbar-bottom {
@@ -430,6 +430,12 @@ template {
 }
 
 .navbar-bottom__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-style: italic;
   font-weight: normal;
   font-size: 28px;
@@ -438,12 +444,6 @@ template {
   margin: 0;
   margin-top: 50px;
   margin-right: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .navbar-bottom__text {
@@ -459,13 +459,13 @@ template {
 }
 
 .navbar__menu {
-  width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 1400px;
   list-style: none;
 }
 
@@ -553,6 +553,7 @@ template {
 }
 
 .preview {
+  display: none;
   padding-bottom: 150px;
 }
 
@@ -617,5 +618,20 @@ template {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.065em;
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .navbar__menu {
+    max-width: 1200px;
+  }
+  .navbar-bottom__logo {
+    margin-left: 0;
+  }
+  .navbar-bottom__title {
+    margin-right: 0;
+  }
+  .container {
+    max-width: 1200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

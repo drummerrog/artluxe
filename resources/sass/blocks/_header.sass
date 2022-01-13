@@ -1,9 +1,9 @@
 .navbar
-  height: 130px
-  background-color: $color-header
   display: flex
   align-items: center
   justify-content: space-evenly
+  height: 130px
+  background-color: $color-header
   &-bottom
     margin-bottom: 90px
     &__logo
@@ -12,6 +12,8 @@
       margin-top: 70px
       margin-left: 100px
     &__title
+      display: flex
+      justify-content: flex-end
       font-style: italic
       font-weight: normal
       font-size: 28px
@@ -20,8 +22,6 @@
       margin: 0
       margin-top: 50px
       margin-right: 75px
-      display: flex
-      justify-content: flex-end
     &__text
       width: 1210px
       font-style: normal
@@ -33,9 +33,9 @@
       margin: auto
       margin-top: 80px
   &__menu
-    width: 1400px
     display: flex
     justify-content: space-between
+    width: 1400px
     list-style: none
     &-item
       cursor: pointer

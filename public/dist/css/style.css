@@ -456,6 +456,10 @@ template {
   margin-top: 80px;
 }
 
+.navbar-bottom__menu-button {
+  display: none;
+}
+
 .navbar__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,6 +493,10 @@ template {
 
 .navbar__menu-link:hover::after {
   width: 70%;
+}
+
+.navbar__menu-button {
+  display: none;
 }
 
 .dropdown {
@@ -720,6 +728,78 @@ template {
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 700px;
+  }
+  .navbar {
+    background-color: #000;
+    display: none;
+  }
+  .navbar__menu-item--mobile_hidden {
+    display: none;
+  }
+  .navbar__menu-button {
+    display: none;
+  }
+  .navbar-bottom__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-bottom__logo {
+    max-width: 400px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .navbar-bottom__menu-button {
+    display: block;
+  }
+  .navbar-bottom__title {
+    font-size: 22px;
+    margin-right: 0;
+  }
+  .navbar-bottom__text {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.055em;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .dropdown--mobile_hidden {
+    display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+    padding: 6px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+  .menu-button__line {
+    width: 18px;
+    height: 2px;
+    line-height: 12px;
+    background-color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */

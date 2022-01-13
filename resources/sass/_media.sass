@@ -78,3 +78,57 @@
 @media (min-width: 768px) and (max-width: 1023px)
   .container
     max-width: 700px
+  .navbar
+    background-color: #000
+    display: none
+    &__menu
+      &-item
+        &--mobile
+          &_hidden
+            display: none
+      &-button
+        display: none
+    &-bottom
+      &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+      &__logo
+        max-width: 400px
+        margin-top: 30px
+        margin-bottom: 20px
+        margin-left: 0
+      &__menu
+        &-button
+          display: block
+      &__title
+        font-size: 22px
+        margin-right: 0
+      &__text
+        font-size: 20px
+        line-height: 40px
+        text-align: center
+        letter-spacing: 0.055em
+        margin: auto
+        margin-top: 40px
+  .dropdown
+    &--mobile
+      &_hidden
+        display: none
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      width: 30px
+      height: 30px
+      background-color: inherit
+      padding: 6px
+      border: 2px solid #fff
+      border-radius: 5px
+      &__line
+        width: 18px
+        height: 2px
+        line-height: 12px
+        background-color: #fff

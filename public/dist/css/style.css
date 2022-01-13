@@ -423,8 +423,7 @@ template {
 }
 
 .navbar-bottom__logo {
-  width: 770px;
-  height: 100px;
+  max-width: 770px;
   margin-top: 70px;
   margin-left: 100px;
 }
@@ -447,8 +446,7 @@ template {
 }
 
 .navbar-bottom__text {
-  width: 1210px;
-  font-style: normal;
+  max-width: 1210px;
   font-weight: normal;
   font-size: 28px;
   line-height: 53px;
@@ -467,6 +465,7 @@ template {
           justify-content: space-between;
   width: 1400px;
   list-style: none;
+  padding: 0;
 }
 
 .navbar__menu-item {
@@ -621,17 +620,74 @@ template {
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {
+  body {
+    font-size: 18px;
+  }
   .navbar__menu {
     max-width: 1200px;
   }
   .navbar-bottom__logo {
+    max-width: 700px;
     margin-left: 0;
   }
   .navbar-bottom__title {
     margin-right: 0;
   }
+  .navbar-bottom__text {
+    font-size: 26px;
+  }
   .container {
     max-width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  body {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .navbar__menu {
+    max-width: 900px;
+  }
+  .navbar-bottom__logo {
+    max-width: 600px;
+    margin-left: 0;
+  }
+  .navbar-bottom__title {
+    font-size: 24px;
+    margin-right: 0;
+  }
+  .navbar-bottom__text {
+    font-size: 24px;
+  }
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+  .navbar {
+    height: 100px;
+  }
+  .navbar__menu {
+    max-width: 900px;
+  }
+  .navbar-bottom__logo {
+    max-width: 500px;
+    margin-left: 0;
+  }
+  .navbar-bottom__title {
+    font-size: 22px;
+    margin-right: 0;
+  }
+  .navbar-bottom__text {
+    font-size: 22px;
+  }
+  .container {
+    max-width: 900px;
   }
 }
 /*# sourceMappingURL=style.css.map */

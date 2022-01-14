@@ -12,3 +12,9 @@ window.onclick = function (e) {
     }
   }
 };
+
+// Кнопка меню
+var menuButton = $(`.menu-button`);
+menuButton.on(`click`, function () {
+  $(`.navbar__menu-burger`).toggleClass(`navbar__menu-burger--visible`);
+});

@@ -10,12 +10,13 @@
   <link rel="stylesheet" href="public/dist/css/style.css">
   <link rel="stylesheet" href="public/assets/fonts/caudex/caudex.css">
   <!-- Скрипты -->
+  <script src="public/dist/js/jquery-3.6.0.min.js" defer></script>
   <script src="public/dist/js/main.js" defer></script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="navbar">
+  <header class="navbar">
+    <div class="navbar-wrapper">
       <ul class="navbar__menu">
         <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
           <a href="#" class="navbar__menu-link">Главная</a>
@@ -52,17 +53,63 @@
         </li>
       </ul>
       <!-- navbar__menu -->
+
     </div>
-    <!-- /.navbar -->
+    <!-- /.navbar-wrapper -->
+
     <div class="navbar-bottom">
       <div class="container">
         <div class="navbar-bottom__wrapper">
           <img class="navbar-bottom__logo" src="public/assets/img/logo.jpg" alt="логотип">
-          <button class="menu-button navbar-bottom__menu-button">
+          <button class="menu-button navbar-wrapper__menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
           </button>
+          <div class="navbar__menu-burger">
+            <ul class="navbar__menu">
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="#" class="navbar__menu-link">Главная</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="#" class="navbar__menu-link">Афиша</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="#" class="navbar__menu-link">Репертуар</a>
+              </li>
+              <li class="dropdown dropdown--mobile_visible">
+                <button class="dropbtn" onclick="myFunction()">
+                  О театре
+                  <img class="dropdown__caret" src="public/assets/img/icons/caret-down.svg" alt="каретка" />
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a class="dropdown-content__link" href="#">О театре</a>
+                  <a class="dropdown-content__link" href="#">Труппа</a>
+                  <a class="dropdown-content__link" href="#">Люди</a>
+                  <a class="dropdown-content__link" href="#">Новости</a>
+                </div>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="#" class="navbar__menu-link">Школа кино</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="#" class="navbar__menu-link">Театральная студия</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="#" class="navbar__menu-link">Вакансии</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="#" class="navbar__menu-link">Контакты</a>
+              </li>
+            </ul>
+            <!-- navbar__menu -->
+            <button class="menu-button navbar-bottom__menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+          <!-- /.navbar__menu-burger -->
         </div>
         <!-- /.navbar-bottom__wrapper -->
         <h1 class="navbar-bottom__title">До счастья всего лишь миг!</h1>
@@ -75,8 +122,9 @@
       <!-- /.container -->
     </div>
     <!-- /.navbar-bottom -->
+
   </header>
-  <!-- /.header -->
+  <!-- /.navbar -->
 
   <section class="preview">
     <div class="container">
@@ -139,6 +187,10 @@
     <!-- /.container -->
   </section>
   <!-- /.preview -->
+
+  <!-- Скрипты -->
+  <!-- <script src="public/dist/js/main.js"></script>
+  <script src="public/dist/js/jquery-3.6.0.min.js"></script> -->
 
 </body>
 

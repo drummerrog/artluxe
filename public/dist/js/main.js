@@ -1,9 +1,9 @@
-// Открытие и закрытие выпадающего списка меню по клику
+// Открытие и закрытие подменю по клику
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Закрытие выпадающего списка меню при щелчке за его пределами
+// Закрытие подменю по клику за его пределами
 window.onclick = function (e) {
   if (!e.target.matches(".dropbtn")) {
     var myDropdown = document.getElementById("myDropdown");
@@ -13,28 +13,34 @@ window.onclick = function (e) {
   }
 };
 
-// Мобильное меню
-// Открытие и закрытие выпадающего списка меню по клику
-// var menuButton = $(`.dropbtn`);
-// menuButton.on(`click`, function () {
-//   $(`.dropdown-content`).toggleClass(`dropdown-content--visible`);
-// });
+// МОБИЛЬНОЕ МЕНЮ
+// Кнопка меню - burger-menu
+var menuButton = $(`.menu-button`);
+menuButton.on(`click`, function () {
+  $(`.navbar__menu-burger`).toggleClass(`navbar__menu-burger--visible`);
+});
 
+// Закрытие меню по клику на ссылку
+$(".navbar__menu-item").on("click", closeMenu);
+
+function closeMenu() {
+  $(".navbar__menu-burger").removeClass("navbar__menu-burger--visible");
+}
+
+// Открытие и закрытие подменю по клику
 $(".dropbtn").on("click", openMenu);
 
 function openMenu() {
   $(".dropdown-content").toggleClass("dropdown-content--visible");
 }
 
-// Закрытие выпадающего списка меню после клика на ссылку
+// Закрытие подменю по клику на ссылку
 $(".dropdown-content__link").on("click", closeMenu);
 
 function closeMenu() {
-  $(".navbar__menu-burger").removeClass("navbar__menu-burger--visible");
-}
+  $(".dropdown-content").removeClass("dropdown-content--visible");
+}// Закрытие подменю
 
-// Кнопка меню
-var menuButton = $(`.menu-button`);
-menuButton.on(`click`, function () {
-  $(`.navbar__menu-burger`).toggleClass(`navbar__menu-burger--visible`);
-});
+function closeMenu() {
+  $(".navbar__menu-burger").removeClass("navbar__menu-burger--visible");
+} // Закрытие меню

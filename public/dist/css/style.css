@@ -778,7 +778,7 @@ template {
   }
   .navbar__menu-link {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 22px;
   }
   .navbar__menu-link::after {
     content: '';
@@ -882,7 +882,7 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
     right: -23px;
-    top: 90px;
+    top: 94px;
   }
   .dropdown-content--mobile_hidden {
     display: none;
@@ -897,6 +897,9 @@ template {
     line-height: 24px;
     letter-spacing: 0.055em;
     padding: 0 10px;
+  }
+  .dropbtn {
+    line-height: 1.7;
   }
   .dropbtn:focus:hover::after {
     width: 0;

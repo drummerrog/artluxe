@@ -60,13 +60,22 @@
     <div class="navbar-bottom">
       <div class="container">
         <div class="navbar-bottom__wrapper">
-          <img class="navbar-bottom__logo" src="public/assets/img/logo.jpg" alt="логотип">
+          <img class="navbar-bottom__logo navbar-bottom__logo--mobile_hidden" src="public/assets/img/logo.jpg"
+            alt="логотип">
+          <img class="navbar-bottom__logo navbar-bottom__logo--mobile_visible" src="public/assets/img/logo_mobile.jpg"
+            alt="логотип">
+          <h1 class="navbar-bottom__title navbar-bottom__title--mobile_visible">До счастья всего лишь миг!</h1>
           <button class="menu-button navbar-wrapper__menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
           </button>
           <div class="navbar__menu-burger">
+            <button class="menu-button navbar-bottom__menu-button menu-button--mobile_visible">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
             <ul class="navbar__menu">
               <li class="navbar__menu-item navbar__menu-item--mobile_visible">
                 <a href="#" class="navbar__menu-link">Главная</a>
@@ -103,7 +112,7 @@
               </li>
             </ul>
             <!-- navbar__menu -->
-            <button class="menu-button navbar-bottom__menu-button">
+            <button class="menu-button navbar-bottom__menu-button menu-button--mobile_hidden">
               <span class="menu-button__line"></span>
               <span class="menu-button__line"></span>
               <span class="menu-button__line"></span>
@@ -112,7 +121,7 @@
           <!-- /.navbar__menu-burger -->
         </div>
         <!-- /.navbar-bottom__wrapper -->
-        <h1 class="navbar-bottom__title">До счастья всего лишь миг!</h1>
+        <h1 class="navbar-bottom__title navbar-bottom__title--mobile_hidden">До счастья всего лишь миг!</h1>
         <p class="navbar-bottom__text">
           Всем привет! Вы когда-нибудь были на большом сайте самого маленького театра России? Нет?
           Тогда, добро пожаловать! Мы

@@ -10,8 +10,13 @@
       max-width: 1200px
     &-bottom
       &__logo
-        max-width: 700px
+        width: 700px
         margin-left: 0
+        &--mobile
+          &_hidden
+            display: block
+          &_visible
+            display: none
       &__title
         margin-right: 0
       &__text
@@ -36,8 +41,13 @@
       max-width: 900px
     &-bottom
       &__logo
-        max-width: 600px
+        width: 600px
         margin-left: 0
+        &--mobile
+          &_hidden
+            display: block
+          &_visible
+            display: none
       &__title
         font-size: 24px
         margin-right: 0
@@ -62,8 +72,13 @@
       max-width: 900px
     &-bottom
       &__logo
-        max-width: 500px
+        width: 500px
         margin-left: 0
+        &--mobile
+          &_hidden
+            display: block
+          &_visible
+            display: none
       &__title
         font-size: 22px
         margin-right: 0
@@ -137,10 +152,15 @@
         justify-content: space-between
         align-items: center
       &__logo
-        max-width: 400px
+        width: 400px
         margin-top: 30px
         margin-bottom: 20px
         margin-left: 0
+        &--mobile
+          &_hidden
+            display: block
+          &_visible
+            display: none
       &__menu
         &-button
           display: block
@@ -174,7 +194,7 @@
       flex-direction: column
       align-items: flex-start
       right: -23px
-      top: 94px
+      top: 90px
       &--mobile
         &_hidden
           display: none
@@ -182,7 +202,7 @@
         display: flex
       &__link
         font-size: 14px
-        line-height: 24px
+        line-height: 22px
         letter-spacing: 0.055em
         padding: 0 10px
   .dropbtn
@@ -208,3 +228,146 @@
         height: 2px
         line-height: 12px
         background-color: #fff
+      &--mobile
+        &_visible
+          display: none
+@media (min-width: 425px) and (max-width: 767px)
+  .container
+    max-width: 400px
+  .navbar
+    &-wrapper
+      background-color: #000
+      display: none
+      &__menu
+        &-button
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
+    &__menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: auto
+      margin: 0
+      margin-right: 0
+      &-item
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+      &-link
+        font-size: 14px
+        line-height: 22px
+        &::after
+          content: ''
+          display: none
+      &-button
+        display: none
+      &-burger
+        display: none
+        top: -75px
+        left: 0
+        right: 0
+        bottom: 0
+        padding: 100px
+        background-color: #000
+        &--mobile
+          &_visible
+            display: none
+        &--visible
+          display: block
+          position: fixed
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: flex-start
+          height: auto
+          z-index: 150
+    &-bottom
+      &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__logo
+        width: 400px
+        margin-top: 25px
+        margin-left: 0
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+      &__title
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+            justify-content: center
+            font-weight: normal
+            font-size: 20px
+            line-height: 17px
+            letter-spacing: 0.225em
+            margin: 20px 0
+      &__text
+        font-weight: normal
+        font-size: 18px
+        line-height: 23px
+        text-align: center
+        letter-spacing: 0.055em
+        margin: 20px 0 0
+  .dropdown
+    &--mobile
+      &_hidden
+        display: none
+      &_visible
+        display: flex
+        font-size: 14px
+    &__caret
+      width: 10px
+      height: 10px
+    &-content
+      min-width: 90px
+      display: none
+      flex-direction: column
+      align-items: flex-end
+      right: 70px
+      top: 223px
+      &--mobile
+        &_hidden
+          display: none
+      &--visible
+        display: flex
+      &__link
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.055em
+        padding: 0 10px
+  .dropbtn
+    line-height: 1.7
+    &:focus
+      &:hover
+        &::after
+          width: 0
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      width: 30px
+      height: 30px
+      background-color: inherit
+      border: 2px solid #fff
+      border-radius: 5px
+      margin-bottom: 25px
+      padding: 6px
+      &__line
+        width: 18px
+        height: 2px
+        line-height: 12px
+        background-color: #fff
+      &--mobile
+        &_hidden
+          display: none

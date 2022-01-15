@@ -778,7 +778,11 @@ template {
   }
   .navbar__menu-link {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;
+  }
+  .navbar__menu-link::after {
+    content: '';
+    display: none;
   }
   .navbar__menu-button {
     display: none;
@@ -857,10 +861,45 @@ template {
   .dropdown--mobile_hidden {
     display: none;
   }
-  .dropdown--mobile_hidden_visible {
+  .dropdown--mobile_visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 14px;
+  }
+  .dropdown__caret {
+    width: 10px;
+    height: 10px;
+  }
+  .dropdown-content {
+    min-width: 90px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    right: -23px;
+    top: 90px;
+  }
+  .dropdown-content--mobile_hidden {
+    display: none;
+  }
+  .dropdown-content--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dropdown-content__link {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.055em;
+    padding: 0 10px;
+  }
+  .dropbtn:focus:hover::after {
+    width: 0;
   }
   .menu-button {
     display: -webkit-box;

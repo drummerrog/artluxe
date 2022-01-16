@@ -371,3 +371,284 @@
       &--mobile
         &_hidden
           display: none
+@media (min-width: 375px) and (max-width: 424px)
+  .container
+    max-width: 345px
+  .navbar
+    &-wrapper
+      background-color: #000
+      display: none
+      &__menu
+        &-button
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
+    &__menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: auto
+      margin: 0
+      margin-right: 0
+      &-item
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+      &-link
+        font-size: 14px
+        line-height: 22px
+        &::after
+          content: ''
+          display: none
+      &-button
+        display: none
+      &-burger
+        display: none
+        top: -75px
+        left: 0
+        right: 0
+        bottom: 0
+        padding: 100px
+        background-color: #000
+        &--mobile
+          &_visible
+            display: none
+        &--visible
+          display: block
+          position: fixed
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: flex-start
+          height: auto
+          z-index: 150
+    &-bottom
+      &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__logo
+        width: 345px
+        margin-top: 25px
+        margin-left: 0
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+      &__title
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+            justify-content: center
+            font-weight: normal
+            font-size: 16px
+            line-height: 17px
+            letter-spacing: 0.225em
+            margin: 20px 0
+      &__text
+        font-weight: normal
+        font-size: 18px
+        line-height: 23px
+        text-align: center
+        letter-spacing: 0.055em
+        margin: 20px 0 0
+  .dropdown
+    &--mobile
+      &_hidden
+        display: none
+      &_visible
+        display: flex
+        font-size: 14px
+    &__caret
+      width: 10px
+      height: 10px
+    &-content
+      min-width: 90px
+      display: none
+      flex-direction: column
+      align-items: flex-end
+      right: 50px
+      top: 223px
+      &--mobile
+        &_hidden
+          display: none
+      &--visible
+        display: flex
+      &__link
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.055em
+        padding: 0 10px
+  .dropbtn
+    line-height: 1.7
+    &:focus
+      &:hover
+        &::after
+          width: 0
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      width: 30px
+      height: 30px
+      background-color: inherit
+      border: 2px solid #fff
+      border-radius: 5px
+      margin-bottom: 25px
+      padding: 6px
+      &__line
+        width: 18px
+        height: 2px
+        line-height: 12px
+        background-color: #fff
+      &--mobile
+        &_hidden
+          display: none
+@media (min-width: 320px) and (max-width: 374px)
+  .container
+    max-width: 290px
+  .navbar
+    &-wrapper
+      background-color: #000
+      display: none
+      &__menu
+        &-button
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
+    &__menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: auto
+      margin: 0
+      margin-right: 0
+      &-item
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+      &-link
+        font-size: 14px
+        line-height: 22px
+        &::after
+          content: ''
+          display: none
+      &-button
+        display: none
+      &-burger
+        display: none
+        top: -75px
+        left: 0
+        right: 0
+        bottom: 0
+        padding: 100px
+        background-color: #000
+        &--mobile
+          &_visible
+            display: none
+        &--visible
+          display: block
+          position: fixed
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: flex-start
+          height: auto
+          z-index: 150
+    &-bottom
+      &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__logo
+        width: 290px
+        margin-top: 25px
+        margin-left: 0
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+      &__title
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+            justify-content: center
+            font-weight: normal
+            font-size: 15px
+            line-height: 17px
+            letter-spacing: 0.225em
+            margin: 20px 0
+      &__text
+        width: 280px
+        font-weight: normal
+        font-size: 18px
+        line-height: 23px
+        text-align: center
+        letter-spacing: 0.055em
+        margin-top: 20px
+  .dropdown
+    &--mobile
+      &_hidden
+        display: none
+      &_visible
+        display: flex
+        font-size: 14px
+    &__caret
+      width: 10px
+      height: 10px
+    &-content
+      min-width: 90px
+      display: none
+      flex-direction: column
+      align-items: flex-end
+      right: 50px
+      top: 223px
+      &--mobile
+        &_hidden
+          display: none
+      &--visible
+        display: flex
+      &__link
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.055em
+        padding: 0 10px
+  .dropbtn
+    line-height: 1.7
+    &:focus
+      &:hover
+        &::after
+          width: 0
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      width: 30px
+      height: 30px
+      background-color: inherit
+      border: 2px solid #fff
+      border-radius: 5px
+      margin-bottom: 25px
+      padding: 6px
+      &__line
+        width: 18px
+        height: 2px
+        line-height: 12px
+        background-color: #fff
+      &--mobile
+        &_hidden
+          display: none

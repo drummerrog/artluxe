@@ -8,19 +8,20 @@ body {
   font-family: 'Caudex', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.065em;
   color: #fff;
 }
 
 .container {
-  max-width: 1670px;
+  max-width: 1400px;
   margin: auto;
 }
 
 .button {
   font-weight: normal;
+  font-size: 18px;
   text-align: center;
   color: #fff;
   background: #4E565F;
@@ -28,13 +29,12 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   cursor: pointer;
+  padding: 5px 5px;
 }
 
 .button-pay {
-  font-size: 24px;
   line-height: 31px;
   letter-spacing: 0.065em;
-  padding: 12px 5px;
 }
 
 .button-wrapper {
@@ -47,10 +47,9 @@ body {
 }
 
 .button-forward {
-  font-size: 24px;
   line-height: 31px;
   letter-spacing: 0.065em;
-  padding: 12px 46px;
+  padding: 5px 30px;
 }
 
 .line {
@@ -449,7 +448,7 @@ template {
           justify-content: flex-end;
   font-style: italic;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 45px;
   letter-spacing: 0.305em;
   margin: 0;
@@ -464,7 +463,7 @@ template {
 .navbar-bottom__text {
   max-width: 1210px;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 53px;
   text-align: center;
   letter-spacing: 0.055em;
@@ -543,7 +542,7 @@ template {
 
 .dropdown-content__link {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   padding: 8px 10px;
 }
@@ -579,7 +578,6 @@ template {
 }
 
 .preview {
-  display: none;
   padding-bottom: 150px;
 }
 
@@ -593,7 +591,7 @@ template {
 
 .preview__title {
   font-weight: normal;
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 0.065em;
   margin: 0 0 50px;
 }
@@ -612,7 +610,7 @@ template {
 
 .preview-card__title {
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 52px;
   letter-spacing: 0.065em;
   -webkit-text-decoration-line: underline;
@@ -627,7 +625,7 @@ template {
 .preview-card__text {
   width: 220px;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.065em;
 }
@@ -641,7 +639,7 @@ template {
 
 .preview-date {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.065em;
 }

@@ -11,14 +11,11 @@
     &-bottom
       &__logo
         width: 700px
-        margin-left: 0
         &--mobile
           &_hidden
             display: block
           &_visible
             display: none
-      &__title
-        margin-right: 0
       &__text
         font-size: 26px
   .dropdown
@@ -28,6 +25,9 @@
     &-content
       &__link
         font-size: 18px
+  .preview
+    &-performance
+      margin: 0
 @media (min-width: 1200px) and (max-width: 1439px)
   body
     font-size: 16px
@@ -42,7 +42,6 @@
     &-bottom
       &__logo
         width: 600px
-        margin-left: 0
         &--mobile
           &_hidden
             display: block
@@ -50,7 +49,6 @@
             display: none
       &__title
         font-size: 24px
-        margin-right: 0
       &__text
         font-size: 24px
   .dropdown
@@ -60,6 +58,20 @@
     &-content
       &__link
         font-size: 16px
+  .preview
+    &-wrapper
+      padding: 40px 60px 20px
+    &__title
+      margin: 0 0 30px
+    &-card
+      &__image
+        width: 200px
+        height: 135px
+      &__text
+        width: 140px
+        line-height: 27px
+    &-performance
+      margin: 0
 @media (min-width: 1024px) and (max-width: 1199px)
   body
     font-size: 16px
@@ -73,7 +85,6 @@
     &-bottom
       &__logo
         width: 500px
-        margin-left: 0
         &--mobile
           &_hidden
             display: block
@@ -81,7 +92,6 @@
             display: none
       &__title
         font-size: 22px
-        margin-right: 0
       &__text
         font-size: 22px
   .dropdown
@@ -93,6 +103,21 @@
         font-size: 16px
   .show
     margin-top: -7px
+  .preview
+    padding-bottom: 120px
+    &-wrapper
+      padding: 30px 50px 20px
+    &__title
+      margin: 0 0 30px
+    &-card
+      &__image
+        width: 200px
+        height: 135px
+      &__text
+        width: 140px
+        line-height: 27px
+    &-performance
+      margin: 0
 @media (min-width: 768px) and (max-width: 1023px)
   .container
     max-width: 700px
@@ -155,7 +180,6 @@
         width: 400px
         margin-top: 30px
         margin-bottom: 20px
-        margin-left: 0
         &--mobile
           &_hidden
             display: block
@@ -170,7 +194,6 @@
       &__title
         justify-content: center
         font-size: 20px
-        margin-right: 0
       &__text
         font-size: 20px
         line-height: 40px
@@ -231,6 +254,23 @@
       &--mobile
         &_visible
           display: none
+  .preview
+    padding-bottom: 120px
+    &-wrapper
+      padding: 30px 40px 20px
+    &__title
+      margin: 0 0 30px
+    &-card
+      &__image
+        width: 175px
+        height: 115px
+      &__text
+        display: none
+    &-performance
+      margin: 0
+    .line
+      &-bottom
+        margin: 40px 0 30px
 @media (min-width: 425px) and (max-width: 767px)
   .container
     max-width: 400px
@@ -292,7 +332,6 @@
       &__logo
         width: 400px
         margin-top: 25px
-        margin-left: 0
         &--mobile
           &_hidden
             display: none
@@ -371,6 +410,53 @@
       &--mobile
         &_hidden
           display: none
+  .preview
+    padding-bottom: 50px
+    &-wrapper
+      padding: 30px 20px 20px
+    &__title
+      font-size: 42px
+      text-align: center
+      margin: 0 0 20px
+    &-card
+      display: grid
+      justify-items: center
+      justify-content: center
+      grid-template-columns: auto
+      grid-template-rows: auto
+      &__image
+        width: 200px
+        height: 135px
+        grid-row: 1
+      &__text
+        display: grid
+        width: auto
+        text-align: center
+      &__director
+        grid-row: 5
+      &__title
+        line-height: 40px
+        grid-row: 4
+      &__age
+        line-height: 30px
+        grid-row: 3
+    &-performance
+      margin: 0
+      &__title
+        grid-row: 2
+      &__about
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+    &-date
+      grid-row: 6
+  .line
+    margin: 0
+    margin-bottom: 10px
+    &-bottom
+      margin: 40px 0 30px
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px
@@ -432,7 +518,6 @@
       &__logo
         width: 345px
         margin-top: 25px
-        margin-left: 0
         &--mobile
           &_hidden
             display: none
@@ -572,7 +657,6 @@
       &__logo
         width: 290px
         margin-top: 25px
-        margin-left: 0
         &--mobile
           &_hidden
             display: none

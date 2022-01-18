@@ -268,9 +268,20 @@
         display: none
     &-performance
       margin: 0
-    .line
-      &-bottom
-        margin: 40px 0 30px
+      &__about
+        &::after
+          content: ''
+          display: block
+          width: 0%
+        &:hover
+          &::after
+            width: 0%
+  .line
+    &-bottom
+      margin: 40px 0 30px
+  .button
+    &:hover
+      background-color: $color-button
 @media (min-width: 425px) and (max-width: 767px)
   .container
     max-width: 400px
@@ -442,8 +453,9 @@
         grid-row: 3
     &-performance
       margin: 0
-      &__title
-        grid-row: 2
+      &--mobile
+        &_visible
+          display: block
       &__about
         &--mobile
           &_hidden
@@ -451,12 +463,19 @@
           &_visible
             display: block
     &-date
-      grid-row: 6
+      grid-row: 5
   .line
     margin: 0
     margin-bottom: 10px
     &-bottom
       margin: 40px 0 30px
+  .button
+    &:hover
+      background-color: $color-button
+    &-pay
+      margin: 20px 0
+    &-forward
+      margin-top: 20px
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px
@@ -596,6 +615,63 @@
       &--mobile
         &_hidden
           display: none
+  .preview
+    padding-bottom: 50px
+    &-wrapper
+      padding: 30px 20px 20px
+    &__title
+      font-size: 42px
+      text-align: center
+      margin: 0 0 20px
+    &-card
+      display: grid
+      justify-items: center
+      justify-content: center
+      grid-template-columns: auto
+      grid-template-rows: auto
+      &__image
+        width: 200px
+        height: 135px
+        grid-row: 1
+      &__text
+        display: grid
+        width: auto
+        text-align: center
+      &__director
+        font-size: 16px
+        grid-row: 5
+      &__title
+        font-size: 16px
+        line-height: 40px
+        grid-row: 4
+      &__age
+        line-height: 30px
+        grid-row: 3
+    &-performance
+      margin: 0
+      &--mobile
+        &_visible
+          display: block
+      &__about
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+    &-date
+      grid-row: 5
+  .line
+    margin: 0
+    margin-bottom: 10px
+    &-bottom
+      margin: 40px 0 30px
+  .button
+    &:hover
+      background-color: $color-button
+    &-pay
+      margin: 20px 0
+    &-forward
+      margin-top: 20px
 @media (min-width: 320px) and (max-width: 374px)
   .container
     max-width: 290px
@@ -736,3 +812,59 @@
       &--mobile
         &_hidden
           display: none
+  .preview
+    padding-bottom: 50px
+    &-wrapper
+      padding: 30px 15px 15px
+    &__title
+      font-size: 42px
+      text-align: center
+      margin: 0 0 20px
+    &-card
+      display: grid
+      justify-items: center
+      justify-content: center
+      grid-template-columns: auto
+      grid-template-rows: auto
+      &__image
+        width: 160px
+        height: 115px
+        grid-row: 1
+      &__text
+        display: grid
+        width: auto
+        font-size: 14px
+        text-align: center
+      &__director
+        grid-row: 5
+      &__title
+        line-height: 32px
+        grid-row: 4
+      &__age
+        line-height: 30px
+        grid-row: 3
+    &-performance
+      margin: 0
+      &--mobile
+        &_visible
+          display: block
+      &__about
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+    &-date
+      grid-row: 5
+  .line
+    margin: 0
+    margin-bottom: 10px
+    &-bottom
+      margin: 40px 0 30px
+  .button
+    &:hover
+      background-color: $color-button
+    &-pay
+      margin: 20px 0
+    &-forward
+      margin-top: 20px

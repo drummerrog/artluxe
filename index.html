@@ -240,24 +240,45 @@
     <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="public/assets/img/swiper/swiper-01.jpg" alt="Изображение" />
-          <img src="public/assets/img/swiper/swiper-02.jpg" alt="Изображение" />
-          <img src="public/assets/img/swiper/swiper-03.jpg" alt="Изображение" />
-          <img src="public/assets/img/swiper/swiper-04.jpg" alt="Изображение" />
+          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-01.jpg" alt="Изображение" />
         </div>
-        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-02.jpg" alt="Изображение" />
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-03.jpg" alt="Изображение" />
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-04.jpg" alt="Изображение" />
+        </div>
       </div>
+      <!-- swiper-wrapper -->
       <div class="swiper-buttons">
         <div class="swiper-button swiper-button-prev">
-          <img src="public/assets/img/icons/left-arrow.svg" alt="назад" />
+          <img class="swiper-button__icon" src="public/assets/img/icons/left-arrow.svg" alt="назад" />
         </div>
         <div class="swiper-button swiper-button-next">
-          <img src="public/assets/img/icons/right-arrow.svg" alt="вперёд" />
+          <img class="swiper-button__icon" src="public/assets/img/icons/right-arrow.svg" alt="вперёд" />
         </div>
+      </div>
+      <div class="swiper-pagination">
+        <svg class="swiper-pagination__bullets" width="16" height="14" viewBox="0 0 16 14" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <ellipse class="swiper-pagination__bullet" cx="7.83029" cy="7" rx="7.52737" ry="7" fill="#6F6F6F" />
+        </svg>
+        <svg class="swiper-pagination__bullets" width="16" height="15" viewBox="0 0 16 15" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <ellipse class="swiper-pagination__bullet" cx="7.99609" cy="7.93498" rx="7.51953" ry="7.0175"
+            fill="#C4C4C4" />
+        </svg>
+        <svg class="swiper-pagination__bullets swiper-pagination__bullets--right" width="16" height="15"
+          viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse class="swiper-pagination__bullet" cx="7.99609" cy="7.93498" rx="7.51953" ry="7.0175"
+            fill="#C4C4C4" />
+        </svg>
       </div>
     </div>
     <!-- /.swiper-container -->
-    <div class="swiper-pagination"></div>
   </section>
   <!-- /.swiper -->
 

@@ -53,6 +53,23 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   loopedSlides: 0,
   allowTouchMove: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    },
+
+    425: {
+      slidesPerView: 1
+    },
+
+    375: {
+      slidesPerView: 1
+    },
+
+    320: {
+      slidesPerView: 1
+    }
+  },
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,

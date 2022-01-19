@@ -816,6 +816,13 @@ template {
   .preview-performance {
     margin: 0;
   }
+  .swiper-slide__image {
+    max-width: 330px;
+    height: auto;
+  }
+  .swiper-buttons {
+    width: 92%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -869,6 +876,18 @@ template {
   }
   .preview-performance {
     margin: 0;
+  }
+  .swiper-slide__image {
+    max-width: 262px;
+    height: auto;
+  }
+  .swiper-buttons {
+    width: 92%;
+    top: 28%;
+  }
+  .swiper-button__icon {
+    width: 20px;
+    height: 50px;
   }
 }
 
@@ -928,6 +947,18 @@ template {
   }
   .preview-performance {
     margin: 0;
+  }
+  .swiper-slide__image {
+    max-width: 218px;
+    height: auto;
+  }
+  .swiper-buttons {
+    width: 92%;
+    top: 28%;
+  }
+  .swiper-button__icon {
+    width: 20px;
+    height: 50px;
   }
 }
 
@@ -1168,6 +1199,27 @@ template {
   }
   .button:hover {
     background-color: #4E565F;
+  }
+  .swiper-container {
+    padding: 40px 15px 23px;
+  }
+  .swiper-slide__image {
+    max-width: 337px;
+    height: auto;
+  }
+  .swiper-buttons {
+    width: 85%;
+    top: 28%;
+  }
+  .swiper-buttons:hover {
+    max-width: 1800px;
+  }
+  .swiper-button__icon {
+    width: 20px;
+    height: 50px;
+  }
+  .swiper-pagination {
+    margin-top: 20px;
   }
 }
 
@@ -1458,6 +1510,31 @@ template {
   }
   .button-forward {
     margin-top: 20px;
+  }
+  .swiper-container {
+    padding: 20px 0 10px;
+  }
+  .swiper-slide__image {
+    width: 390px;
+    height: auto;
+  }
+  .swiper-buttons {
+    width: 85%;
+    top: 28%;
+  }
+  .swiper-buttons:hover {
+    max-width: 1800px;
+  }
+  .swiper-button__icon {
+    width: 20px;
+    height: 50px;
+  }
+  .swiper-pagination {
+    margin-top: 10px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
   }
 }
 

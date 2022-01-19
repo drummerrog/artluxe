@@ -28,6 +28,13 @@
   .preview
     &-performance
       margin: 0
+  .swiper
+    &-slide
+      &__image
+        max-width: 330px
+        height: auto
+    &-buttons
+      width: 92%
 @media (min-width: 1200px) and (max-width: 1439px)
   body
     font-size: 16px
@@ -72,6 +79,17 @@
         line-height: 27px
     &-performance
       margin: 0
+  .swiper
+    &-slide
+      &__image
+        max-width: 262px
+        height: auto
+    &-buttons
+      width: 92%
+      top: 28%
+    &-button__icon
+      width: 20px
+      height: 50px
 @media (min-width: 1024px) and (max-width: 1199px)
   body
     font-size: 16px
@@ -118,6 +136,17 @@
         line-height: 27px
     &-performance
       margin: 0
+  .swiper
+    &-slide
+      &__image
+        max-width: 218px
+        height: auto
+    &-buttons
+      width: 92%
+      top: 28%
+    &-button__icon
+      width: 20px
+      height: 50px
 @media (min-width: 768px) and (max-width: 1023px)
   .container
     max-width: 700px
@@ -282,6 +311,23 @@
   .button
     &:hover
       background-color: $color-button
+  .swiper
+    &-container
+      padding: 40px 15px 23px
+    &-slide
+      &__image
+        max-width: 337px
+        height: auto
+    &-buttons
+      width: 85%
+      top: 28%
+      &:hover
+        max-width: 1800px
+    &-button__icon
+      width: 20px
+      height: 50px
+    &-pagination
+      margin-top: 20px
 @media (min-width: 425px) and (max-width: 767px)
   .container
     max-width: 400px
@@ -476,6 +522,26 @@
       margin: 20px 0
     &-forward
       margin-top: 20px
+  .swiper
+    &-container
+      padding: 20px 0 10px
+    &-slide
+      &__image
+        width: 390px
+        height: auto
+    &-buttons
+      width: 85%
+      top: 28%
+      &:hover
+        max-width: 1800px
+    &-button__icon
+      width: 20px
+      height: 50px
+    &-pagination
+      margin-top: 10px
+      &-bullet
+        width: 10px
+        height: 10px
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px

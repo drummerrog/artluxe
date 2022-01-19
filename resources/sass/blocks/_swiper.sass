@@ -7,17 +7,18 @@
     border: 2px solid $color-border
     padding: 63px 15px 23px
     justify-content: space-between
+    overflow: hidden
   &-wrapper
     display: flex
   &-slide
     display: flex
-    margin: 0 15px
     &__image
       width: 440px
       height: 265px
       border: 1px solid #000
       box-sizing: border-box
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+      margin: 0 15px
   &-buttons
     display: flex
     justify-content: space-between
@@ -47,16 +48,15 @@
     justify-content: center
     bottom: 0
     margin-top: 40px
-    &__bullets
+    &-bullets
       cursor: pointer
-      margin-right: 30px
-      &--right
-        margin-right: -15px
-    &__bullet
+    &-bullet
       width: 18px
       height: 18px
-      border: 1px solid #fff
-      // background-color: $swiper-pagination-active
-      margin-right: 10px
+      background-color: $swiper-pagination-notactive
+      border-radius: 50%
+      margin: 0 5px
+      &-active
+        background-color: $swiper-pagination-active
     // &:last-child
     //   margin-right: 0

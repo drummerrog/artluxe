@@ -44,3 +44,28 @@ function closeMenu() {
 function closeMenu() {
   $(".navbar__menu-burger").removeClass("navbar__menu-burger--visible");
 } // Закрытие меню
+
+// Слайдер
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  slidesPerGroup: 1,
+  initialSlide: null,
+  loop: true,
+  loopedSlides: 0,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  mousewheel: {
+    invert: true,
+  },
+});

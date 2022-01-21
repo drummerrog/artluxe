@@ -713,14 +713,15 @@ template {
 }
 
 .swiper-slide__image {
-  width: 440px;
+  width: 445px;
   height: 265px;
   border: 1px solid #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin: 0 15px;
 }
 
 .swiper-buttons {
@@ -878,7 +879,7 @@ template {
     margin: 0;
   }
   .swiper-slide__image {
-    max-width: 262px;
+    max-width: 270px;
     height: auto;
   }
   .swiper-buttons {
@@ -949,7 +950,7 @@ template {
     margin: 0;
   }
   .swiper-slide__image {
-    max-width: 218px;
+    max-width: 225px;
     height: auto;
   }
   .swiper-buttons {
@@ -1204,19 +1205,11 @@ template {
     padding: 40px 15px 23px;
   }
   .swiper-slide__image {
-    max-width: 337px;
+    max-width: 352px;
     height: auto;
   }
   .swiper-buttons {
-    width: 85%;
-    top: 28%;
-  }
-  .swiper-buttons:hover {
-    max-width: 1800px;
-  }
-  .swiper-button__icon {
-    width: 20px;
-    height: 50px;
+    display: none;
   }
   .swiper-pagination {
     margin-top: 20px;
@@ -1515,19 +1508,13 @@ template {
     padding: 20px 0 10px;
   }
   .swiper-slide__image {
-    width: 390px;
+    max-width: 400px;
     height: auto;
+    margin-left: 10px;
+    margin-right: 15px;
   }
   .swiper-buttons {
-    width: 85%;
-    top: 28%;
-  }
-  .swiper-buttons:hover {
-    max-width: 1800px;
-  }
-  .swiper-button__icon {
-    width: 20px;
-    height: 50px;
+    display: none;
   }
   .swiper-pagination {
     margin-top: 10px;
@@ -1828,6 +1815,25 @@ template {
   .button-forward {
     margin-top: 20px;
   }
+  .swiper-container {
+    padding: 20px 0 10px;
+  }
+  .swiper-slide__image {
+    max-width: 350px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+  .swiper-buttons {
+    display: none;
+  }
+  .swiper-pagination {
+    margin-top: 10px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -2119,6 +2125,25 @@ template {
   }
   .button-forward {
     margin-top: 20px;
+  }
+  .swiper-container {
+    padding: 20px 0 10px;
+  }
+  .swiper-slide__image {
+    max-width: 295px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+  .swiper-buttons {
+    display: none;
+  }
+  .swiper-pagination {
+    margin-top: 10px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

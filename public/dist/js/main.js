@@ -49,40 +49,58 @@ function closeMenu() {
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   slidesPerGroup: 1,
-  initialSlide: null,
+  spaceBetween: 30,
   loop: true,
-  loopedSlides: 0,
-  allowTouchMove: false,
+  initialSlide: 0,
+
   breakpoints: {
+    1920: {
+      slidesPerView: 4
+    },
+    1440: {
+      slidesPerView: 4
+    },
+    1200: {
+      slidesPerView: 4
+    },
+    1024: {
+      slidesPerView: 4
+    },
     768: {
       slidesPerView: 2
     },
-
     425: {
       slidesPerView: 1
     },
-
     375: {
       slidesPerView: 1
     },
-
     320: {
       slidesPerView: 1
     }
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   mousewheel: {
     invert: true,
   },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
+
+  // initialSlide: 0,
+  // loop: true,
+  // loopedSlides: 4,
+  // allowTouchMove: true,

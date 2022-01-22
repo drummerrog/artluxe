@@ -23,6 +23,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   text-align: center;
+  text-decoration: none;
   color: #C4C4C4;
   background-color: #4E565F;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -39,7 +40,6 @@ body {
 
 .button-pay {
   line-height: 31px;
-  letter-spacing: 0.065em;
 }
 
 .button-wrapper {
@@ -53,8 +53,11 @@ body {
 
 .button-forward {
   line-height: 31px;
-  letter-spacing: 0.065em;
   padding: 5px 30px;
+}
+
+.button-read {
+  padding: 10px 44px;
 }
 
 .line {
@@ -63,6 +66,11 @@ body {
 
 .line-bottom {
   margin: 60px 0 30px;
+}
+
+.line-vertical {
+  height: 290px;
+  margin: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -781,6 +789,45 @@ template {
 
 .swiper-pagination-bullet-active {
   background-color: #6F6F6F;
+}
+
+.overview {
+  padding-bottom: 320px;
+}
+
+.overview-wrapper {
+  background-color: #131415;
+  border: 2px solid #F4F4F4;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+  padding: 30px 45px 50px;
+}
+
+.overview-wrapper__title {
+  margin: 0 0 15px;
+}
+
+.overview-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.overview-card {
+  width: 290px;
+}
+
+.overview-card__text {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {

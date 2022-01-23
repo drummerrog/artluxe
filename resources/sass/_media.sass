@@ -8,14 +8,15 @@
       height: 110px
     &__menu
       max-width: 1200px
-    &-bottom
-      &__logo
-        width: 700px
+    &-logo
+      width: 700px
+      &__image
         &--mobile
           &_hidden
             display: block
           &_visible
             display: none
+    &-bottom
       &__text
         font-size: 26px
   .dropdown
@@ -55,14 +56,15 @@
       height: 100px
     &__menu
       max-width: 900px
-    &-bottom
-      &__logo
+    &-logo
+      &__image
         width: 600px
         &--mobile
           &_hidden
             display: block
           &_visible
             display: none
+    &-bottom
       &__title
         font-size: 24px
       &__text
@@ -120,14 +122,15 @@
       height: 90px
     &__menu
       max-width: 900px
-    &-bottom
-      &__logo
+    &-logo
+      &__image
         width: 500px
         &--mobile
           &_hidden
             display: block
           &_visible
             display: none
+    &-bottom
       &__title
         font-size: 22px
       &__text
@@ -231,12 +234,8 @@
           justify-content: flex-end
           height: auto
           z-index: 150
-    &-bottom
-      &__wrapper
-        display: flex
-        justify-content: space-between
-        align-items: center
-      &__logo
+    &-logo
+      &__image
         width: 400px
         margin-top: 30px
         margin-bottom: 20px
@@ -245,6 +244,11 @@
             display: block
           &_visible
             display: none
+    &-bottom
+      &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
       &__menu
         &-button
           display: block
@@ -424,12 +428,8 @@
           justify-content: flex-start
           height: auto
           z-index: 150
-    &-bottom
-      &__wrapper
-        display: flex
-        flex-direction: column
-        align-items: center
-      &__logo
+    &-logo
+      &__image
         width: 400px
         margin-top: 25px
         &--mobile
@@ -437,6 +437,11 @@
             display: none
           &_visible
             display: block
+    &-bottom
+      &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
       &__title
         &--mobile
           &_hidden
@@ -669,12 +674,8 @@
           justify-content: flex-start
           height: auto
           z-index: 150
-    &-bottom
-      &__wrapper
-        display: flex
-        flex-direction: column
-        align-items: center
-      &__logo
+    &-logo
+      &__image
         width: 345px
         margin-top: 25px
         &--mobile
@@ -682,6 +683,11 @@
             display: none
           &_visible
             display: block
+    &-bottom
+      &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
       &__title
         &--mobile
           &_hidden
@@ -916,12 +922,8 @@
           justify-content: flex-start
           height: auto
           z-index: 150
-    &-bottom
-      &__wrapper
-        display: flex
-        flex-direction: column
-        align-items: center
-      &__logo
+    &-logo
+      &__image
         width: 290px
         margin-top: 25px
         &--mobile
@@ -929,6 +931,11 @@
             display: none
           &_visible
             display: block
+    &-bottom
+      &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
       &__title
         &--mobile
           &_hidden

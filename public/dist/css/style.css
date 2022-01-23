@@ -14,6 +14,15 @@ body {
   color: #fff;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
@@ -837,6 +846,107 @@ template {
   font-weight: normal;
   line-height: 26px;
   margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #131415;
+  padding: 35px 60px;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo__image {
+  max-width: 600px;
+  width: 100%;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 190px;
+  margin: 0;
+  margin-left: -215px;
+  padding: 0;
+}
+
+.footer__menu-item {
+  cursor: pointer;
+}
+
+.footer__menu-item--mobile_visible {
+  display: none;
+}
+
+.footer__menu-link {
+  color: #fff;
+}
+
+.footer__menu-link::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 0%;
+}
+
+.footer__menu-link:hover::after {
+  width: 70%;
+}
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 340px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.footer-social__icon {
+  width: 48px;
+  height: 43px;
+}
+
+.footer-social__icon:hover {
+  background-color: #131415;
+}
+
+.footer-contacts {
+  line-height: 39px;
+}
+
+.footer-contacts__tel {
+  margin-bottom: 30px;
+}
+
+.footer__copyrating {
+  text-align: center;
+  margin-top: 30px;
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {

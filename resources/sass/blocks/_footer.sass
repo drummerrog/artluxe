@@ -1,0 +1,55 @@
+.footer
+  background-color: $color-card
+  padding: 35px 60px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+  &-logo
+    display: flex
+    align-items: center
+    &__image
+      max-width: 600px
+      width: 100%
+  &__menu
+    display: flex
+    flex-direction: column
+    max-width: 190px
+    margin: 0
+    margin-left: -215px
+    padding: 0
+    &-item
+      cursor: pointer
+      &--mobile
+        &_visible
+          display: none
+    &-link
+      color: #fff
+      &::after
+        content: ''
+        display: block
+        height: 1px
+        background-color: #fff
+        transition: 0.2s
+        width: 0%
+      &:hover
+        &::after
+          width: 70%
+    // &-button
+    //   display: none
+  &-social
+    display: flex
+    width: 340px
+    justify-content: space-between
+    margin-bottom: 25px
+    &__icon
+      width: 48px
+      height: 43px
+      &:hover
+        background-color: $color-card
+  &-contacts
+    line-height: 39px
+    &__tel
+      margin-bottom: 30px
+  &__copyrating
+    text-align: center
+    margin-top: 30px

@@ -54,17 +54,18 @@
         </li>
       </ul>
       <!-- navbar__menu -->
-
     </div>
     <!-- /.navbar-wrapper -->
 
     <div class="navbar-bottom">
       <div class="container">
         <div class="navbar-bottom__wrapper">
-          <img class="navbar-bottom__logo navbar-bottom__logo--mobile_hidden" src="public/assets/img/logo.jpg"
-            alt="логотип">
-          <img class="navbar-bottom__logo navbar-bottom__logo--mobile_visible" src="public/assets/img/logo_mobile.jpg"
-            alt="логотип">
+          <div class="navbar-logo">
+            <img class="navbar-logo__image navbar-logo__image--mobile_hidden" src="public/assets/img/logo.jpg"
+              alt="логотип">
+            <img class="navbar-logo__image navbar-logo__image--mobile_visible" src="public/assets/img/logo_mobile.jpg"
+              alt="логотип">
+          </div>
           <h1 class="navbar-bottom__title navbar-bottom__title--mobile_visible">До счастья всего лишь миг!</h1>
           <button class="menu-button navbar-wrapper__menu-button">
             <span class="menu-button__line"></span>
@@ -340,6 +341,74 @@
     <!-- /.container -->
   </section>
   <!-- /.overview -->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-logo">
+        <img class="footer-logo__image" src="public/assets/img/logo.jpg" alt="логотип">
+      </div>
+      <ul class="footer__menu">
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="#" class="footer__menu-link">Главная</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="#" class="footer__menu-link">Афиша</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="#" class="footer__menu-link">Репертуар</a>
+        </li>
+        <li class="dropdown dropdown--mobile_hidden">
+          <button class="dropbtn" onclick="myFunction()">
+            О театре
+            <img class="dropdown__caret" src="public/assets/img/icons/caret-down.svg" alt="каретка" />
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a class="dropdown-content__link" href="#">О театре</a>
+            <a class="dropdown-content__link" href="#">Труппа</a>
+            <a class="dropdown-content__link" href="#">Люди</a>
+            <a class="dropdown-content__link" href="#">Новости</a>
+          </div>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="#" class="footer__menu-link">Школа кино</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="#" class="footer__menu-link">Театральная студия</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="#" class="footer__menu-link">Вакансии</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="#" class="footer__menu-link">Контакты</a>
+        </li>
+      </ul>
+      <!-- /.footer-menu -->
+      <div class="footer-contacts">
+        <div class="footer-social">
+          <a href="#" class="footer-social__link">
+            <img class="footer-social__icon" src="public/assets/img/social/whatsapp.svg" alt="WhatsApp">
+          </a>
+          <a href="#" class="footer-social__link">
+            <img class="footer-social__icon" src="public/assets/img/social/vk.svg" alt="VK">
+          </a>
+          <a href="#" class="footer-social__link">
+            <img class="footer-social__icon" src="public/assets/img/social/youtube.svg" alt="YouTube">
+          </a>
+          <a href="#" class="footer-social__link">
+            <img class="footer-social__icon" src="public/assets/img/social/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+        <!-- footer-social -->
+        <div class="footer-contacts__tel">+7(911)1234567</div>
+        <div class="footer-contacts__adress">Адрес:</div>
+      </div>
+      <!-- /.footer-contacts -->
+    </div>
+    <!-- /.footer-wrapper -->
+    <div class="footer__copyrating">
+      <a href="#" class="footer__copyrating-link">drummerrog service </a>2022
+    </div>
+  </footer>
+  <!-- /.footer -->
 
 </body>
 

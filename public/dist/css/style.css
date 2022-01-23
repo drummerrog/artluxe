@@ -20,8 +20,6 @@ body {
 }
 
 .button {
-  font-weight: normal;
-  font-size: 18px;
   text-align: center;
   text-decoration: none;
   color: #C4C4C4;
@@ -49,6 +47,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.button-wrapper--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  line-height: 18px;
 }
 
 .button-forward {

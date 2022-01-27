@@ -1,17 +1,54 @@
-// Открытие и закрытие подменю по клику
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+// Открытие и закрытие подменю в шапке по клику
+// function myFunction() {
+//   document.getElementById("first").classList.toggle("show");
+// }
 
 // Закрытие подменю по клику за его пределами
+// window.onclick = function (e) {
+//   if (!e.target.matches(".dropbtn")) {
+//     var myDropdown = document.getElementById("first");
+//     if (myDropdown.classList.contains("show")) {
+//       myDropdown.classList.remove("show");
+//     }
+//   }
+// };
+
+// Открытие и закрытие выпадающего списка меню по клику
+const dropdowns = document.querySelectorAll(`.dropdown`);
+
+dropdowns.forEach((dropdown) => {
+  const btn = dropdown.querySelector(`.dropbtn`);
+  dropdown.querySelector(`.dropdown-content`).classList.remove(`show`);
+
+  // Клик по кнопке
+  btn.addEventListener(`click`, (evt) => {
+    // Список кликнутой кнопки в переменную
+    const itemOpen = dropdown.querySelector(`.dropdown-content`);
+
+    // Если у списка есть класс .show, то скрываем/показываем список
+    if (itemOpen.matches(`.show`)) {
+      navBarHide();
+      itemOpen.classList.remove(`show`);
+    } else {
+      navBarHide();
+      itemOpen.classList.add(`show`);
+    }
+  });
+});
+
+// Закрытие выпадающего списка меню, если щёлкнуть за его пределами
 window.onclick = function (e) {
   if (!e.target.matches(".dropbtn")) {
-    var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains("show")) {
-      myDropdown.classList.remove("show");
-    }
+    navBarHide();
   }
 };
+
+function navBarHide() {
+  dropdowns.forEach((el) => {
+    el.querySelector(`.dropdown-content`).classList.remove(`show`);
+  });
+}
+
 
 // МОБИЛЬНОЕ МЕНЮ
 // Кнопка меню - burger-menu
@@ -99,8 +136,3 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-
-  // initialSlide: 0,
-  // loop: true,
-  // loopedSlides: 4,
-  // allowTouchMove: true,

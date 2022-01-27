@@ -913,18 +913,18 @@ template {
 }
 
 .footer__menu-link:hover::after {
-  width: 70%;
+  width: 30%;
 }
 
 .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 340px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 25px;
+  width: 280px;
+  margin-bottom: 10px;
 }
 
 .footer-social__icon {
@@ -932,11 +932,14 @@ template {
   height: 43px;
 }
 
-.footer-social__icon:hover {
-  background-color: #131415;
-}
-
 .footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   line-height: 39px;
 }
 
@@ -944,9 +947,18 @@ template {
   margin-bottom: 30px;
 }
 
-.footer__copyrating {
+.footer-copyrating {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 100px;
+}
+
+.footer-copyrating__link:hover {
+  text-decoration: underline;
+}
+
+#second {
+  margin-left: 100px;
+  margin-top: -36px;
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {

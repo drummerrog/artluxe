@@ -33,23 +33,46 @@
         width: 0%
       &:hover
         &::after
-          width: 70%
+          width: 30%
     // &-button
     //   display: none
   &-social
     display: flex
-    width: 340px
     justify-content: space-between
-    margin-bottom: 25px
+    width: 280px
+    margin-bottom: 10px
     &__icon
       width: 48px
       height: 43px
-      &:hover
-        background-color: $color-card
+    &__link
+      // &:hover
+      //   stroke: $color-card
+    // &__filling
+    //   stroke: #fff
+      // &:hover
+      //   width: 48px
+      //   height: 43px
+      //   stroke: red
+      //   fill: #fff
+    // &__stroke
+    //   stroke: #fff
+      // &:hover
+      //   width: 48px
+      //   height: 43px
+      //   stroke: red
+        // fill: $color-card
   &-contacts
+    display: flex
+    flex-direction: column
     line-height: 39px
     &__tel
       margin-bottom: 30px
-  &__copyrating
+  &-copyrating
     text-align: center
-    margin-top: 30px
+    margin-top: 100px
+    &__link
+      &:hover
+        text-decoration: underline
+#second
+  margin-left: 100px
+  margin-top: -36px

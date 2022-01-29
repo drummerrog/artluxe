@@ -605,11 +605,11 @@ template {
   background-color: inherit;
 }
 
-.preview {
+.playbill {
   padding-bottom: 130px;
 }
 
-.preview-wrapper {
+.playbill-wrapper {
   background: #131415;
   border: 2px solid #F1F1F1;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
@@ -617,13 +617,13 @@ template {
   padding: 50px 80px 20px;
 }
 
-.preview__title {
+.playbill__title {
   font-weight: normal;
   font-size: 30px;
   margin: 0 0 50px;
 }
 
-.preview-card {
+.playbill-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,52 +635,52 @@ template {
           align-items: center;
 }
 
-.preview-card__image {
+.playbill-card__image {
   width: 250px;
   height: 185px;
   border-radius: 3px;
 }
 
-.preview-card__text {
+.playbill-card__text {
   width: 160px;
   font-weight: normal;
   line-height: 32px;
 }
 
-.preview-card__age {
+.playbill-card__age {
   font-weight: normal;
   font-size: 30px;
   line-height: 53px;
 }
 
-.preview-date {
+.playbill-date {
   font-weight: normal;
   line-height: 32px;
 }
 
-.preview-performance {
+.playbill-text {
   margin: 0 150px 0 100px;
 }
 
-.preview-performance--mobile_visible {
+.playbill-text--mobile_visible {
   display: none;
 }
 
-.preview-performance__title {
+.playbill-text__title {
   font-weight: normal;
   font-size: 20px;
   line-height: 52px;
   margin: 0;
 }
 
-.preview-performance__about {
+.playbill-text__about {
   font-weight: normal;
   line-height: 23px;
   color: #fff;
   text-decoration: none;
 }
 
-.preview-performance__about::after {
+.playbill-text__about::after {
   content: '';
   display: block;
   height: 1px;
@@ -690,19 +690,19 @@ template {
   width: 0%;
 }
 
-.preview-performance__about:hover::after {
+.playbill-text__about:hover::after {
   width: 70%;
 }
 
-.preview-performance__about--mobile_hidden {
+.playbill-text__about--mobile_hidden {
   display: block;
 }
 
-.preview-performance__about--mobile_visible {
+.playbill-text__about--mobile_visible {
   display: none;
 }
 
-.preview-performance__arrows {
+.playbill-text__arrows {
   width: 30px;
   height: 23px;
   margin-left: -5px;
@@ -1000,7 +1000,7 @@ template {
   .dropdown-content__link {
     font-size: 18px;
   }
-  .preview-performance {
+  .playbill-text {
     margin: 0;
   }
   .swiper-slide__image {
@@ -1073,21 +1073,21 @@ template {
   .dropdown-content__link {
     font-size: 16px;
   }
-  .preview-wrapper {
+  .playbill-wrapper {
     padding: 40px 60px 20px;
   }
-  .preview__title {
+  .playbill__title {
     margin: 0 0 30px;
   }
-  .preview-card__image {
+  .playbill-card__image {
     width: 200px;
     height: 135px;
   }
-  .preview-card__text {
+  .playbill-card__text {
     width: 140px;
     line-height: 27px;
   }
-  .preview-performance {
+  .playbill-text {
     margin: 0;
   }
   .swiper-slide__image {
@@ -1170,24 +1170,24 @@ template {
   .show {
     margin-top: -7px;
   }
-  .preview {
+  .playbill {
     padding-bottom: 120px;
   }
-  .preview-wrapper {
+  .playbill-wrapper {
     padding: 30px 50px 20px;
   }
-  .preview__title {
+  .playbill__title {
     margin: 0 0 30px;
   }
-  .preview-card__image {
+  .playbill-card__image {
     width: 200px;
     height: 135px;
   }
-  .preview-card__text {
+  .playbill-card__text {
     width: 140px;
     line-height: 27px;
   }
-  .preview-performance {
+  .playbill-text {
     margin: 0;
   }
   .swiper-slide__image {
@@ -1441,31 +1441,31 @@ template {
   .menu-button--mobile_visible {
     display: none;
   }
-  .preview {
+  .playbill {
     padding-bottom: 120px;
   }
-  .preview-wrapper {
+  .playbill-wrapper {
     padding: 30px 40px 20px;
   }
-  .preview__title {
+  .playbill__title {
     margin: 0 0 30px;
   }
-  .preview-card__image {
+  .playbill-card__image {
     width: 175px;
     height: 115px;
   }
-  .preview-card__text {
+  .playbill-card__text {
     display: none;
   }
-  .preview-performance {
+  .playbill-text {
     margin: 0;
   }
-  .preview-performance__about::after {
+  .playbill-text__about::after {
     content: '';
     display: block;
     width: 0%;
   }
-  .preview-performance__about:hover::after {
+  .playbill-text__about:hover::after {
     width: 0%;
   }
   .line-bottom {
@@ -1779,18 +1779,18 @@ template {
   .menu-button--mobile_hidden {
     display: none;
   }
-  .preview {
+  .playbill {
     padding-bottom: 50px;
   }
-  .preview-wrapper {
+  .playbill-wrapper {
     padding: 30px 20px 20px;
   }
-  .preview__title {
+  .playbill__title {
     font-size: 42px;
     text-align: center;
     margin: 0 0 20px;
   }
-  .preview-card {
+  .playbill-card {
     display: -ms-grid;
     display: grid;
     justify-items: center;
@@ -1802,45 +1802,45 @@ template {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  .preview-card__image {
+  .playbill-card__image {
     width: 200px;
     height: 135px;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .preview-card__text {
+  .playbill-card__text {
     display: -ms-grid;
     display: grid;
     width: auto;
     text-align: center;
   }
-  .preview-card__director {
+  .playbill-card__director {
     -ms-grid-row: 5;
     grid-row: 5;
   }
-  .preview-card__title {
+  .playbill-card__title {
     line-height: 40px;
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  .preview-card__age {
+  .playbill-card__age {
     line-height: 30px;
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  .preview-performance {
+  .playbill-text {
     margin: 0;
   }
-  .preview-performance--mobile_visible {
+  .playbill-text--mobile_visible {
     display: block;
   }
-  .preview-performance__about--mobile_hidden {
+  .playbill-text__about--mobile_hidden {
     display: none;
   }
-  .preview-performance__about--mobile_visible {
+  .playbill-text__about--mobile_visible {
     display: block;
   }
-  .preview-date {
+  .playbill-date {
     -ms-grid-row: 5;
     grid-row: 5;
   }
@@ -2195,18 +2195,18 @@ template {
   .menu-button--mobile_hidden {
     display: none;
   }
-  .preview {
+  .playbill {
     padding-bottom: 50px;
   }
-  .preview-wrapper {
+  .playbill-wrapper {
     padding: 30px 20px 20px;
   }
-  .preview__title {
+  .playbill__title {
     font-size: 42px;
     text-align: center;
     margin: 0 0 20px;
   }
-  .preview-card {
+  .playbill-card {
     display: -ms-grid;
     display: grid;
     justify-items: center;
@@ -2218,47 +2218,47 @@ template {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  .preview-card__image {
+  .playbill-card__image {
     width: 200px;
     height: 135px;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .preview-card__text {
+  .playbill-card__text {
     display: -ms-grid;
     display: grid;
     width: auto;
     text-align: center;
   }
-  .preview-card__director {
+  .playbill-card__director {
     font-size: 16px;
     -ms-grid-row: 5;
     grid-row: 5;
   }
-  .preview-card__title {
+  .playbill-card__title {
     font-size: 16px;
     line-height: 40px;
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  .preview-card__age {
+  .playbill-card__age {
     line-height: 30px;
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  .preview-performance {
+  .playbill-text {
     margin: 0;
   }
-  .preview-performance--mobile_visible {
+  .playbill-text--mobile_visible {
     display: block;
   }
-  .preview-performance__about--mobile_hidden {
+  .playbill-text__about--mobile_hidden {
     display: none;
   }
-  .preview-performance__about--mobile_visible {
+  .playbill-text__about--mobile_visible {
     display: block;
   }
-  .preview-date {
+  .playbill-date {
     -ms-grid-row: 5;
     grid-row: 5;
   }
@@ -2619,18 +2619,18 @@ template {
   .menu-button--mobile_hidden {
     display: none;
   }
-  .preview {
+  .playbill {
     padding-bottom: 50px;
   }
-  .preview-wrapper {
+  .playbill-wrapper {
     padding: 30px 15px 15px;
   }
-  .preview__title {
+  .playbill__title {
     font-size: 42px;
     text-align: center;
     margin: 0 0 20px;
   }
-  .preview-card {
+  .playbill-card {
     display: -ms-grid;
     display: grid;
     justify-items: center;
@@ -2642,46 +2642,46 @@ template {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  .preview-card__image {
+  .playbill-card__image {
     width: 160px;
     height: 115px;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .preview-card__text {
+  .playbill-card__text {
     display: -ms-grid;
     display: grid;
     width: auto;
     font-size: 14px;
     text-align: center;
   }
-  .preview-card__director {
+  .playbill-card__director {
     -ms-grid-row: 5;
     grid-row: 5;
   }
-  .preview-card__title {
+  .playbill-card__title {
     line-height: 32px;
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  .preview-card__age {
+  .playbill-card__age {
     line-height: 30px;
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  .preview-performance {
+  .playbill-text {
     margin: 0;
   }
-  .preview-performance--mobile_visible {
+  .playbill-text--mobile_visible {
     display: block;
   }
-  .preview-performance__about--mobile_hidden {
+  .playbill-text__about--mobile_hidden {
     display: none;
   }
-  .preview-performance__about--mobile_visible {
+  .playbill-text__about--mobile_visible {
     display: block;
   }
-  .preview-date {
+  .playbill-date {
     -ms-grid-row: 5;
     grid-row: 5;
   }

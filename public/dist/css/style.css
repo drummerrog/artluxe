@@ -28,6 +28,23 @@ li {
   margin: auto;
 }
 
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.105em;
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #131415;
+  border: 2px solid #F1F1F1;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+  padding: 50px 40px;
+}
+
 .button {
   text-align: center;
   text-decoration: none;
@@ -447,10 +464,6 @@ template {
   background-color: #1A1F23;
 }
 
-.navbar-wrapper__menu-button {
-  display: none;
-}
-
 .navbar-logo__image {
   max-width: 770px;
   margin-top: 70px;
@@ -500,6 +513,10 @@ template {
 }
 
 .navbar-bottom__menu-button {
+  display: none;
+}
+
+.navbar-bottom__wrapper-button {
   display: none;
 }
 
@@ -610,16 +627,10 @@ template {
 }
 
 .playbill-wrapper {
-  background: #131415;
-  border: 2px solid #F1F1F1;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
   padding: 50px 80px 20px;
 }
 
 .playbill__title {
-  font-weight: normal;
-  font-size: 30px;
   margin: 0 0 50px;
 }
 
@@ -716,8 +727,6 @@ template {
 
 .swiper-container {
   height: unset;
-  background-color: #131415;
-  border: 2px solid #F1F1F1;
   padding: 63px 15px 23px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -813,10 +822,6 @@ template {
 }
 
 .overview-wrapper {
-  background-color: #131415;
-  border: 2px solid #F4F4F4;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
   padding: 30px 45px 50px;
 }
 
@@ -846,6 +851,22 @@ template {
   font-weight: normal;
   line-height: 26px;
   margin-bottom: 50px;
+}
+
+.about {
+  padding-bottom: 100px;
+}
+
+.about__title {
+  margin-bottom: 40px;
+}
+
+.about__title--mobile_hidden {
+  display: block;
+}
+
+.about__title--mobile_visible {
+  display: none;
 }
 
 .footer {
@@ -1036,6 +1057,12 @@ template {
     margin-left: 110px;
     margin-top: -145px;
   }
+  .about__title--mobile_hidden {
+    display: block;
+  }
+  .about__title--mobile_visible {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -1130,6 +1157,12 @@ template {
     width: 95px;
     margin-left: 95px;
     margin-top: -120px;
+  }
+  .about__title--mobile_hidden {
+    display: block;
+  }
+  .about__title--mobile_visible {
+    display: none;
   }
 }
 
@@ -1234,6 +1267,12 @@ template {
     margin-left: 100px;
     margin-top: -145px;
   }
+  .about__title--mobile_hidden {
+    display: block;
+  }
+  .about__title--mobile_visible {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1243,18 +1282,6 @@ template {
   .navbar-wrapper {
     background-color: #000;
     display: none;
-  }
-  .navbar-wrapper__menu-button {
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .navbar__menu {
     display: -webkit-box;
@@ -1292,7 +1319,7 @@ template {
   }
   .navbar__menu-burger {
     display: none;
-    top: 14px;
+    top: 16px;
     left: 0;
     right: 34px;
     bottom: 0;
@@ -1338,6 +1365,18 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .navbar-bottom__wrapper-button {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .navbar-bottom__menu-button {
     display: block;
@@ -1570,6 +1609,18 @@ template {
   .footer-copyrating__link:hover {
     text-decoration: none;
   }
+  .about {
+    padding-bottom: 50px;
+  }
+  .about__title--mobile_hidden {
+    display: block;
+  }
+  .about__title--mobile_visible {
+    display: none;
+  }
+  .wrapper {
+    padding: 30px 20px;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -1579,17 +1630,6 @@ template {
   .navbar-wrapper {
     background-color: #000;
     display: none;
-  }
-  .navbar-wrapper__menu-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .navbar__menu {
     display: -webkit-box;
@@ -1677,6 +1717,17 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .navbar-bottom__wrapper-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .navbar-bottom__title--mobile_hidden {
     display: none;
@@ -1785,11 +1836,6 @@ template {
   .playbill-wrapper {
     padding: 30px 20px 20px;
   }
-  .playbill__title {
-    font-size: 42px;
-    text-align: center;
-    margin: 0 0 20px;
-  }
   .playbill-card {
     display: -ms-grid;
     display: grid;
@@ -1844,6 +1890,11 @@ template {
     -ms-grid-row: 5;
     grid-row: 5;
   }
+  .title {
+    font-size: 42px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
   .line {
     margin: 0;
     margin-bottom: 10px;
@@ -1887,9 +1938,6 @@ template {
     text-align: center;
     margin-left: -13px;
     padding: 20px 20px 25px;
-  }
-  .overview-wrapper__title {
-    font-size: 42px;
   }
   .overview-card {
     max-width: 380px;
@@ -1986,6 +2034,18 @@ template {
   .footer-copyrating__link:hover {
     text-decoration: none;
   }
+  .about {
+    padding-bottom: 50px;
+  }
+  .about__title--mobile_hidden {
+    display: none;
+  }
+  .about__title--mobile_visible {
+    display: block;
+  }
+  .wrapper {
+    padding: 30px 20px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -1995,17 +2055,6 @@ template {
   .navbar-wrapper {
     background-color: #000;
     display: none;
-  }
-  .navbar-wrapper__menu-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .navbar__menu {
     display: -webkit-box;
@@ -2093,6 +2142,17 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .navbar-bottom__wrapper-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .navbar-bottom__title--mobile_hidden {
     display: none;
@@ -2201,11 +2261,6 @@ template {
   .playbill-wrapper {
     padding: 30px 20px 20px;
   }
-  .playbill__title {
-    font-size: 42px;
-    text-align: center;
-    margin: 0 0 20px;
-  }
   .playbill-card {
     display: -ms-grid;
     display: grid;
@@ -2262,6 +2317,11 @@ template {
     -ms-grid-row: 5;
     grid-row: 5;
   }
+  .title {
+    font-size: 42px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
   .line {
     margin: 0;
     margin-bottom: 10px;
@@ -2305,9 +2365,6 @@ template {
     text-align: center;
     margin-left: -15px;
     padding: 20px 20px 25px;
-  }
-  .overview-wrapper__title {
-    font-size: 42px;
   }
   .overview-card {
     max-width: 380px;
@@ -2409,6 +2466,18 @@ template {
   .footer-copyrating__link:hover {
     text-decoration: none;
   }
+  .about {
+    padding-bottom: 50px;
+  }
+  .about__title--mobile_hidden {
+    display: none;
+  }
+  .about__title--mobile_visible {
+    display: block;
+  }
+  .wrapper {
+    padding: 30px 20px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -2418,17 +2487,6 @@ template {
   .navbar-wrapper {
     background-color: #000;
     display: none;
-  }
-  .navbar-wrapper__menu-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .navbar__menu {
     display: -webkit-box;
@@ -2516,6 +2574,17 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .navbar-bottom__wrapper-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .navbar-bottom__title--mobile_hidden {
     display: none;
@@ -2625,11 +2694,6 @@ template {
   .playbill-wrapper {
     padding: 30px 15px 15px;
   }
-  .playbill__title {
-    font-size: 42px;
-    text-align: center;
-    margin: 0 0 20px;
-  }
   .playbill-card {
     display: -ms-grid;
     display: grid;
@@ -2685,6 +2749,11 @@ template {
     -ms-grid-row: 5;
     grid-row: 5;
   }
+  .title {
+    font-size: 42px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
   .line {
     margin: 0;
     margin-bottom: 10px;
@@ -2728,9 +2797,6 @@ template {
     text-align: center;
     margin-left: -15px;
     padding: 20px 20px 25px;
-  }
-  .overview-wrapper__title {
-    font-size: 36px;
   }
   .overview-card {
     max-width: 380px;
@@ -2836,6 +2902,21 @@ template {
   }
   .footer-copyrating__link:hover {
     text-decoration: none;
+  }
+  .about {
+    padding-bottom: 35px;
+  }
+  .about__title {
+    margin-bottom: 15px;
+  }
+  .about__title--mobile_hidden {
+    display: none;
+  }
+  .about__title--mobile_visible {
+    display: block;
+  }
+  .wrapper {
+    padding: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

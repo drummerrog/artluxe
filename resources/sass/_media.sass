@@ -64,6 +64,13 @@
     width: 105px
     margin-left: 110px
     margin-top: -145px
+  .about
+    &__title
+      &--mobile
+        &_hidden
+          display: block
+        &_visible
+          display: none
 @media (min-width: 1200px) and (max-width: 1439px)
   body
     font-size: 16px
@@ -146,6 +153,13 @@
     width: 95px
     margin-left: 95px
     margin-top: -120px
+  .about
+    &__title
+      &--mobile
+        &_hidden
+          display: block
+        &_visible
+          display: none
 @media (min-width: 1024px) and (max-width: 1199px)
   body
     font-size: 16px
@@ -232,6 +246,13 @@
     width: 95px
     margin-left: 100px
     margin-top: -145px
+  .about
+    &__title
+      &--mobile
+        &_hidden
+          display: block
+        &_visible
+          display: none
 @media (min-width: 768px) and (max-width: 1023px)
   .container
     max-width: 700px
@@ -239,12 +260,6 @@
     &-wrapper
       background-color: #000
       display: none
-      &__menu
-        &-button
-          display: block
-          display: flex
-          justify-content: space-between
-          align-items: flex-end
     &__menu
       display: flex
       flex-direction: column
@@ -268,7 +283,7 @@
         display: none
       &-burger
         display: none
-        top: 14px
+        top: 16px
         left: 0
         right: 34px
         bottom: 0
@@ -300,6 +315,11 @@
         display: flex
         justify-content: space-between
         align-items: center
+        &-button
+          display: block
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
       &__menu
         &-button
           display: block
@@ -474,6 +494,16 @@
       &__link
         &:hover
           text-decoration: none
+  .about
+    padding-bottom: 50px
+    &__title
+      &--mobile
+        &_hidden
+          display: block
+        &_visible
+          display: none
+  .wrapper
+    padding: 30px 20px
 @media (min-width: 425px) and (max-width: 767px)
   .container
     max-width: 400px
@@ -481,11 +511,6 @@
     &-wrapper
       background-color: #000
       display: none
-      &__menu
-        &-button
-          display: flex
-          justify-content: space-between
-          align-items: flex-end
     &__menu
       display: flex
       flex-direction: column
@@ -541,6 +566,10 @@
         display: flex
         flex-direction: column
         align-items: center
+        &-button
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
       &__title
         &--mobile
           &_hidden
@@ -618,10 +647,6 @@
     padding-bottom: 50px
     &-wrapper
       padding: 30px 20px 20px
-    &__title
-      font-size: 42px
-      text-align: center
-      margin: 0 0 20px
     &-card
       display: grid
       justify-items: center
@@ -657,6 +682,10 @@
             display: block
     &-date
       grid-row: 5
+  .title
+    font-size: 42px
+    text-align: center
+    margin: 0 0 20px
   .line
     margin: 0
     margin-bottom: 10px
@@ -692,8 +721,6 @@
       text-align: center
       margin-left: -13px
       padding: 20px 20px 25px
-      &__title
-        font-size: 42px
     &-card
       max-width: 380px
       width: 100%
@@ -768,6 +795,16 @@
       &__link
         &:hover
           text-decoration: none
+  .about
+    padding-bottom: 50px
+    &__title
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: block
+  .wrapper
+    padding: 30px 20px
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px
@@ -775,11 +812,6 @@
     &-wrapper
       background-color: #000
       display: none
-      &__menu
-        &-button
-          display: flex
-          justify-content: space-between
-          align-items: flex-end
     &__menu
       display: flex
       flex-direction: column
@@ -835,6 +867,10 @@
         display: flex
         flex-direction: column
         align-items: center
+        &-button
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
       &__title
         &--mobile
           &_hidden
@@ -912,10 +948,6 @@
     padding-bottom: 50px
     &-wrapper
       padding: 30px 20px 20px
-    &__title
-      font-size: 42px
-      text-align: center
-      margin: 0 0 20px
     &-card
       display: grid
       justify-items: center
@@ -953,6 +985,10 @@
             display: block
     &-date
       grid-row: 5
+  .title
+    font-size: 42px
+    text-align: center
+    margin: 0 0 20px
   .line
     margin: 0
     margin-bottom: 10px
@@ -988,8 +1024,6 @@
       text-align: center
       margin-left: -15px
       padding: 20px 20px 25px
-      &__title
-        font-size: 42px
     &-card
       max-width: 380px
       width: 100%
@@ -1065,6 +1099,16 @@
       &__link
         &:hover
           text-decoration: none
+  .about
+    padding-bottom: 50px
+    &__title
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: block
+  .wrapper
+    padding: 30px 20px
 @media (min-width: 320px) and (max-width: 374px)
   .container
     max-width: 290px
@@ -1072,11 +1116,6 @@
     &-wrapper
       background-color: #000
       display: none
-      &__menu
-        &-button
-          display: flex
-          justify-content: space-between
-          align-items: flex-end
     &__menu
       display: flex
       flex-direction: column
@@ -1132,6 +1171,10 @@
         display: flex
         flex-direction: column
         align-items: center
+        &-button
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
       &__title
         &--mobile
           &_hidden
@@ -1210,10 +1253,6 @@
     padding-bottom: 50px
     &-wrapper
       padding: 30px 15px 15px
-    &__title
-      font-size: 42px
-      text-align: center
-      margin: 0 0 20px
     &-card
       display: grid
       justify-items: center
@@ -1250,6 +1289,10 @@
             display: block
     &-date
       grid-row: 5
+  .title
+    font-size: 42px
+    text-align: center
+    margin: 0 0 20px
   .line
     margin: 0
     margin-bottom: 10px
@@ -1285,8 +1328,6 @@
       text-align: center
       margin-left: -15px
       padding: 20px 20px 25px
-      &__title
-        font-size: 36px
     &-card
       max-width: 380px
       width: 100%
@@ -1366,3 +1407,14 @@
       &__link
         &:hover
           text-decoration: none
+  .about
+    padding-bottom: 35px
+    &__title
+      margin-bottom: 15px
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: block
+  .wrapper
+    padding: 15px

@@ -1,0 +1,62 @@
+.repertoire
+  padding-bottom: 150px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 50px 60px
+  &__title
+    margin: 0 0 50px
+  &-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    &__image
+      width: 350px
+      height: 300px
+      border-radius: 3px
+    &__title
+      font-weight: normal
+      font-size: 20px
+      line-height: 26px
+      text-decoration: underline
+    &__text
+      width: 160px
+      font-weight: normal
+      line-height: 23px
+      margin-top: 10px
+    &__age
+      font-weight: normal
+      font-size: 30px
+      line-height: 53px
+  &-text
+    margin-bottom: 80px
+    // &--mobile
+    //   &_visible
+    //     display: none
+    &__about
+      font-weight: normal
+      line-height: 23px
+      color: #fff
+      text-decoration: none
+      &::after
+        content: ''
+        display: block
+        height: 1px
+        background-color: #fff
+        transition: 0.2s
+        width: 0%
+      &:hover
+        &::after
+          width: 70%
+      // &--mobile
+      //   &_hidden
+      //     display: block
+      //   &_visible
+      //     display: none
+    &__arrows
+      width: 30px
+      height: 23px
+      margin-left: -5px
+      margin-bottom: -5px

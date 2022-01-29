@@ -345,7 +345,10 @@
     <div class="footer-wrapper">
       <div class="footer-logo">
         <a href="index.html">
-          <img class="footer-logo__image" src="public/assets/img/logo.jpg" alt="логотип">
+          <img class="footer-logo__image footer-logo__image--mobile_hidden" src="public/assets/img/logo.jpg"
+            alt="логотип">
+          <img class="footer-logo__image footer-logo__image--mobile_visible" src="public/assets/img/logo_mobile.jpg"
+            alt="логотип">
         </a>
       </div>
       <ul class="footer__menu">
@@ -379,14 +382,14 @@
         <li class="footer__menu-item footer__menu-item--mobile_hidden">
           <a href="#" class="footer__menu-link">Вакансии</a>
         </li>
-        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+        <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Контакты</a>
         </li>
       </ul>
       <!-- /.footer-menu -->
       <div class="footer-contacts">
         <div class="footer-social">
-          <a href="#" class="footer-social__link" target="_blank" rel="nofollow noopener">
+          <a class="footer-social__link" href="#" target="_blank" rel="nofollow noopener">
             <svg class="footer-social__icon" width="60" height="55" viewBox="0 0 60 55" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -398,7 +401,7 @@
             </svg>
           </a>
 
-          <a href="https://vk.com/" class="footer-social__link" target="_blank" rel="nofollow noopener">
+          <a class="footer-social__link" href="https://vk.com/" target="_blank" rel="nofollow noopener">
             <svg class="footer-social__icon" width="57" height="54" viewBox="0 0 57 54" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_48_22)">
@@ -417,7 +420,7 @@
             </svg>
           </a>
 
-          <a href="https://www.youtube.com/" class="footer-social__link" target="_blank" rel="nofollow noopener">
+          <a class="footer-social__link" href="https://www.youtube.com/" target="_blank" rel="nofollow noopener">
             <svg class="footer-social__icon" width="58" height="54" viewBox="0 0 58 54" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -429,7 +432,7 @@
             </svg>
           </a>
 
-          <a href="https://www.instagram.com/" class="footer-social__link" target="_blank" rel="nofollow noopener">
+          <a class="footer-social__link" href="https://www.instagram.com/" target="_blank" rel="nofollow noopener">
             <svg class="footer-social__icon" width="58" height="54" viewBox="0 0 58 54" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -448,10 +451,10 @@
           </a>
         </div>
         <!-- footer-social -->
-        <span>
-          <a class="footer-contacts__tel" href="tel:+79111234567">+7(911)1234567</a>
+        <span class="footer-contacts__tel">
+          <a href="tel:+79111234567">+7(911)1234567</a>
         </span>
-        <span class="footer-contacts__adress">Адрес:</span>
+        <span class="footer-contacts__adress footer-contacts__adress--mobile_hidden">Адрес:</span>
       </div>
       <!-- /.footer-contacts -->
     </div>

@@ -48,6 +48,12 @@
   .footer
     &-logo
       width: 460px
+      &__image
+        &--mobile
+          &_hidden
+            display: block
+          &_visible
+            display: none
     &__menu
       margin-left: -70px
   // .dropdown
@@ -128,6 +134,12 @@
   .footer
     &-logo
       width: 440px
+      &__image
+        &--mobile
+          &_hidden
+            display: block
+          &_visible
+            display: none
     &__menu
       margin-left: -70px
   #second
@@ -206,6 +218,12 @@
   .footer
     &-logo
       width: 350px
+      &__image
+        &--mobile
+          &_hidden
+            display: block
+          &_visible
+            display: none
     &__menu
       margin-left: 0
     &-social
@@ -408,6 +426,54 @@
       &--mobile
         &_hidden
           display: none
+  .footer
+    &-wrapper
+      display: grid
+      justify-items: center
+      justify-content: center
+      grid-template-columns: 1
+      grid-template-rows: 4
+    &-logo
+      &__image
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+            grid-row: 1
+    &__menu
+      grid-row: 2
+      text-decoration: underline
+      margin: 20px 0 10px 0
+      &-item
+        &--mobile
+          &_hidden
+            display: none
+      &-link
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
+    &-social
+      grid-row: 2
+      margin-bottom: 0
+    &-contacts
+      display: grid
+      justify-items: center
+      grid-template-rows: 2
+      grid-row: 3
+      &__tel
+        grid-row: 1
+      &__adress
+        &--mobile
+          &_hidden
+            display: none
+    &-copyrating
+      margin-top: 60px
+      &__link
+        &:hover
+          text-decoration: none
 @media (min-width: 425px) and (max-width: 767px)
   .container
     max-width: 400px
@@ -620,7 +686,7 @@
         width: 10px
         height: 10px
   .overview
-    padding-bottom: 150px
+    padding-bottom: 50px
     &-wrapper
       width: 425px
       text-align: center
@@ -654,6 +720,54 @@
       justify-content: flex-end
     &-read
       padding: 5px 20px
+  .footer
+    &-wrapper
+      display: grid
+      justify-items: center
+      justify-content: center
+      grid-template-columns: 1
+      grid-template-rows: 4
+    &-logo
+      &__image
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+            grid-row: 1
+    &__menu
+      grid-row: 2
+      text-decoration: underline
+      margin: 20px 0 10px 0
+      &-item
+        &--mobile
+          &_hidden
+            display: none
+      &-link
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
+    &-social
+      grid-row: 2
+      margin-bottom: 0
+    &-contacts
+      display: grid
+      justify-items: center
+      grid-template-rows: 2
+      grid-row: 3
+      &__tel
+        grid-row: 1
+      &__adress
+        &--mobile
+          &_hidden
+            display: none
+    &-copyrating
+      margin-top: 60px
+      &__link
+        &:hover
+          text-decoration: none
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px
@@ -868,11 +982,11 @@
         width: 10px
         height: 10px
   .overview
-    padding-bottom: 150px
+    padding-bottom: 50px
     &-wrapper
-      width: 425px
+      width: 375px
       text-align: center
-      margin-left: -13px
+      margin-left: -15px
       padding: 20px 20px 25px
       &__title
         font-size: 42px
@@ -902,6 +1016,55 @@
       justify-content: flex-end
     &-read
       padding: 5px 20px
+  .footer
+    padding: 25px 15px
+    &-wrapper
+      display: grid
+      justify-items: center
+      justify-content: center
+      grid-template-columns: 1
+      grid-template-rows: 4
+    &-logo
+      &__image
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+            grid-row: 1
+    &__menu
+      grid-row: 2
+      margin: 20px 0 10px 0
+      &-item
+        text-decoration: underline
+        &--mobile
+          &_hidden
+            display: none
+      &-link
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
+    &-social
+      grid-row: 2
+      margin-bottom: 0
+    &-contacts
+      display: grid
+      justify-items: center
+      grid-template-rows: 2
+      grid-row: 3
+      &__tel
+        grid-row: 1
+      &__adress
+        &--mobile
+          &_hidden
+            display: none
+    &-copyrating
+      margin-top: 60px
+      &__link
+        &:hover
+          text-decoration: none
 @media (min-width: 320px) and (max-width: 374px)
   .container
     max-width: 290px
@@ -1116,11 +1279,11 @@
         width: 10px
         height: 10px
   .overview
-    padding-bottom: 150px
+    padding-bottom: 50px
     &-wrapper
-      width: 425px
+      width: 320px
       text-align: center
-      margin-left: -13px
+      margin-left: -15px
       padding: 20px 20px 25px
       &__title
         font-size: 36px
@@ -1150,3 +1313,56 @@
       justify-content: flex-end
     &-read
       padding: 5px 20px
+  .footer
+    padding: 25px 15px
+    &-wrapper
+      display: grid
+      justify-items: center
+      justify-content: center
+      grid-template-columns: 1
+      grid-template-rows: 4
+    &-logo
+      &__image
+        &--mobile
+          &_hidden
+            display: none
+          &_visible
+            display: block
+            grid-row: 1
+    &__menu
+      grid-row: 2
+      margin: 20px 0 10px 0
+      &-item
+        &--mobile
+          &_hidden
+            display: none
+      &-link
+        text-decoration: underline
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
+    &-social
+      width: 245px
+      grid-row: 2
+      margin-bottom: 0
+      &__icon
+        width: 42px
+        height: 38px
+    &-contacts
+      display: grid
+      justify-items: center
+      grid-template-rows: 2
+      grid-row: 3
+      &__tel
+        grid-row: 1
+      &__adress
+        &--mobile
+          &_hidden
+            display: none
+    &-copyrating
+      margin-top: 60px
+      &__link
+        &:hover
+          text-decoration: none

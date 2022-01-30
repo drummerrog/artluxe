@@ -649,6 +649,7 @@ template {
 .playbill-card__image {
   width: 250px;
   height: 185px;
+  border: 2px solid #fff;
   border-radius: 3px;
 }
 
@@ -906,6 +907,7 @@ template {
 .repertoire-card__image {
   width: 350px;
   height: 300px;
+  border: 2px solid #fff;
   border-radius: 3px;
 }
 
@@ -959,6 +961,10 @@ template {
   height: 23px;
   margin-left: -5px;
   margin-bottom: -5px;
+}
+
+.line--mobile_visible {
+  display: none;
 }
 
 .footer {
@@ -1155,6 +1161,10 @@ template {
   .about__title--mobile_visible {
     display: none;
   }
+  .repertoire-card__image {
+    width: 300px;
+    height: auto;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -1255,6 +1265,10 @@ template {
   }
   .about__title--mobile_visible {
     display: none;
+  }
+  .repertoire-card__image {
+    width: 350px;
+    height: auto;
   }
 }
 
@@ -1364,6 +1378,10 @@ template {
   }
   .about__title--mobile_visible {
     display: none;
+  }
+  .repertoire-card__image {
+    width: 350px;
+    height: auto;
   }
 }
 
@@ -1713,6 +1731,19 @@ template {
   .wrapper {
     padding: 30px 20px;
   }
+  .repertoire-wrapper {
+    padding: 30px;
+  }
+  .repertoire-card__image {
+    width: 300px;
+    height: auto;
+  }
+  .repertoire-text__about::after {
+    content: '';
+  }
+  .repertoire-text__about:hover::after {
+    width: 0%;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -1797,6 +1828,9 @@ template {
   }
   .navbar-logo__image--mobile_visible {
     display: block;
+  }
+  .navbar-bottom {
+    margin-bottom: 30px;
   }
   .navbar-bottom__wrapper {
     display: -webkit-box;
@@ -2134,9 +2168,42 @@ template {
   }
   .about__title--mobile_visible {
     display: block;
+    margin-bottom: 40px;
   }
   .wrapper {
     padding: 30px 20px;
+  }
+  .repertoire {
+    padding: 0;
+  }
+  .repertoire__title {
+    margin-bottom: 50px;
+  }
+  .repertoire-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #000;
+    border: none;
+    padding: 0;
+  }
+  .repertoire-card__image {
+    width: 330px;
+    height: auto;
+  }
+  .repertoire-text {
+    margin-bottom: 20px;
+  }
+  .repertoire-text__about::after {
+    content: '';
+  }
+  .repertoire-text__about:hover::after {
+    width: 0%;
+  }
+  .repertoire .line--mobile_visible {
+    display: block;
+    width: 240px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2222,6 +2289,9 @@ template {
   }
   .navbar-logo__image--mobile_visible {
     display: block;
+  }
+  .navbar-bottom {
+    margin-bottom: 30px;
   }
   .navbar-bottom__wrapper {
     display: -webkit-box;
@@ -2566,9 +2636,42 @@ template {
   }
   .about__title--mobile_visible {
     display: block;
+    margin-bottom: 40px;
   }
   .wrapper {
     padding: 30px 20px;
+  }
+  .repertoire {
+    padding: 0;
+  }
+  .repertoire__title {
+    margin-bottom: 50px;
+  }
+  .repertoire-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #000;
+    border: none;
+    padding: 0;
+  }
+  .repertoire-card__image {
+    width: 285px;
+    height: auto;
+  }
+  .repertoire-text {
+    margin-bottom: 20px;
+  }
+  .repertoire-text__about::after {
+    content: '';
+  }
+  .repertoire-text__about:hover::after {
+    width: 0%;
+  }
+  .repertoire .line--mobile_visible {
+    display: block;
+    width: 240px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2654,6 +2757,9 @@ template {
   }
   .navbar-logo__image--mobile_visible {
     display: block;
+  }
+  .navbar-bottom {
+    margin-bottom: 30px;
   }
   .navbar-bottom__wrapper {
     display: -webkit-box;
@@ -3006,9 +3112,42 @@ template {
   }
   .about__title--mobile_visible {
     display: block;
+    margin-bottom: 40px;
   }
   .wrapper {
     padding: 15px;
+  }
+  .repertoire {
+    padding: 0;
+  }
+  .repertoire__title {
+    margin-bottom: 50px;
+  }
+  .repertoire-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #000;
+    border: none;
+    padding: 0;
+  }
+  .repertoire-card__image {
+    width: 270px;
+    height: auto;
+  }
+  .repertoire-text {
+    margin-bottom: 20px;
+  }
+  .repertoire-text__about::after {
+    content: '';
+  }
+  .repertoire-text__about:hover::after {
+    width: 0%;
+  }
+  .repertoire .line--mobile_visible {
+    display: block;
+    width: 240px;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

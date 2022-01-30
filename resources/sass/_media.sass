@@ -71,6 +71,11 @@
           display: block
         &_visible
           display: none
+  .repertoire
+    &-card
+      &__image
+        width: 300px
+        height: auto
 @media (min-width: 1200px) and (max-width: 1439px)
   body
     font-size: 16px
@@ -160,6 +165,11 @@
           display: block
         &_visible
           display: none
+  .repertoire
+    &-card
+      &__image
+        width: 350px
+        height: auto
 @media (min-width: 1024px) and (max-width: 1199px)
   body
     font-size: 16px
@@ -253,6 +263,11 @@
           display: block
         &_visible
           display: none
+  .repertoire
+    &-card
+      &__image
+        width: 350px
+        height: auto
 @media (min-width: 768px) and (max-width: 1023px)
   .container
     max-width: 700px
@@ -504,6 +519,20 @@
           display: none
   .wrapper
     padding: 30px 20px
+  .repertoire
+    &-wrapper
+      padding: 30px
+    &-card
+      &__image
+        width: 300px
+        height: auto
+    &-text
+      &__about
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
 @media (min-width: 425px) and (max-width: 767px)
   .container
     max-width: 400px
@@ -562,6 +591,7 @@
           &_visible
             display: block
     &-bottom
+      margin-bottom: 30px
       &__wrapper
         display: flex
         flex-direction: column
@@ -803,8 +833,36 @@
           display: none
         &_visible
           display: block
+          margin-bottom: 40px
   .wrapper
     padding: 30px 20px
+  .repertoire
+    padding: 0
+    &__title
+      margin-bottom: 50px
+    &-wrapper
+      justify-content: center
+      background-color: #000
+      border: none
+      padding: 0
+    &-card
+      &__image
+        width: 330px
+        height: auto
+    &-text
+      margin-bottom: 20px
+      &__about
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
+    .line
+      &--mobile
+        &_visible
+          display: block
+          width: 240px
+          margin-bottom: 40px
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px
@@ -863,6 +921,7 @@
           &_visible
             display: block
     &-bottom
+      margin-bottom: 30px
       &__wrapper
         display: flex
         flex-direction: column
@@ -1107,8 +1166,36 @@
           display: none
         &_visible
           display: block
+          margin-bottom: 40px
   .wrapper
     padding: 30px 20px
+  .repertoire
+    padding: 0
+    &__title
+      margin-bottom: 50px
+    &-wrapper
+      justify-content: center
+      background-color: #000
+      border: none
+      padding: 0
+    &-card
+      &__image
+        width: 285px
+        height: auto
+    &-text
+      margin-bottom: 20px
+      &__about
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
+    .line
+      &--mobile
+        &_visible
+          display: block
+          width: 240px
+          margin-bottom: 40px
 @media (min-width: 320px) and (max-width: 374px)
   .container
     max-width: 290px
@@ -1167,6 +1254,7 @@
           &_visible
             display: block
     &-bottom
+      margin-bottom: 30px
       &__wrapper
         display: flex
         flex-direction: column
@@ -1416,5 +1504,33 @@
           display: none
         &_visible
           display: block
+          margin-bottom: 40px
   .wrapper
     padding: 15px
+  .repertoire
+    padding: 0
+    &__title
+      margin-bottom: 50px
+    &-wrapper
+      justify-content: center
+      background-color: #000
+      border: none
+      padding: 0
+    &-card
+      &__image
+        width: 270px
+        height: auto
+    &-text
+      margin-bottom: 20px
+      &__about
+        &::after
+          content: ''
+        &:hover
+          &::after
+            width: 0%
+    .line
+      &--mobile
+        &_visible
+          display: block
+          width: 240px
+          margin-bottom: 40px

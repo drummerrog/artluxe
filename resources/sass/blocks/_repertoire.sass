@@ -15,6 +15,7 @@
     &__image
       width: 350px
       height: 300px
+      border: 2px solid #fff
       border-radius: 3px
     &__title
       font-weight: normal
@@ -32,9 +33,6 @@
       line-height: 53px
   &-text
     margin-bottom: 80px
-    // &--mobile
-    //   &_visible
-    //     display: none
     &__about
       font-weight: normal
       line-height: 23px
@@ -50,13 +48,12 @@
       &:hover
         &::after
           width: 70%
-      // &--mobile
-      //   &_hidden
-      //     display: block
-      //   &_visible
-      //     display: none
     &__arrows
       width: 30px
       height: 23px
       margin-left: -5px
       margin-bottom: -5px
+.line
+  &--mobile
+    &_visible
+      display: none

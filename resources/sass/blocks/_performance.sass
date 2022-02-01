@@ -18,17 +18,21 @@
       border: 1px solid $color-border
       padding: 30px 40px
   &-gallery
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
+    display: grid
+    grid-template-columns: 380px 380px 380px
+    grid-template-rows: auto
+    justify-content: space-between
+    // display: flex
+    // justify-content: center
+    // flex-wrap: wrap
     &__image
       width: 380px
       height: auto
       border: 1px solid $color-border
-      margin-right: 40px
       margin-bottom: 100px
-      margin-left: 40px
-      &:nth-child(1n)
-        margin-left: 40px
-      &:nth-child(3n)
-        margin-right: 40px
+      // margin-right: 40px
+      // margin-left: 40px
+      // &:nth-child(1n)
+      //   margin-left: 40px
+      // &:nth-child(3n)
+      //   margin-right: 40px

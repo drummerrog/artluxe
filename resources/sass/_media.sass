@@ -76,6 +76,21 @@
       &__image
         width: 300px
         height: auto
+  .performance
+    &-wrapper
+      &__image
+        max-width: 400px
+        width: 100%
+    &-description
+      max-width: 700px
+      width: 100%
+    &-gallery
+      &__image
+        height: 211px
+      &__img
+        max-width: 314px
+        width: 100%
+        height: auto
 @media (min-width: 1200px) and (max-width: 1439px)
   body
     font-size: 16px
@@ -169,6 +184,29 @@
     &-card
       &__image
         width: 350px
+        height: auto
+  .performance
+    padding-bottom: 100px
+    &__title
+      margin-bottom: 70px
+    &-wrapper
+      padding-bottom: 100px
+      &__image
+        width: 380px
+    &-description
+      width: 470px
+      padding: 20px 20px
+    &-gallery
+      margin: 0 -30px
+      &__image
+        max-width: calc(33.3% - 60px)
+        height: 175px
+        border: 1px solid #F1F1F1
+        margin: 0 30px
+        margin-bottom: 100px
+      &__img
+        max-width: 314px
+        width: 100%
         height: auto
 @media (min-width: 1024px) and (max-width: 1199px)
   body
@@ -267,6 +305,30 @@
     &-card
       &__image
         width: 350px
+        height: auto
+  .performance
+    padding-bottom: 100px
+    &__title
+      margin-bottom: 70px
+    &-wrapper
+      padding-bottom: 100px
+      &__image
+        max-width: 380px
+        width: 100%
+    &-description
+      width: 470px
+      padding: 20px 20px
+    &-gallery
+      margin: 0 -30px
+      &__image
+        max-width: calc(33.3% - 60px)
+        height: 175px
+        border: 1px solid #F1F1F1
+        margin: 0 30px
+        margin-bottom: 100px
+      &__img
+        max-width: 314px
+        width: 100%
         height: auto
 @media (min-width: 768px) and (max-width: 1023px)
   .container
@@ -533,6 +595,43 @@
         &:hover
           &::after
             width: 0%
+  .performance
+    padding-bottom: 0
+    &__title
+      margin-bottom: 70px
+    &-wrapper
+      padding-bottom: 100px
+      &__image
+        width: 380px
+        &--mobile
+          &_hidden
+            display: none
+    &-description
+      max-width: 700px
+      width: 100%
+      padding: 20px 20px
+      &__image
+        &--mobile
+          &_visible
+            display: block
+            width: 660px
+            border: 2px solid $color-border
+            border-radius: 3px
+            margin-bottom: 50px
+      &__text
+        font-size: 14px
+    &-gallery
+      margin: 0 -30px
+      &__image
+        max-width: calc(33.3% - -65px)
+        height: 212px
+        border: 1px solid #F1F1F1
+        margin: 0 31px
+        margin-bottom: 100px
+      &__img
+        max-width: 315px
+        width: 100%
+        height: auto
 @media (min-width: 425px) and (max-width: 767px)
   .container
     max-width: 400px
@@ -863,6 +962,46 @@
           display: block
           width: 240px
           margin-bottom: 40px
+  .performance
+    padding-bottom: 0
+    &__title
+      margin-bottom: 70px
+    &-wrapper
+      padding-bottom: 50px
+      &__image
+        width: 380px
+        &--mobile
+          &_hidden
+            display: none
+    &-description
+      max-width: 700px
+      width: 100%
+      padding: 20px 20px
+      &__image
+        &--mobile
+          &_visible
+            display: block
+            max-width: 660px
+            width: 100%
+            border: 2px solid $color-border
+            border-radius: 3px
+            margin-bottom: 50px
+      &__text
+        font-size: 14px
+    &-gallery
+      flex-direction: column
+      align-items: center
+      margin: 0
+      &__image
+        max-width: 315px
+        height: 212px
+        border: 1px solid #F1F1F1
+        margin: 0
+        margin-bottom: 50px
+      &__img
+        max-width: 315px
+        width: 100%
+        height: auto
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px
@@ -1196,6 +1335,46 @@
           display: block
           width: 240px
           margin-bottom: 40px
+  .performance
+    padding-bottom: 0
+    &__title
+      margin-bottom: 70px
+    &-wrapper
+      padding-bottom: 50px
+      &__image
+        width: 380px
+        &--mobile
+          &_hidden
+            display: none
+    &-description
+      max-width: 700px
+      width: 100%
+      padding: 20px 20px
+      &__image
+        &--mobile
+          &_visible
+            display: block
+            max-width: 660px
+            width: 100%
+            border: 2px solid $color-border
+            border-radius: 3px
+            margin-bottom: 50px
+      &__text
+        font-size: 14px
+    &-gallery
+      flex-direction: column
+      align-items: center
+      margin: 0
+      &__image
+        max-width: 315px
+        height: 212px
+        border: 1px solid #F1F1F1
+        margin: 0
+        margin-bottom: 50px
+      &__img
+        max-width: 315px
+        width: 100%
+        height: auto
 @media (min-width: 320px) and (max-width: 374px)
   .container
     max-width: 290px
@@ -1534,3 +1713,43 @@
           display: block
           width: 240px
           margin-bottom: 40px
+  .performance
+    padding-bottom: 0
+    &__title
+      margin-bottom: 70px
+    &-wrapper
+      padding-bottom: 50px
+      &__image
+        width: 380px
+        &--mobile
+          &_hidden
+            display: none
+    &-description
+      max-width: 700px
+      width: 100%
+      padding: 20px 20px
+      &__image
+        &--mobile
+          &_visible
+            display: block
+            max-width: 660px
+            width: 100%
+            border: 2px solid $color-border
+            border-radius: 3px
+            margin-bottom: 50px
+      &__text
+        font-size: 14px
+    &-gallery
+      flex-direction: column
+      align-items: center
+      margin: 0
+      &__image
+        max-width: 315px
+        height: 170px
+        border: 1px solid #F1F1F1
+        margin: 0
+        margin-bottom: 50px
+      &__img
+        max-width: 250px
+        width: 100%
+        height: auto

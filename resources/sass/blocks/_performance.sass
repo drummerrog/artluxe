@@ -18,21 +18,29 @@
       border: 1px solid $color-border
       padding: 30px 40px
   &-gallery
-    display: grid
-    grid-template-columns: 380px 380px 380px
-    grid-template-rows: auto
-    justify-content: space-between
-    // display: flex
-    // justify-content: center
-    // flex-wrap: wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 0 -62px
     &__image
-      width: 380px
-      height: auto
-      border: 1px solid $color-border
+      flex: 33%
+      max-width: calc(33.3% - 124px)
+      height: 292px
+      border: 1px solid #F1F1F1
+      margin: 0 62px
       margin-bottom: 100px
-      // margin-right: 40px
+    &__img
+      width: 381px
+      height: 290px
+      // width: 380px
+      // margin-right: 86px
+      // &:nth-child(3n-3)
+      //   margin-right: -86px
       // margin-left: 40px
       // &:nth-child(1n)
-      //   margin-left: 40px
-      // &:nth-child(3n)
-      //   margin-right: 40px
+      //   margin-left: 0
+
+    // display: grid
+    // grid-template-columns: 1fr 1fr 1fr
+    // grid-template-rows: auto
+    // justify-content: space-between

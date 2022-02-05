@@ -1004,22 +1004,31 @@ template {
 }
 
 .performance-gallery {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 380px 380px 380px;
-      grid-template-columns: 380px 380px 380px;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -62px;
 }
 
 .performance-gallery__image {
-  width: 380px;
-  height: auto;
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  max-width: calc(33.3% - 124px);
+  height: 292px;
   border: 1px solid #F1F1F1;
+  margin: 0 62px;
   margin-bottom: 100px;
+}
+
+.performance-gallery__img {
+  width: 381px;
+  height: 290px;
 }
 
 .footer {
@@ -1220,6 +1229,14 @@ template {
     width: 300px;
     height: auto;
   }
+  .performance-wrapper__image {
+    max-width: 400px;
+    width: 100%;
+  }
+  .performance-wrapper__text {
+    max-width: 700px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -1324,6 +1341,19 @@ template {
   .repertoire-card__image {
     width: 350px;
     height: auto;
+  }
+  .performance__title {
+    margin-bottom: 70px;
+  }
+  .performance-wrapper {
+    padding-bottom: 100px;
+  }
+  .performance-wrapper__image {
+    width: 380px;
+  }
+  .performance-wrapper__text {
+    width: 470px;
+    padding: 20px 20px;
   }
 }
 

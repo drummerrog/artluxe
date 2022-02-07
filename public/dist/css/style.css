@@ -98,6 +98,13 @@ li {
   margin: 30px 0;
 }
 
+.line-top {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0;
+  margin-left: 50px;
+}
+
 .line-bottom {
   margin: 60px 0 30px;
 }
@@ -1035,6 +1042,84 @@ template {
 .performance-gallery__img {
   width: 381px;
   height: 290px;
+}
+
+.troupe {
+  padding-bottom: 150px;
+}
+
+.troupe__title {
+  margin-bottom: 50px;
+}
+
+.troupe-wrapper {
+  background-color: #0D1215;
+  border: 1px solid #F1F1F1;
+}
+
+.troupe-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 80px 0;
+}
+
+.troupe-description {
+  padding: 0 100px;
+}
+
+.troupe-description__name {
+  margin-bottom: 20px;
+}
+
+.troupe-description__text {
+  line-height: 26px;
+  max-width: 900px;
+}
+
+.troupe-image {
+  position: relative;
+  padding: 0 15px;
+}
+
+.troupe-image__photo {
+  width: 257px;
+  height: 307px;
+  position: relative;
+}
+
+.troupe-image__background {
+  width: 257px;
+  height: 307px;
+  background-color: #4A4E52;
+  border: 1px solid #F1F1F1;
+  position: absolute;
+}
+
+.troupe-image__background--right {
+  right: -20px;
+  bottom: 45px;
+}
+
+.troupe-image__background--left {
+  left: -20px;
+  bottom: 45px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer {

@@ -1,0 +1,41 @@
+.troupe
+  padding-bottom: 150px
+  &__title
+    margin-bottom: 50px
+  &-wrapper
+    background-color: $color-card-2
+    border: 1px solid $color-border
+  &-card
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding: 80px 0
+  &-description
+    padding: 0 100px
+    &__name
+      margin-bottom: 20px
+    &__text
+      line-height: 26px
+      max-width: 900px
+  &-image
+    position: relative
+    padding: 0 15px
+    &__photo
+      width: 257px
+      height: 307px
+      position: relative
+    &__background
+      width: 257px
+      height: 307px
+      background-color: $color-background
+      border: 1px solid $color-border
+      position: absolute
+      &--right
+        right: -20px
+        bottom: 45px
+      &--left
+        left: -20px
+        bottom: 45px
+.row
+  display: flex
+  flex-direction: column

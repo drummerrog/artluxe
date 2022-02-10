@@ -42,6 +42,8 @@
       width: 100%
       height: auto
   .line
+    &-top
+      width: 92%
     &-vertical
       height: 380px
       margin: 0
@@ -56,10 +58,6 @@
             display: none
     &__menu
       margin-left: -70px
-  // .dropdown
-  //   &-content
-  //     &__link
-  //       padding: 0 0 0 10px
   #second
     width: 105px
     margin-left: 110px
@@ -91,9 +89,6 @@
         max-width: 314px
         width: 100%
         height: auto
-  .line
-    &-top
-      width: 92%
 @media (min-width: 1200px) and (max-width: 1439px)
   body
     font-size: 16px
@@ -214,7 +209,7 @@
         width: 100%
         height: auto
   .troupe
-    &-description
+    &-text
       padding: 0 70px
 @media (min-width: 1024px) and (max-width: 1199px)
   body
@@ -341,7 +336,7 @@
         width: 100%
         height: auto
   .troupe
-    &-description
+    &-text
       padding: 0 60px
 @media (min-width: 768px) and (max-width: 1023px)
   .container
@@ -653,9 +648,9 @@
       justify-items: center
       grid-template-columns: auto
       grid-template-rows: auto
-    &-description
+    &-text
       padding: 50px 50px 0
-      &__text
+      &__description
         width: 600px
         font-size: 14px
         line-height: 18px
@@ -845,6 +840,10 @@
   .button
     &:hover
       background-color: $color-button
+    &-wrapper
+      justify-content: flex-end
+    &-read
+      padding: 5px 20px
     &-pay
       margin: 20px 0
     &-forward
@@ -904,11 +903,6 @@
           display: none
         &_visible
           display: none
-  .button
-    &-wrapper
-      justify-content: flex-end
-    &-read
-      padding: 5px 20px
   .footer
     &-wrapper
       display: grid
@@ -1037,9 +1031,9 @@
       grid-template-columns: auto
       grid-template-rows: auto
       padding: 50px 0
-    &-description
+    &-text
       padding: 30px 30px 0
-      &__text
+      &__description
         font-size: 14px
         line-height: 18px
     &-image
@@ -1242,6 +1236,10 @@
   .button
     &:hover
       background-color: $color-button
+    &-wrapper
+      justify-content: flex-end
+    &-read
+      padding: 5px 20px
     &-pay
       margin: 20px 0
     &-forward
@@ -1301,11 +1299,6 @@
           display: none
         &_visible
           display: none
-  .button
-    &-wrapper
-      justify-content: flex-end
-    &-read
-      padding: 5px 20px
   .footer
     padding: 25px 15px
     &-wrapper
@@ -1436,9 +1429,9 @@
       grid-template-columns: auto
       grid-template-rows: auto
       padding: 50px 0
-    &-description
+    &-text
       padding: 30px 20px 0
-      &__text
+      &__description
         font-size: 14px
         line-height: 18px
     &-image
@@ -1841,9 +1834,9 @@
       grid-template-columns: auto
       grid-template-rows: auto
       padding: 50px 0
-    &-description
+    &-text
       padding: 30px 20px 0
-      &__text
+      &__description
         font-size: 14px
         line-height: 18px
     &-image

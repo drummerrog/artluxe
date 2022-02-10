@@ -1057,15 +1057,15 @@ template {
   padding: 80px 0;
 }
 
-.troupe-description {
+.troupe-text {
   padding: 0 100px;
 }
 
-.troupe-description__name {
+.troupe-text__name {
   margin-bottom: 20px;
 }
 
-.troupe-description__text {
+.troupe-text__description {
   line-height: 26px;
   max-width: 900px;
 }
@@ -1265,6 +1265,9 @@ template {
     width: 100%;
     height: auto;
   }
+  .line-top {
+    width: 92%;
+  }
   .line-vertical {
     height: 380px;
     margin: 0;
@@ -1311,9 +1314,6 @@ template {
     max-width: 314px;
     width: 100%;
     height: auto;
-  }
-  .line-top {
-    width: 92%;
   }
 }
 
@@ -1454,7 +1454,7 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe-description {
+  .troupe-text {
     padding: 0 70px;
   }
 }
@@ -1605,7 +1605,7 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe-description {
+  .troupe-text {
     padding: 0 60px;
   }
 }
@@ -2029,10 +2029,10 @@ template {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  .troupe-description {
+  .troupe-text {
     padding: 50px 50px 0;
   }
-  .troupe-description__text {
+  .troupe-text__description {
     width: 600px;
     font-size: 14px;
     line-height: 18px;
@@ -2319,6 +2319,14 @@ template {
   .button:hover {
     background-color: #4E565F;
   }
+  .button-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .button-read {
+    padding: 5px 20px;
+  }
   .button-pay {
     margin: 20px 0;
   }
@@ -2392,14 +2400,6 @@ template {
   }
   .line-vertical--mobile_visible {
     display: none;
-  }
-  .button-wrapper {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .button-read {
-    padding: 5px 20px;
   }
   .footer-wrapper {
     display: -ms-grid;
@@ -2569,10 +2569,10 @@ template {
         grid-template-rows: auto;
     padding: 50px 0;
   }
-  .troupe-description {
+  .troupe-text {
     padding: 30px 30px 0;
   }
-  .troupe-description__text {
+  .troupe-text__description {
     font-size: 14px;
     line-height: 18px;
   }
@@ -2876,6 +2876,14 @@ template {
   .button:hover {
     background-color: #4E565F;
   }
+  .button-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .button-read {
+    padding: 5px 20px;
+  }
   .button-pay {
     margin: 20px 0;
   }
@@ -2949,14 +2957,6 @@ template {
   }
   .line-vertical--mobile_visible {
     display: none;
-  }
-  .button-wrapper {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .button-read {
-    padding: 5px 20px;
   }
   .footer {
     padding: 25px 15px;
@@ -3134,10 +3134,10 @@ template {
         grid-template-rows: auto;
     padding: 50px 0;
   }
-  .troupe-description {
+  .troupe-text {
     padding: 30px 20px 0;
   }
-  .troupe-description__text {
+  .troupe-text__description {
     font-size: 14px;
     line-height: 18px;
   }
@@ -3709,10 +3709,10 @@ template {
         grid-template-rows: auto;
     padding: 50px 0;
   }
-  .troupe-description {
+  .troupe-text {
     padding: 30px 20px 0;
   }
-  .troupe-description__text {
+  .troupe-text__description {
     font-size: 14px;
     line-height: 18px;
   }

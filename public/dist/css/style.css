@@ -99,6 +99,10 @@ li {
   margin: 30px 0;
 }
 
+.line--mobile_visible {
+  display: none;
+}
+
 .line-top {
   max-width: 1300px;
   width: 93%;
@@ -955,10 +959,6 @@ template {
   margin-bottom: -5px;
 }
 
-.line--mobile_visible {
-  display: none;
-}
-
 .performance {
   padding-bottom: 150px;
 }
@@ -1029,13 +1029,19 @@ template {
   padding-bottom: 150px;
 }
 
-.troupe__title {
-  margin-bottom: 50px;
-}
-
 .troupe-wrapper {
   background-color: #0D1215;
   border: 1px solid #F1F1F1;
+}
+
+.troupe-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .troupe-card {
@@ -1070,13 +1076,12 @@ template {
 }
 
 .troupe-image__photo {
-  width: 257px;
-  height: 307px;
+  width: 264px;
   position: relative;
 }
 
 .troupe-image__background {
-  width: 257px;
+  width: 264px;
   height: 307px;
   background-color: #4A4E52;
   border: 1px solid #F1F1F1;
@@ -1091,16 +1096,6 @@ template {
 .troupe-image__background--left {
   left: -20px;
   bottom: 45px;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .footer {
@@ -2040,6 +2035,7 @@ template {
   .troupe-description__text {
     width: 600px;
     font-size: 14px;
+    line-height: 18px;
   }
   .troupe-image {
     -ms-grid-row: 1;
@@ -2318,19 +2314,7 @@ template {
     grid-row: 5;
   }
   .title {
-    font-size: 42px;
     text-align: center;
-    margin: 0 0 20px;
-  }
-  .line {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  .line-top {
-    width: 75%;
-  }
-  .line-bottom {
-    margin: 40px 0 30px;
   }
   .button:hover {
     background-color: #4E565F;
@@ -2383,6 +2367,21 @@ template {
   }
   .overview-card__text {
     margin-bottom: 20px;
+  }
+  .line {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .line--mobile_visible {
+    display: block;
+    width: 240px;
+    margin-bottom: 40px;
+  }
+  .line-top {
+    width: 75%;
+  }
+  .line-bottom {
+    margin: 40px 0 30px;
   }
   .line-vertical {
     height: 280px;
@@ -2504,11 +2503,6 @@ template {
   .repertoire-text__about:hover::after {
     width: 0%;
   }
-  .repertoire .line--mobile_visible {
-    display: block;
-    width: 240px;
-    margin-bottom: 40px;
-  }
   .performance {
     padding-bottom: 0;
   }
@@ -2573,25 +2567,34 @@ template {
         grid-template-columns: auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
+    padding: 50px 0;
   }
   .troupe-description {
-    padding: 50px 50px 0;
+    padding: 30px 30px 0;
   }
   .troupe-description__text {
-    width: 600px;
     font-size: 14px;
+    line-height: 18px;
   }
   .troupe-image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
   .troupe-image__background {
-    width: 100px;
-    height: 192px;
+    width: 150px;
+    height: 200px;
+  }
+  .troupe-image__background--right {
+    right: -10px;
+    bottom: 35px;
+  }
+  .troupe-image__background--left {
+    left: -10px;
+    bottom: 35px;
   }
   .troupe-image__photo {
     width: 150px;
-    height: 192px;
+    height: 200px;
   }
 }
 
@@ -2868,19 +2871,7 @@ template {
     grid-row: 5;
   }
   .title {
-    font-size: 42px;
     text-align: center;
-    margin: 0 0 20px;
-  }
-  .line {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  .line-top {
-    width: 72%;
-  }
-  .line-bottom {
-    margin: 40px 0 30px;
   }
   .button:hover {
     background-color: #4E565F;
@@ -2933,6 +2924,21 @@ template {
   }
   .overview-card__text {
     margin-bottom: 20px;
+  }
+  .line {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .line--mobile_visible {
+    display: block;
+    width: 240px;
+    margin-bottom: 40px;
+  }
+  .line-top {
+    width: 72%;
+  }
+  .line-bottom {
+    margin: 40px 0 30px;
   }
   .line-vertical {
     height: 280px;
@@ -3059,11 +3065,6 @@ template {
   .repertoire-text__about:hover::after {
     width: 0%;
   }
-  .repertoire .line--mobile_visible {
-    display: block;
-    width: 240px;
-    margin-bottom: 40px;
-  }
   .performance {
     padding-bottom: 0;
   }
@@ -3116,6 +3117,49 @@ template {
     max-width: 315px;
     width: 100%;
     height: auto;
+  }
+  .troupe {
+    padding-bottom: 50px;
+  }
+  .troupe-card {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding: 50px 0;
+  }
+  .troupe-description {
+    padding: 30px 20px 0;
+  }
+  .troupe-description__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .troupe-image {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .troupe-image__background {
+    width: 157px;
+    height: 200px;
+  }
+  .troupe-image__background--right {
+    right: -10px;
+    bottom: 35px;
+  }
+  .troupe-image__background--left {
+    left: -10px;
+    bottom: 35px;
+  }
+  .troupe-image__photo {
+    width: 157px;
+    height: 200px;
   }
 }
 
@@ -3392,28 +3436,9 @@ template {
     grid-row: 5;
   }
   .title {
-    font-size: 42px;
+    font-size: 24px;
     text-align: center;
-    margin: 0 0 20px;
-  }
-  .line {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  .line-top {
-    width: 65%;
-  }
-  .line-bottom {
-    margin: 40px 0 30px;
-  }
-  .button:hover {
-    background-color: #4E565F;
-  }
-  .button-pay {
-    margin: 20px 0;
-  }
-  .button-forward {
-    margin-top: 20px;
+    margin: 0 0 30px;
   }
   .swiper-container {
     padding: 20px 0 10px;
@@ -3458,6 +3483,21 @@ template {
   .overview-card__text {
     margin-bottom: 20px;
   }
+  .line {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .line--mobile_visible {
+    display: block;
+    width: 240px;
+    margin-bottom: 40px;
+  }
+  .line-top {
+    width: 65%;
+  }
+  .line-bottom {
+    margin: 40px 0 30px;
+  }
   .line-vertical {
     height: 280px;
     margin: 0;
@@ -3468,6 +3508,9 @@ template {
   .line-vertical--mobile_visible {
     display: none;
   }
+  .button:hover {
+    background-color: #4E565F;
+  }
   .button-wrapper {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -3475,6 +3518,12 @@ template {
   }
   .button-read {
     padding: 5px 20px;
+  }
+  .button-pay {
+    margin: 20px 0;
+  }
+  .button-forward {
+    margin-top: 20px;
   }
   .footer {
     padding: 25px 15px;
@@ -3591,11 +3640,6 @@ template {
   .repertoire-text__about:hover::after {
     width: 0%;
   }
-  .repertoire .line--mobile_visible {
-    display: block;
-    width: 240px;
-    margin-bottom: 40px;
-  }
   .performance {
     padding-bottom: 0;
   }
@@ -3648,6 +3692,49 @@ template {
     max-width: 250px;
     width: 100%;
     height: auto;
+  }
+  .troupe {
+    padding-bottom: 50px;
+  }
+  .troupe-card {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding: 50px 0;
+  }
+  .troupe-description {
+    padding: 30px 20px 0;
+  }
+  .troupe-description__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .troupe-image {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .troupe-image__background {
+    width: 157px;
+    height: 200px;
+  }
+  .troupe-image__background--right {
+    right: -10px;
+    bottom: 35px;
+  }
+  .troupe-image__background--left {
+    left: -10px;
+    bottom: 35px;
+  }
+  .troupe-image__photo {
+    width: 157px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */

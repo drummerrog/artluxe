@@ -658,6 +658,7 @@
       &__text
         width: 600px
         font-size: 14px
+        line-height: 18px
     &-image
       grid-row: 1
 @media (min-width: 425px) and (max-width: 767px)
@@ -840,16 +841,7 @@
     &-date
       grid-row: 5
   .title
-    font-size: 42px
     text-align: center
-    margin: 0 0 20px
-  .line
-    margin: 0
-    margin-bottom: 10px
-    &-top
-      width: 75%
-    &-bottom
-      margin: 40px 0 30px
   .button
     &:hover
       background-color: $color-button
@@ -893,6 +885,17 @@
       &__text
         margin-bottom: 20px
   .line
+    margin: 0
+    margin-bottom: 10px
+    &--mobile
+      &_visible
+        display: block
+        width: 240px
+        margin-bottom: 40px
+    &-top
+      width: 75%
+    &-bottom
+      margin: 40px 0 30px
     &-vertical
       height: 280px
       margin: 0
@@ -986,12 +989,6 @@
         &:hover
           &::after
             width: 0%
-    .line
-      &--mobile
-        &_visible
-          display: block
-          width: 240px
-          margin-bottom: 40px
   .performance
     padding-bottom: 0
     &__title
@@ -1025,7 +1022,7 @@
       &__image
         max-width: 315px
         height: 212px
-        border: 1px solid #F1F1F1
+        border: 1px solid $color-border
         margin: 0
         margin-bottom: 50px
       &__img
@@ -1039,19 +1036,26 @@
       justify-items: center
       grid-template-columns: auto
       grid-template-rows: auto
+      padding: 50px 0
     &-description
-      padding: 50px 50px 0
+      padding: 30px 30px 0
       &__text
-        width: 600px
         font-size: 14px
+        line-height: 18px
     &-image
       grid-row: 1
       &__background
-        width: 100px
-        height: 192px
+        width: 150px
+        height: 200px
+        &--right
+          right: -10px
+          bottom: 35px
+        &--left
+          left: -10px
+          bottom: 35px
       &__photo
         width: 150px
-        height: 192px
+        height: 200px
 @media (min-width: 375px) and (max-width: 424px)
   .container
     max-width: 345px
@@ -1234,16 +1238,7 @@
     &-date
       grid-row: 5
   .title
-    font-size: 42px
     text-align: center
-    margin: 0 0 20px
-  .line
-    margin: 0
-    margin-bottom: 10px
-    &-top
-      width: 72%
-    &-bottom
-      margin: 40px 0 30px
   .button
     &:hover
       background-color: $color-button
@@ -1287,6 +1282,17 @@
       &__text
         margin-bottom: 20px
   .line
+    margin: 0
+    margin-bottom: 10px
+    &--mobile
+      &_visible
+        display: block
+        width: 240px
+        margin-bottom: 40px
+    &-top
+      width: 72%
+    &-bottom
+      margin: 40px 0 30px
     &-vertical
       height: 280px
       margin: 0
@@ -1381,12 +1387,6 @@
         &:hover
           &::after
             width: 0%
-    .line
-      &--mobile
-        &_visible
-          display: block
-          width: 240px
-          margin-bottom: 40px
   .performance
     padding-bottom: 0
     &__title
@@ -1427,6 +1427,34 @@
         max-width: 315px
         width: 100%
         height: auto
+  .troupe
+    padding-bottom: 50px
+    &-card
+      display: grid
+      justify-content: center
+      justify-items: center
+      grid-template-columns: auto
+      grid-template-rows: auto
+      padding: 50px 0
+    &-description
+      padding: 30px 20px 0
+      &__text
+        font-size: 14px
+        line-height: 18px
+    &-image
+      grid-row: 1
+      &__background
+        width: 157px
+        height: 200px
+        &--right
+          right: -10px
+          bottom: 35px
+        &--left
+          left: -10px
+          bottom: 35px
+      &__photo
+        width: 157px
+        height: 200px
 @media (min-width: 320px) and (max-width: 374px)
   .container
     max-width: 290px
@@ -1609,23 +1637,9 @@
     &-date
       grid-row: 5
   .title
-    font-size: 42px
+    font-size: 24px
     text-align: center
-    margin: 0 0 20px
-  .line
-    margin: 0
-    margin-bottom: 10px
-    &-top
-      width: 65%
-    &-bottom
-      margin: 40px 0 30px
-  .button
-    &:hover
-      background-color: $color-button
-    &-pay
-      margin: 20px 0
-    &-forward
-      margin-top: 20px
+    margin: 0 0 30px
   .swiper
     &-container
       padding: 20px 0 10px
@@ -1662,6 +1676,17 @@
       &__text
         margin-bottom: 20px
   .line
+    margin: 0
+    margin-bottom: 10px
+    &--mobile
+      &_visible
+        display: block
+        width: 240px
+        margin-bottom: 40px
+    &-top
+      width: 65%
+    &-bottom
+      margin: 40px 0 30px
     &-vertical
       height: 280px
       margin: 0
@@ -1671,10 +1696,16 @@
         &_visible
           display: none
   .button
+    &:hover
+      background-color: $color-button
     &-wrapper
       justify-content: flex-end
     &-read
       padding: 5px 20px
+    &-pay
+      margin: 20px 0
+    &-forward
+      margin-top: 20px
   .footer
     padding: 25px 15px
     &-wrapper
@@ -1761,12 +1792,6 @@
         &:hover
           &::after
             width: 0%
-    .line
-      &--mobile
-        &_visible
-          display: block
-          width: 240px
-          margin-bottom: 40px
   .performance
     padding-bottom: 0
     &__title
@@ -1807,3 +1832,31 @@
         max-width: 250px
         width: 100%
         height: auto
+  .troupe
+    padding-bottom: 50px
+    &-card
+      display: grid
+      justify-content: center
+      justify-items: center
+      grid-template-columns: auto
+      grid-template-rows: auto
+      padding: 50px 0
+    &-description
+      padding: 30px 20px 0
+      &__text
+        font-size: 14px
+        line-height: 18px
+    &-image
+      grid-row: 1
+      &__background
+        width: 157px
+        height: 200px
+        &--right
+          right: -10px
+          bottom: 35px
+        &--left
+          left: -10px
+          bottom: 35px
+      &__photo
+        width: 157px
+        height: 200px

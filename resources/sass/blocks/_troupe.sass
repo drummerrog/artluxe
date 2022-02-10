@@ -1,10 +1,11 @@
 .troupe
   padding-bottom: 150px
-  &__title
-    margin-bottom: 50px
   &-wrapper
     background-color: $color-card-2
     border: 1px solid $color-border
+  &-row
+    display: flex
+    flex-direction: column
   &-card
     display: flex
     justify-content: space-between
@@ -21,11 +22,10 @@
     position: relative
     padding: 0 15px
     &__photo
-      width: 257px
-      height: 307px
+      width: 264px
       position: relative
     &__background
-      width: 257px
+      width: 264px
       height: 307px
       background-color: $color-background
       border: 1px solid $color-border
@@ -36,6 +36,3 @@
       &--left
         left: -20px
         bottom: 45px
-.row
-  display: flex
-  flex-direction: column

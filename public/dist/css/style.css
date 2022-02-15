@@ -1132,27 +1132,23 @@ template {
 
 .people-text__title {
   font-size: 26px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .people-text__name {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .people-text__description {
   line-height: 26px;
-  max-width: 900px;
-}
-
-.people-text__description--bottom {
-  width: auto;
-  line-height: 26px;
 }
 
 .people-image {
+  float: left;
   position: relative;
-  padding: 0 15px;
+  left: -46px;
+  padding: 0 0 15px 15px;
 }
 
 .people-image__photo {
@@ -1536,6 +1532,10 @@ template {
   .troupe-text {
     padding: 0 70px;
   }
+  .people-text {
+    font-size: 16px;
+    padding: 0 45px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -1686,6 +1686,9 @@ template {
   }
   .troupe-text {
     padding: 0 60px;
+  }
+  .people-text {
+    padding: 0 45px;
   }
 }
 
@@ -2119,6 +2122,19 @@ template {
   .troupe-image {
     -ms-grid-row: 1;
     grid-row: 1;
+  }
+  .people {
+    padding: 100px 0;
+  }
+  .people-text {
+    font-size: 14px;
+    padding: 0 45px;
+  }
+  .people-text__title {
+    font-size: 22px;
+  }
+  .people-text__name {
+    font-size: 18px;
   }
 }
 
@@ -2675,6 +2691,39 @@ template {
     width: 150px;
     height: 200px;
   }
+  .people {
+    padding: 100px 0;
+  }
+  .people-card {
+    padding: 50px 0;
+  }
+  .people-text {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .people-text__title {
+    font-size: 22px;
+  }
+  .people-text__name {
+    font-size: 18px;
+  }
+  .people-image {
+    left: 0;
+    padding: 0 20px 15px 15px;
+  }
+  .people-image__photo {
+    width: 217px;
+    height: 267px;
+    left: 55px;
+  }
+  .people-image__background {
+    width: 217px;
+    height: 267px;
+  }
+  .people-image__background--left {
+    left: 45px;
+    top: -20px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -2761,7 +2810,7 @@ template {
     display: block;
   }
   .navbar-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
   .navbar-bottom__wrapper {
     display: -webkit-box;
@@ -3239,6 +3288,40 @@ template {
   .troupe-image__photo {
     width: 157px;
     height: 200px;
+  }
+  .people {
+    padding: 50px 0;
+  }
+  .people-card {
+    padding: 40px 0;
+  }
+  .people-text {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .people-text__title {
+    font-size: 22px;
+    margin-bottom: 77px;
+  }
+  .people-text__name {
+    font-size: 18px;
+  }
+  .people-image {
+    left: -25px;
+    padding: 0 30px 0 15px;
+  }
+  .people-image__photo {
+    width: 100px;
+    height: 120px;
+    left: 30px;
+  }
+  .people-image__background {
+    width: 100px;
+    height: 120px;
+  }
+  .people-image__background--left {
+    left: 25px;
+    top: -20px;
   }
 }
 
@@ -3814,6 +3897,42 @@ template {
   .troupe-image__photo {
     width: 157px;
     height: 200px;
+  }
+  .people {
+    padding: 50px 0;
+  }
+  .people-card {
+    padding: 40px 0;
+  }
+  .people-text {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    padding: 0 20px;
+  }
+  .people-text__title {
+    font-size: 18px;
+    margin-bottom: 77px;
+  }
+  .people-text__name {
+    font-size: 18px;
+  }
+  .people-image {
+    left: -25px;
+    padding: 0 15px 0 15px;
+  }
+  .people-image__photo {
+    width: 100px;
+    height: 120px;
+    left: 20px;
+  }
+  .people-image__background {
+    width: 100px;
+    height: 120px;
+  }
+  .people-image__background--left {
+    left: 25px;
+    top: -10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

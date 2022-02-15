@@ -1173,6 +1173,29 @@ template {
   top: -40px;
 }
 
+.filmschool-about {
+  background-color: #1A1F23;
+  border: 2px solid #F1F1F1;
+  padding: 50px 0;
+}
+
+.filmschool-about__title {
+  font-size: 62px;
+  font-weight: 400;
+  letter-spacing: 0.105em;
+  margin: 0 0 25px 50px;
+}
+
+.filmschool-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filmschool-description__text {
+  padding: 0 50px;
+}
+
 .footer {
   background-color: #131415;
   padding: 35px 60px;

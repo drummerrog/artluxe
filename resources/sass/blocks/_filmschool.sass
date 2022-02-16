@@ -1,7 +1,9 @@
 .filmschool
+  padding-bottom: 150px
   &-about
     background-color: $color-header
     border: 2px solid $color-border
+    margin-bottom: 130px
     padding: 50px 0
     &__title
       font-size: 62px
@@ -12,3 +14,40 @@
     display: flex
     &__text
       padding: 0 50px
+  &-wrapper
+    background-color: $color-card-2
+    border: 1px solid $color-border
+  &-row
+    display: flex
+    flex-direction: column
+  &-card
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    height: 467px
+    padding: 80px 0
+  &-text
+    padding: 0 100px
+    &__name
+      margin-bottom: 20px
+    &__description
+      line-height: 26px
+      max-width: 900px
+  &-image
+    position: relative
+    padding: 0 15px
+    &__photo
+      width: 264px
+      position: relative
+    &__background
+      width: 264px
+      height: 307px
+      background-color: $color-background
+      border: 1px solid $color-border
+      position: absolute
+      &--right
+        right: -20px
+        // bottom: 45px
+      &--left
+        left: -20px
+        // bottom: 45px

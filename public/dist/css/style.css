@@ -119,6 +119,11 @@ li {
   margin: 0;
 }
 
+.line-vert {
+  height: 395px;
+  margin: 0;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1173,9 +1178,14 @@ template {
   top: -40px;
 }
 
+.filmschool {
+  padding-bottom: 150px;
+}
+
 .filmschool-about {
   background-color: #1A1F23;
   border: 2px solid #F1F1F1;
+  margin-bottom: 130px;
   padding: 50px 0;
 }
 
@@ -1194,6 +1204,74 @@ template {
 
 .filmschool-description__text {
   padding: 0 50px;
+}
+
+.filmschool-wrapper {
+  background-color: #0D1215;
+  border: 1px solid #F1F1F1;
+}
+
+.filmschool-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filmschool-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 467px;
+  padding: 80px 0;
+}
+
+.filmschool-text {
+  padding: 0 100px;
+}
+
+.filmschool-text__name {
+  margin-bottom: 20px;
+}
+
+.filmschool-text__description {
+  line-height: 26px;
+  max-width: 900px;
+}
+
+.filmschool-image {
+  position: relative;
+  padding: 0 15px;
+}
+
+.filmschool-image__photo {
+  width: 264px;
+  position: relative;
+}
+
+.filmschool-image__background {
+  width: 264px;
+  height: 307px;
+  background-color: #4A4E52;
+  border: 1px solid #F1F1F1;
+  position: absolute;
+}
+
+.filmschool-image__background--right {
+  right: -20px;
+}
+
+.filmschool-image__background--left {
+  left: -20px;
 }
 
 .footer {

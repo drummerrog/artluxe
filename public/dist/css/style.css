@@ -1254,13 +1254,13 @@ template {
 }
 
 .filmschool-image__photo {
-  width: 264px;
+  width: 260px;
   position: relative;
 }
 
 .filmschool-image__background {
-  width: 264px;
-  height: 307px;
+  width: 260px;
+  height: 300px;
   background-color: #4A4E52;
   border: 1px solid #F1F1F1;
   position: absolute;
@@ -1448,6 +1448,9 @@ template {
     height: 380px;
     margin: 0;
   }
+  .line-vert {
+    height: 500px;
+  }
   .footer-logo {
     width: 460px;
   }
@@ -1572,6 +1575,9 @@ template {
   .line-top {
     width: 89%;
   }
+  .line-vert {
+    height: 535px;
+  }
   .footer-logo {
     width: 440px;
   }
@@ -1636,6 +1642,18 @@ template {
   .people-text {
     font-size: 16px;
     padding: 0 45px;
+  }
+  .people-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filmschool-about__title {
+    font-size: 42px;
+  }
+  .filmschool-description__text {
+    font-size: 16px;
   }
 }
 
@@ -1723,6 +1741,9 @@ template {
   .line-top {
     width: 89%;
   }
+  .line-vert {
+    height: 645px;
+  }
   .footer-logo {
     width: 350px;
   }
@@ -1790,6 +1811,12 @@ template {
   }
   .people-text {
     padding: 0 45px;
+  }
+  .filmschool-about__title {
+    font-size: 42px;
+  }
+  .filmschool-description__text {
+    font-size: 16px;
   }
 }
 
@@ -2038,6 +2065,9 @@ template {
   .line-vertical--mobile_hidden {
     display: none;
   }
+  .line-vert {
+    display: none;
+  }
   .button:hover {
     background-color: #4E565F;
   }
@@ -2236,6 +2266,27 @@ template {
   }
   .people-text__name {
     font-size: 18px;
+  }
+  .filmschool {
+    padding-bottom: 100px;
+  }
+  .filmschool-about {
+    padding: 40px 0;
+  }
+  .filmschool-about__title {
+    font-size: 32px;
+    margin-left: 40px;
+  }
+  .filmschool-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filmschool-description__text {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 40px;
   }
 }
 
@@ -2597,6 +2648,9 @@ template {
   .line-vertical--mobile_visible {
     display: none;
   }
+  .line-vert {
+    display: none;
+  }
   .footer-wrapper {
     display: -ms-grid;
     display: grid;
@@ -2752,6 +2806,9 @@ template {
     width: 100%;
     height: auto;
   }
+  .troupe {
+    padding-bottom: 50px;
+  }
   .troupe-card {
     display: -ms-grid;
     display: grid;
@@ -2824,6 +2881,62 @@ template {
   .people-image__background--left {
     left: 45px;
     top: -20px;
+  }
+  .filmschool {
+    padding-bottom: 50px;
+  }
+  .filmschool-about {
+    margin-bottom: 80px;
+    padding: 30px 0;
+  }
+  .filmschool-about__title {
+    font-size: 32px;
+    margin-left: 30px;
+  }
+  .filmschool-card {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding: 50px 0;
+  }
+  .filmschool-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filmschool-description__text {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 30px;
+  }
+  .filmschool-image {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .filmschool-image__background {
+    width: 160px;
+    height: 200px;
+  }
+  .filmschool-image__background--right {
+    right: -10px;
+  }
+  .filmschool-image__background--left {
+    left: -50px;
+  }
+  .filmschool-image__photo {
+    width: 160px;
+    height: 200px;
+  }
+  .filmschool-text {
+    padding: 0 30px;
   }
 }
 
@@ -3187,6 +3300,9 @@ template {
   .line-vertical--mobile_visible {
     display: none;
   }
+  .line-vert {
+    display: none;
+  }
   .footer {
     padding: 25px 15px;
   }
@@ -3423,6 +3539,62 @@ template {
   .people-image__background--left {
     left: 25px;
     top: -20px;
+  }
+  .filmschool {
+    padding-bottom: 50px;
+  }
+  .filmschool-about {
+    margin-bottom: 80px;
+    padding: 30px 0;
+  }
+  .filmschool-about__title {
+    font-size: 32px;
+    margin-left: 30px;
+  }
+  .filmschool-card {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding: 50px 0;
+  }
+  .filmschool-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filmschool-description__text {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 30px;
+  }
+  .filmschool-image {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .filmschool-image__background {
+    width: 160px;
+    height: 200px;
+  }
+  .filmschool-image__background--right {
+    right: -10px;
+  }
+  .filmschool-image__background--left {
+    left: -50px;
+  }
+  .filmschool-image__photo {
+    width: 160px;
+    height: 200px;
+  }
+  .filmschool-text {
+    padding: 0 30px;
   }
 }
 
@@ -3771,6 +3943,9 @@ template {
   .line-vertical--mobile_visible {
     display: none;
   }
+  .line-vert {
+    display: none;
+  }
   .button:hover {
     background-color: #4E565F;
   }
@@ -4034,6 +4209,63 @@ template {
   .people-image__background--left {
     left: 25px;
     top: -10px;
+  }
+  .filmschool {
+    padding-bottom: 50px;
+  }
+  .filmschool-about {
+    margin-bottom: 80px;
+    padding: 25px 0;
+  }
+  .filmschool-about__title {
+    font-size: 22px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .filmschool-card {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding: 50px 0;
+  }
+  .filmschool-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filmschool-description__text {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 20px;
+  }
+  .filmschool-image {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .filmschool-image__background {
+    width: 100px;
+    height: 120px;
+  }
+  .filmschool-image__background--right {
+    right: -10px;
+  }
+  .filmschool-image__background--left {
+    left: -50px;
+  }
+  .filmschool-image__photo {
+    width: 100px;
+    height: 120px;
+  }
+  .filmschool-text {
+    padding: 0 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

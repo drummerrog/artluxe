@@ -1030,79 +1030,6 @@ template {
   height: 290px;
 }
 
-.troupe {
-  padding-bottom: 150px;
-}
-
-.troupe-wrapper {
-  background-color: #0D1215;
-  border: 1px solid #F1F1F1;
-}
-
-.troupe-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.troupe-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 80px 0;
-}
-
-.troupe-text {
-  padding: 0 100px;
-}
-
-.troupe-text__name {
-  margin-bottom: 20px;
-}
-
-.troupe-text__description {
-  line-height: 26px;
-  max-width: 900px;
-}
-
-.troupe-image {
-  position: relative;
-  padding: 0 15px;
-}
-
-.troupe-image__photo {
-  width: 264px;
-  position: relative;
-}
-
-.troupe-image__background {
-  width: 264px;
-  height: 307px;
-  background-color: #4A4E52;
-  border: 1px solid #F1F1F1;
-  position: absolute;
-}
-
-.troupe-image__background--right {
-  right: -20px;
-  bottom: 45px;
-}
-
-.troupe-image__background--left {
-  left: -20px;
-  bottom: 45px;
-}
-
 .people {
   padding-bottom: 150px;
 }
@@ -1176,6 +1103,79 @@ template {
 .people-image__background--left {
   left: -20px;
   top: -40px;
+}
+
+.block-info {
+  padding-bottom: 150px;
+}
+
+.block-info__wrapper {
+  background-color: #0D1215;
+  border: 1px solid #F1F1F1;
+}
+
+.block-info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block-info__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 80px 0;
+}
+
+.block-info__text {
+  padding: 0 100px;
+}
+
+.block-info__name {
+  margin-bottom: 20px;
+}
+
+.block-info__description {
+  line-height: 26px;
+  max-width: 900px;
+}
+
+.block-info__image {
+  position: relative;
+  padding: 0 15px;
+}
+
+.block-info__photo {
+  width: 264px;
+  position: relative;
+}
+
+.block-info__background {
+  width: 264px;
+  height: 307px;
+  background-color: #4A4E52;
+  border: 1px solid #F1F1F1;
+  position: absolute;
+}
+
+.block-info__background--right {
+  right: -20px;
+  bottom: 45px;
+}
+
+.block-info__background--left {
+  left: -20px;
+  bottom: 45px;
 }
 
 .filmschool {
@@ -1636,7 +1636,7 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe-text {
+  .block-info__text {
     padding: 0 70px;
   }
   .people-text {
@@ -1806,7 +1806,7 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe-text {
+  .block-info__text {
     padding: 0 60px;
   }
   .people-text {
@@ -2230,7 +2230,10 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe-card {
+  .block-info {
+    padding-bottom: 100px;
+  }
+  .block-info__card {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -2242,15 +2245,15 @@ template {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  .troupe-text {
+  .block-info__text {
     padding: 50px 50px 0;
   }
-  .troupe-text__description {
+  .block-info__description {
     width: 600px;
     font-size: 14px;
     line-height: 18px;
   }
-  .troupe-image {
+  .block-info__image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
@@ -2806,10 +2809,10 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe {
+  .block-info {
     padding-bottom: 50px;
   }
-  .troupe-card {
+  .block-info__card {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -2822,32 +2825,32 @@ template {
         grid-template-rows: auto;
     padding: 50px 0;
   }
-  .troupe-text {
+  .block-info__text {
     padding: 30px 30px 0;
   }
-  .troupe-text__description {
+  .block-info__description {
     font-size: 14px;
     line-height: 18px;
   }
-  .troupe-image {
+  .block-info__image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .troupe-image__background {
+  .block-info__background {
     width: 150px;
-    height: 200px;
+    height: 175px;
   }
-  .troupe-image__background--right {
+  .block-info__background--right {
     right: -10px;
     bottom: 35px;
   }
-  .troupe-image__background--left {
+  .block-info__background--left {
     left: -10px;
     bottom: 35px;
   }
-  .troupe-image__photo {
+  .block-info__photo {
     width: 150px;
-    height: 200px;
+    height: 175px;
   }
   .people {
     padding: 100px 0;
@@ -3462,10 +3465,10 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe {
+  .block-info {
     padding-bottom: 50px;
   }
-  .troupe-card {
+  .block-info__card {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -3478,32 +3481,32 @@ template {
         grid-template-rows: auto;
     padding: 50px 0;
   }
-  .troupe-text {
+  .block-info__text {
     padding: 30px 20px 0;
   }
-  .troupe-text__description {
+  .block-info__description {
     font-size: 14px;
     line-height: 18px;
   }
-  .troupe-image {
+  .block-info__image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .troupe-image__background {
+  .block-info__background {
     width: 157px;
-    height: 200px;
+    height: 183px;
   }
-  .troupe-image__background--right {
+  .block-info__background--right {
     right: -10px;
     bottom: 35px;
   }
-  .troupe-image__background--left {
+  .block-info__background--left {
     left: -10px;
     bottom: 35px;
   }
-  .troupe-image__photo {
+  .block-info__photo {
     width: 157px;
-    height: 200px;
+    height: 183px;
   }
   .people {
     padding: 50px 0;
@@ -4129,10 +4132,10 @@ template {
     width: 100%;
     height: auto;
   }
-  .troupe {
+  .block-info {
     padding-bottom: 50px;
   }
-  .troupe-card {
+  .block-info__card {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -4145,32 +4148,32 @@ template {
         grid-template-rows: auto;
     padding: 50px 0;
   }
-  .troupe-text {
+  .block-info__text {
     padding: 30px 20px 0;
   }
-  .troupe-text__description {
+  .block-info__description {
     font-size: 14px;
     line-height: 18px;
   }
-  .troupe-image {
+  .block-info__image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .troupe-image__background {
+  .block-info__background {
     width: 157px;
-    height: 200px;
+    height: 183px;
   }
-  .troupe-image__background--right {
+  .block-info__background--right {
     right: -10px;
     bottom: 35px;
   }
-  .troupe-image__background--left {
+  .block-info__background--left {
     left: -10px;
     bottom: 35px;
   }
-  .troupe-image__photo {
+  .block-info__photo {
     width: 157px;
-    height: 200px;
+    height: 183px;
   }
   .people {
     padding: 50px 0;

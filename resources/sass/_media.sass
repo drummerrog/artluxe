@@ -218,10 +218,7 @@
         padding: 0 70px
   .people
     &-text
-      font-size: 16px
-      padding: 0 45px
-    &-description
-      flex-direction: column
+      padding: 0 45px !important
   .filmschool
     &-about
       &__title
@@ -361,7 +358,7 @@
         padding: 0 60px
   .people
     &-text
-      padding: 0 45px
+      padding: 0 45px !important
   .filmschool
     &-about
       &__title
@@ -692,14 +689,18 @@
       &__image
         grid-row: 1
   .people
-    padding: 100px 0
     &-text
-      font-size: 14px
-      padding: 0 45px
+      padding: 0 45px !important
       &__title
         font-size: 22px
       &__name
         font-size: 18px
+    &-image
+      &__photo
+        width: 230px !important
+        height: 280px
+      &__background
+        width: 230px !important
   .filmschool
     padding-bottom: 100px
     &-about
@@ -1112,29 +1113,25 @@
         width: 150px
         height: 175px
   .people
-    padding: 100px 0
-    &-card
-      padding: 50px 0
     &-text
-      font-size: 14px
-      padding: 0 20px
+      padding: 0 20px !important
       &__title
         font-size: 22px
+        padding-top: 300px
       &__name
         font-size: 18px
     &-image
       left: 0
-      padding: 0 20px 15px 15px
+      padding: 0 0 15px !important
       &__photo
-        width: 217px
-        height: 267px
-        left: 55px
+        width: 200px !important
+        height: 250px
+        left: 15px
       &__background
-        width: 217px
-        height: 267px
-        &--left
-          left: 45px
-          top: -20px
+        width: 200px !important
+        height: 250px
+        left: -5px
+        top: -20px
   .filmschool
     padding-bottom: 50px
     &-about
@@ -1571,30 +1568,22 @@
         width: 157px
         height: 183px
   .people
-    padding: 50px 0
-    &-card
-      padding: 40px 0
     &-text
-      font-size: 14px
-      padding: 0 20px
+      padding: 0 20px !important
       &__title
         font-size: 22px
-        margin-bottom: 77px
+        padding-top: 220px
       &__name
         font-size: 18px
     &-image
       left: -25px
-      padding: 0 30px 0 15px
       &__photo
-        width: 100px
-        height: 120px
+        width: 157px !important
         left: 30px
       &__background
-        width: 100px
-        height: 120px
-        &--left
-          left: 25px
-          top: -20px
+        width: 157px !important
+        left: 25px
+        top: -20px
   .filmschool
     padding-bottom: 50px
     &-about
@@ -2038,32 +2027,24 @@
         width: 157px
         height: 183px
   .people
-    padding: 50px 0
-    &-card
-      padding: 40px 0
     &-text
-      font-size: 14px
       line-height: 30px
       letter-spacing: 0.05em
-      padding: 0 20px
+      padding: 0 20px !important
       &__title
         font-size: 18px
-        margin-bottom: 77px
+        padding-top: 150px
       &__name
         font-size: 18px
     &-image
       left: -25px
-      padding: 0 15px 0 15px
       &__photo
-        width: 100px
-        height: 120px
-        left: 20px
+        width: 157px !important
+        left: 30px
       &__background
-        width: 100px
-        height: 120px
-        &--left
-          left: 25px
-          top: -10px
+        width: 157px !important
+        left: 25px
+        top: -20px
   .filmschool
     padding-bottom: 50px
     &-about

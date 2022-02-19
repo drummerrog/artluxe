@@ -1030,36 +1030,8 @@ template {
   height: 290px;
 }
 
-.people {
-  padding-bottom: 150px;
-}
-
-.people-wrapper {
-  background-color: #0D1215;
-  border: 1px solid #F1F1F1;
-}
-
-.people-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.people-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 80px 0;
-}
-
 .people-text {
-  padding: 0 80px 0 45px;
+  padding: 0 80px 0 45px !important;
 }
 
 .people-text__title {
@@ -1073,35 +1045,22 @@ template {
 }
 
 .people-text__description {
-  line-height: 26px;
+  max-width: inherit !important;
 }
 
 .people-image {
   float: left;
-  position: relative;
   left: -46px;
-  padding: 0 0 15px 15px;
+  padding: 0 0 15px 15px !important;
 }
 
 .people-image__photo {
-  width: 257px;
+  width: 257px !important;
   height: 307px;
-  position: relative;
-  border: 1px solid #F1F1F1;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .people-image__background {
-  width: 257px;
-  height: 307px;
-  background-color: #4A4E52;
-  border: 1px solid #F1F1F1;
-  position: absolute;
-}
-
-.people-image__background--left {
-  left: -20px;
+  width: 257px !important;
   top: -40px;
 }
 
@@ -1158,14 +1117,17 @@ template {
 .block-info__photo {
   width: 264px;
   position: relative;
+  border: 1px solid #F1F1F1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .block-info__background {
   width: 264px;
   height: 307px;
+  position: absolute;
   background-color: #4A4E52;
   border: 1px solid #F1F1F1;
-  position: absolute;
 }
 
 .block-info__background--right {
@@ -1640,14 +1602,7 @@ template {
     padding: 0 70px;
   }
   .people-text {
-    font-size: 16px;
-    padding: 0 45px;
-  }
-  .people-description {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    padding: 0 45px !important;
   }
   .filmschool-about__title {
     font-size: 42px;
@@ -1810,7 +1765,7 @@ template {
     padding: 0 60px;
   }
   .people-text {
-    padding: 0 45px;
+    padding: 0 45px !important;
   }
   .filmschool-about__title {
     font-size: 42px;
@@ -2257,18 +2212,21 @@ template {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .people {
-    padding: 100px 0;
-  }
   .people-text {
-    font-size: 14px;
-    padding: 0 45px;
+    padding: 0 45px !important;
   }
   .people-text__title {
     font-size: 22px;
   }
   .people-text__name {
     font-size: 18px;
+  }
+  .people-image__photo {
+    width: 230px !important;
+    height: 280px;
+  }
+  .people-image__background {
+    width: 230px !important;
   }
   .filmschool {
     padding-bottom: 100px;
@@ -2852,37 +2810,29 @@ template {
     width: 150px;
     height: 175px;
   }
-  .people {
-    padding: 100px 0;
-  }
-  .people-card {
-    padding: 50px 0;
-  }
   .people-text {
-    font-size: 14px;
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
   .people-text__title {
     font-size: 22px;
+    padding-top: 300px;
   }
   .people-text__name {
     font-size: 18px;
   }
   .people-image {
     left: 0;
-    padding: 0 20px 15px 15px;
+    padding: 0 0 15px !important;
   }
   .people-image__photo {
-    width: 217px;
-    height: 267px;
-    left: 55px;
+    width: 200px !important;
+    height: 250px;
+    left: 15px;
   }
   .people-image__background {
-    width: 217px;
-    height: 267px;
-  }
-  .people-image__background--left {
-    left: 45px;
+    width: 200px !important;
+    height: 250px;
+    left: -5px;
     top: -20px;
   }
   .filmschool {
@@ -3508,37 +3458,25 @@ template {
     width: 157px;
     height: 183px;
   }
-  .people {
-    padding: 50px 0;
-  }
-  .people-card {
-    padding: 40px 0;
-  }
   .people-text {
-    font-size: 14px;
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
   .people-text__title {
     font-size: 22px;
-    margin-bottom: 77px;
+    padding-top: 220px;
   }
   .people-text__name {
     font-size: 18px;
   }
   .people-image {
     left: -25px;
-    padding: 0 30px 0 15px;
   }
   .people-image__photo {
-    width: 100px;
-    height: 120px;
+    width: 157px !important;
     left: 30px;
   }
   .people-image__background {
-    width: 100px;
-    height: 120px;
-  }
-  .people-image__background--left {
+    width: 157px !important;
     left: 25px;
     top: -20px;
   }
@@ -4175,41 +4113,29 @@ template {
     width: 157px;
     height: 183px;
   }
-  .people {
-    padding: 50px 0;
-  }
-  .people-card {
-    padding: 40px 0;
-  }
   .people-text {
-    font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.05em;
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
   .people-text__title {
     font-size: 18px;
-    margin-bottom: 77px;
+    padding-top: 150px;
   }
   .people-text__name {
     font-size: 18px;
   }
   .people-image {
     left: -25px;
-    padding: 0 15px 0 15px;
   }
   .people-image__photo {
-    width: 100px;
-    height: 120px;
-    left: 20px;
+    width: 157px !important;
+    left: 30px;
   }
   .people-image__background {
-    width: 100px;
-    height: 120px;
-  }
-  .people-image__background--left {
+    width: 157px !important;
     left: 25px;
-    top: -10px;
+    top: -20px;
   }
   .filmschool {
     padding-bottom: 50px;

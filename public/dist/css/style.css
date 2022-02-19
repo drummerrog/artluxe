@@ -1116,6 +1116,7 @@ template {
 
 .block-info__photo {
   width: 264px;
+  height: 307px;
   position: relative;
   border: 1px solid #F1F1F1;
   -o-object-fit: cover;
@@ -1168,64 +1169,8 @@ template {
   padding: 0 50px;
 }
 
-.filmschool-wrapper {
-  background-color: #0D1215;
-  border: 1px solid #F1F1F1;
-}
-
-.filmschool-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .filmschool-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   height: 467px;
-  padding: 80px 0;
-}
-
-.filmschool-text {
-  padding: 0 100px;
-}
-
-.filmschool-text__name {
-  margin-bottom: 20px;
-}
-
-.filmschool-text__description {
-  line-height: 26px;
-  max-width: 900px;
-}
-
-.filmschool-image {
-  position: relative;
-  padding: 0 15px;
-}
-
-.filmschool-image__photo {
-  width: 260px;
-  position: relative;
-}
-
-.filmschool-image__background {
-  width: 260px;
-  height: 300px;
-  background-color: #4A4E52;
-  border: 1px solid #F1F1F1;
-  position: absolute;
 }
 
 .filmschool-image__background--right {
@@ -1607,9 +1552,6 @@ template {
   .filmschool-about__title {
     font-size: 42px;
   }
-  .filmschool-description__text {
-    font-size: 16px;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -1769,9 +1711,6 @@ template {
   }
   .filmschool-about__title {
     font-size: 42px;
-  }
-  .filmschool-description__text {
-    font-size: 16px;
   }
 }
 
@@ -2248,6 +2187,18 @@ template {
     font-size: 14px;
     line-height: 30px;
     padding: 0 40px;
+  }
+  .filmschool-card {
+    height: auto;
+  }
+  .filmschool-image__background {
+    top: -20px;
+  }
+  .filmschool-image__background--right {
+    right: -5px;
+  }
+  .filmschool-image__background--left {
+    left: -5px;
   }
 }
 
@@ -2869,26 +2820,21 @@ template {
     line-height: 18px;
     padding: 0 30px;
   }
+  .filmschool-card {
+    height: auto;
+  }
   .filmschool-image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
   .filmschool-image__background {
-    width: 160px;
-    height: 200px;
+    top: -20px;
   }
   .filmschool-image__background--right {
-    right: -10px;
+    right: -5px;
   }
   .filmschool-image__background--left {
-    left: -50px;
-  }
-  .filmschool-image__photo {
-    width: 160px;
-    height: 200px;
-  }
-  .filmschool-text {
-    padding: 0 30px;
+    left: -5px;
   }
 }
 
@@ -3514,26 +3460,21 @@ template {
     line-height: 18px;
     padding: 0 30px;
   }
+  .filmschool-card {
+    height: auto;
+  }
   .filmschool-image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
   .filmschool-image__background {
-    width: 160px;
-    height: 200px;
+    top: -20px;
   }
   .filmschool-image__background--right {
-    right: -10px;
+    right: -5px;
   }
   .filmschool-image__background--left {
-    left: -50px;
-  }
-  .filmschool-image__photo {
-    width: 160px;
-    height: 200px;
-  }
-  .filmschool-text {
-    padding: 0 30px;
+    left: -5px;
   }
 }
 
@@ -4171,23 +4112,21 @@ template {
     line-height: 18px;
     padding: 0 20px;
   }
+  .filmschool-card {
+    height: auto;
+  }
   .filmschool-image {
     -ms-grid-row: 1;
     grid-row: 1;
   }
   .filmschool-image__background {
-    width: 100px;
-    height: 120px;
+    top: -20px;
   }
   .filmschool-image__background--right {
-    right: -10px;
+    right: -5px;
   }
   .filmschool-image__background--left {
-    left: -50px;
-  }
-  .filmschool-image__photo {
-    width: 100px;
-    height: 120px;
+    left: -5px;
   }
   .filmschool-text {
     padding: 0 30px;

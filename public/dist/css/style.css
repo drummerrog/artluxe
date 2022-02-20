@@ -1181,6 +1181,46 @@ template {
   left: -20px;
 }
 
+.theaterstudio {
+  padding-bottom: 150px;
+}
+
+.theaterstudio-about {
+  background-color: #1A1F23;
+  border: 2px solid #F1F1F1;
+  margin-bottom: 130px;
+  padding: 50px 0;
+}
+
+.theaterstudio-about__title {
+  font-size: 62px;
+  font-weight: 400;
+  letter-spacing: 0.105em;
+  margin: 0 0 25px 50px;
+}
+
+.theaterstudio-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.theaterstudio-description__text {
+  padding: 0 50px;
+}
+
+.theaterstudio-card {
+  height: 467px;
+}
+
+.theaterstudio-image__background--right {
+  right: -20px;
+}
+
+.theaterstudio-image__background--left {
+  left: -20px;
+}
+
 .footer {
   background-color: #131415;
   padding: 35px 60px;

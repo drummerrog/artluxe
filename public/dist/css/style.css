@@ -1221,6 +1221,123 @@ template {
   left: -20px;
 }
 
+.contact {
+  padding-bottom: 75px;
+}
+
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-details__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-details__item {
+  margin-bottom: 45px;
+}
+
+.contact-social__links {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.contact-social__icon {
+  width: 58px;
+  height: 53px;
+}
+
+.contact__map {
+  width: 500px;
+  height: 410px;
+  border: 5px solid #F1F1F1;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+  height: 500px;
+}
+
+.contact__title {
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 430px;
+}
+
+.contact__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact__input {
+  width: 250px;
+  height: 50px;
+  background: #C4C4C4;
+  border: 3px solid #F1F1F1;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  padding: 9px 0 10px 15px;
+}
+
+.contact__message {
+  width: 500px;
+  height: 200px;
+  background: #C4C4C4;
+  border: 3px solid #F1F1F1;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  padding-top: 32px;
+  padding-left: 22px;
+}
+
+.contact__button {
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  border: 3px solid #606060;
+  padding: 10px 15px;
+}
+
 .footer {
   background-color: #131415;
   padding: 35px 60px;

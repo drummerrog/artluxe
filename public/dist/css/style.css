@@ -1243,6 +1243,10 @@ template {
   margin-bottom: 45px;
 }
 
+.contact-details__phone:hover {
+  text-decoration: underline;
+}
+
 .contact-social__links {
   width: 350px;
   display: -webkit-box;

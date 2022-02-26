@@ -2413,6 +2413,20 @@ template {
   .theaterstudio-image__background--left {
     left: -5px;
   }
+  .thank-you {
+    padding-bottom: 100px;
+  }
+  .thank-you__title {
+    font-size: 24px;
+  }
+  .thank-you__text {
+    font-size: 16px;
+  }
+  .thank-you__button {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -3098,6 +3112,21 @@ template {
   }
   .theaterstudio-image__background--left {
     left: -5px;
+  }
+  .thank-you {
+    padding-bottom: 50px;
+  }
+  .thank-you__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .thank-you__text {
+    font-size: 14px;
+  }
+  .thank-you__button {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0 10px;
   }
 }
 
@@ -3788,6 +3817,21 @@ template {
   }
   .theaterstudio-image__background--left {
     left: -5px;
+  }
+  .thank-you {
+    padding-bottom: 50px;
+  }
+  .thank-you__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .thank-you__text {
+    font-size: 14px;
+  }
+  .thank-you__button {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0 10px;
   }
 }
 
@@ -4496,6 +4540,21 @@ template {
   }
   .theaterstudio-text {
     padding: 0 30px;
+  }
+  .thank-you {
+    padding-bottom: 50px;
+  }
+  .thank-you__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .thank-you__text {
+    font-size: 14px;
+  }
+  .thank-you__button {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

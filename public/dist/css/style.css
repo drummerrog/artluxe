@@ -1225,6 +1225,10 @@ template {
   padding-bottom: 150px;
 }
 
+.news {
+  padding-bottom: 150px;
+}
+
 .contact {
   padding-bottom: 75px;
 }
@@ -2420,6 +2424,9 @@ template {
   .job {
     padding-bottom: 100px;
   }
+  .news {
+    padding-bottom: 100px;
+  }
   .thank-you {
     padding-bottom: 100px;
   }
@@ -3121,6 +3128,9 @@ template {
     left: -5px;
   }
   .job {
+    padding-bottom: 50px;
+  }
+  .news {
     padding-bottom: 50px;
   }
   .thank-you {
@@ -3829,6 +3839,9 @@ template {
     left: -5px;
   }
   .job {
+    padding-bottom: 50px;
+  }
+  .news {
     padding-bottom: 50px;
   }
   .thank-you {
@@ -4555,6 +4568,9 @@ template {
     padding: 0 30px;
   }
   .job {
+    padding-bottom: 50px;
+  }
+  .news {
     padding-bottom: 50px;
   }
   .thank-you {

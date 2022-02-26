@@ -1342,6 +1342,28 @@ template {
   padding: 10px 15px;
 }
 
+.thank-you {
+  padding-bottom: 150px;
+}
+
+.thank-you__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.thank-you__button {
+  margin-top: 50px;
+  padding: 5px 25px;
+}
+
 .footer {
   background-color: #131415;
   padding: 35px 60px;

@@ -1,18 +1,3 @@
-// Открытие и закрытие подменю в шапке по клику
-// function myFunction() {
-//   document.getElementById("first").classList.toggle("show");
-// }
-
-// Закрытие подменю по клику за его пределами
-// window.onclick = function (e) {
-//   if (!e.target.matches(".dropbtn")) {
-//     var myDropdown = document.getElementById("first");
-//     if (myDropdown.classList.contains("show")) {
-//       myDropdown.classList.remove("show");
-//     }
-//   }
-// };
-
 // Открытие и закрытие выпадающего списка меню по клику
 const dropdowns = document.querySelectorAll(`.dropdown`);
 
@@ -117,10 +102,10 @@ var swiper = new Swiper(".mySwiper", {
     }
   },
 
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -136,3 +121,18 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// Открытие и закрытие подменю в шапке по клику
+// function myFunction() {
+//   document.getElementById("first").classList.toggle("show");
+// }
+
+// Закрытие подменю по клику за его пределами
+// window.onclick = function (e) {
+//   if (!e.target.matches(".dropbtn")) {
+//     var myDropdown = document.getElementById("first");
+//     if (myDropdown.classList.contains("show")) {
+//       myDropdown.classList.remove("show");
+//     }
+//   }
+// };

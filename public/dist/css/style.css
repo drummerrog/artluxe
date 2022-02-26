@@ -2417,6 +2417,9 @@ template {
   .theaterstudio-image__background--left {
     left: -5px;
   }
+  .job {
+    padding-bottom: 100px;
+  }
   .thank-you {
     padding-bottom: 100px;
   }
@@ -3116,6 +3119,9 @@ template {
   }
   .theaterstudio-image__background--left {
     left: -5px;
+  }
+  .job {
+    padding-bottom: 50px;
   }
   .thank-you {
     padding-bottom: 50px;
@@ -3821,6 +3827,9 @@ template {
   }
   .theaterstudio-image__background--left {
     left: -5px;
+  }
+  .job {
+    padding-bottom: 50px;
   }
   .thank-you {
     padding-bottom: 50px;
@@ -4544,6 +4553,9 @@ template {
   }
   .theaterstudio-text {
     padding: 0 30px;
+  }
+  .job {
+    padding-bottom: 50px;
   }
   .thank-you {
     padding-bottom: 50px;

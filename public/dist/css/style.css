@@ -1221,6 +1221,10 @@ template {
   left: -20px;
 }
 
+.job {
+  padding-bottom: 150px;
+}
+
 .contact {
   padding-bottom: 75px;
 }

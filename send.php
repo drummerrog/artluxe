@@ -9,7 +9,8 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование письма Формы обратной связи
-if (empty($name)) {
+// if (empty($name)) {
+if (strlen($email) !== 0) {
   $title = "Новое письмо";
   $body = "
   <h2>Новое письмо</h2>
@@ -24,17 +25,18 @@ try {
   $mail->isSMTP();   
   $mail->CharSet = "UTF-8";
   $mail->SMTPAuth   = true;
-  //$mail->SMTPDebug = 2;
+  // $mail->SMTPDebug = 2;
   $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
   // Настройки вашей почты
-  $mail->Host       = 'ssl://smtp.gmail.com'; // SMTP сервера вашей почты
+  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'i.groznov86@gmail.com'; // Логин на почте (почта тестовая, не используется)
   $mail->Password   = 'rogovivan666'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
   $mail->setFrom('i.groznov86@gmail.com', 'Иван Грознов'); // Адрес самой почты и имя отправителя
-
+  $mail->addReplyTo('i.groznov86@gmail.com', 'Иван Грознов');
+  
   // Получатель письма
   $mail->addAddress('drummerrog86@gmail.com');  
   // $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен

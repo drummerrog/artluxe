@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="public/assets/fonts/caudex/caudex.css">
   <!-- Скрипты -->
   <script src="public/dist/jquery/jquery-3.6.0.min.js" defer></script>
+  <script src="public/dist/jquery/jquery.validate.min.js" defer></script>
   <script src="public/dist/js/main.js" defer></script>
 </head>
 
@@ -219,7 +220,7 @@
       <div class="contact-form">
         <h3 class="contact__title">Напишите нам!</h3>
         <form class="contact__form form" action="send.php" method="POST">
-          <input class="input contact__input" type="text" name="email" placeholder="e-mail" />
+          <input class="input contact__input" type="email" name="email" placeholder="e-mail" required />
           <textarea class="message contact__message" name="message" placeholder="Ваш вопрос"></textarea>
           <div class="contact__form-wrapper">
             <button class="button contact__button" type="submit">Отправить</button>

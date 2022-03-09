@@ -122,17 +122,15 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Открытие и закрытие подменю в шапке по клику
-// function myFunction() {
-//   document.getElementById("first").classList.toggle("show");
-// }
-
-// Закрытие подменю по клику за его пределами
-// window.onclick = function (e) {
-//   if (!e.target.matches(".dropbtn")) {
-//     var myDropdown = document.getElementById("first");
-//     if (myDropdown.classList.contains("show")) {
-//       myDropdown.classList.remove("show");
-//     }
-//   }
-// };
+// Обработка форм
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: "Укажите ваш email",
+        email: "Ваш email должен быть в формате name@domain.com",
+      },
+    },
+  });
+});

@@ -30,15 +30,15 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'i.groznov86@gmail.com'; // Логин на почте (почта тестовая, не используется)
-  // $mail->Password   = ''; // Пароль на почте
+  $mail->Username   = 'artluxe2021@yandex.ru'; // Логин на почте (почта тестовая, не используется)
+  $mail->Password   = '1985_Vitalik1985'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
-  $mail->setFrom('i.groznov86@gmail.com', 'Иван Грознов'); // Адрес самой почты и имя отправителя
-  $mail->addReplyTo('i.groznov86@gmail.com', 'Иван Грознов');
+  $mail->setFrom('artluxe2021@yandex.ru', 'Театр Art Luxe'); // Адрес самой почты и имя отправителя
+  $mail->addReplyTo('artluxe2021@yandex.ru', 'Театр Art Luxe');
   
   // Получатель письма
-  $mail->addAddress('drummerrog86@gmail.com');  
+  $mail->addAddress('artluxe2021@yandex.ru');  
   // $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
 // Отправка сообщения

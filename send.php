@@ -31,7 +31,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'artluxe2021@yandex.ru'; // Логин на почте (почта тестовая, не используется)
-  $mail->Password   = '1985_Vitalik1985'; // Пароль на почте
+  // $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
   $mail->setFrom('artluxe2021@yandex.ru', 'Театр Art Luxe'); // Адрес самой почты и имя отправителя

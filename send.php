@@ -29,7 +29,7 @@ try {
   $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+  $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
   $mail->Username   = 'artluxe2021@yandex.ru'; // Логин на почте (почта тестовая, не используется)
   // $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';

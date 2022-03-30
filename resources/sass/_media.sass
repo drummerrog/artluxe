@@ -27,8 +27,15 @@
       &__link
         font-size: 18px
   .playbill
+    &-card
+      &__image
+        height: auto
+      &__age
+        margin-right: 20px
     &-text
       margin: 0
+      &__title
+        line-height: 30px
   .swiper
     &-slide
       &__image
@@ -94,7 +101,7 @@
         height: auto
 @media (min-width: 1200px) and (max-width: 1439px)
   body
-    font-size: 16px
+    font-size: 15px
     line-height: 30px
   .container
     max-width: 900px
@@ -131,12 +138,18 @@
     &-card
       &__image
         width: 200px
-        height: 135px
+        height: auto
       &__text
         width: 140px
         line-height: 27px
+        margin-left: 10px
+      &__age
+        margin-right: 20px
     &-text
+      width: 200px
       margin: 0
+      &__title
+        line-height: 30px
   .swiper
     &-slide
       &__image
@@ -242,7 +255,7 @@
       margin-bottom: 50px
 @media (min-width: 1024px) and (max-width: 1199px)
   body
-    font-size: 16px
+    font-size: 14px
   .container
     max-width: 900px
   .navbar
@@ -281,12 +294,18 @@
     &-card
       &__image
         width: 200px
-        height: 135px
+        height: auto
       &__text
         width: 140px
         line-height: 27px
+        margin-left: 10px
+      &__age
+        margin-right: 10px
     &-text
+      width: 220px
       margin: 0
+      &__title
+        line-height: 30px
   .swiper
     &-slide
       &__image
@@ -394,6 +413,8 @@
     &__map
       margin-bottom: 50px
 @media (min-width: 768px) and (max-width: 1023px)
+  body
+    font-size: 14px
   .container
     max-width: 700px
   .navbar
@@ -538,11 +559,16 @@
     &-card
       &__image
         width: 175px
-        height: 115px
+        height: auto
       &__text
         display: none
+      &__age
+        margin: auto
     &-text
+      width: 140px
       margin: 0
+      &__title
+        line-height: 30px
       &__about
         &::after
           content: ''
@@ -953,7 +979,7 @@
       grid-template-rows: auto
       &__image
         width: 200px
-        height: 135px
+        height: auto
         grid-row: 1
       &__text
         display: grid
@@ -967,11 +993,16 @@
       &__age
         line-height: 30px
         grid-row: 3
+        margin-right: 0
     &-text
+      width: auto
       margin: 0
       &--mobile
         &_visible
           display: block
+      &__title
+        line-height: 30px
+        margin-top: 10px
       &__about
         &--mobile
           &_hidden
@@ -980,6 +1011,7 @@
             display: block
     &-date
       grid-row: 5
+      text-align: center
   .title
     font-size: 24px
     text-align: center
@@ -1463,7 +1495,7 @@
       grid-template-rows: auto
       &__image
         width: 200px
-        height: 135px
+        height: auto
         grid-row: 1
       &__text
         display: grid
@@ -1479,11 +1511,16 @@
       &__age
         line-height: 30px
         grid-row: 3
+        margin-right: 0
     &-text
+      width: auto
       margin: 0
       &--mobile
         &_visible
           display: block
+      &__title
+        line-height: 30px
+        margin-top: 10px
       &__about
         &--mobile
           &_hidden
@@ -1492,6 +1529,7 @@
             display: block
     &-date
       grid-row: 5
+      text-align: center
   .title
     font-size: 24px
     text-align: center
@@ -1974,7 +2012,7 @@
       grid-template-rows: auto
       &__image
         width: 160px
-        height: 115px
+        height: auto
         grid-row: 1
       &__text
         display: grid
@@ -1989,11 +2027,16 @@
       &__age
         line-height: 30px
         grid-row: 3
+        margin-right: 0
     &-text
+      width: auto
       margin: 0
       &--mobile
         &_visible
           display: block
+      &__title
+        line-height: 30px
+        margin-top: 10px
       &__about
         &--mobile
           &_hidden
@@ -2002,6 +2045,7 @@
             display: block
     &-date
       grid-row: 5
+      text-align: center
   .title
     font-size: 24px
     text-align: center

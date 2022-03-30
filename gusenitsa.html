@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Афиша театра Art-Luxe</title>
+  <title>Спектакль театра Art-Luxe</title>
   <!-- Стили -->
   <link rel="stylesheet" href="public/dist/css/style.css">
   <link rel="stylesheet" href="public/assets/fonts/caudex/caudex.css">
+  <link rel="stylesheet" href="public/dist/css/jquery.fancybox.min.css" />
   <!-- Скрипты -->
+  <script src="public/dist/jquery/jquery.fancybox.min.js" defer></script>
   <script src="public/dist/jquery/jquery-3.6.0.min.js" defer></script>
   <script src="public/dist/js/main.js" defer></script>
 </head>
@@ -133,106 +135,63 @@
   </header>
   <!-- /.navbar -->
 
-  <section class="playbill">
+  <section class="performance">
     <div class="container">
-      <div class="wrapper playbill-wrapper">
-        <h2 class="title playbill__title">Афиша</h2>
-        <hr class="line">
-        <div class="playbill-card">
-          <div class="playbill-date">
-            <div class="playbill-date__day">10 апреля</div>
-            <div class="playbill-date__time">20.00</div>
+      <h2 class="title performance__title">Очень голодная гусеница</h2>
+      <div class="performance-wrapper">
+        <img class="performance-wrapper__image performance-wrapper__image--mobile_hidden"
+          src="public/assets/img/playbill/02.jpg" alt="афиша">
+        <div class="performance-description">
+          <img class="performance-description__image performance-description__image--mobile_visible"
+            src="public/assets/img/playbill/02.jpg" alt="афиша">
+          <div class="performance-description__text">
+            Сказка-игра<br>
+            Спектакль-игра на часок, с мастер классом, как стать прекрасной бабочкой;)🌞🌈
+            Это незамысловатая история по мотивам книги Э.Карла "Очень голодная гусеница"🐛.<br>
+            Гусеница - та еще героиня! Яро поедая, растет и радуется жизни. Ведь скоро она исполнит свое предназначение,
+            став прекрасной бабочкой,
+            отправится
+            во взрослую жизнь...<br>
+            Но, это уже совсем другая история!<br>
+            А пока, мы вместе познаем мир с рождения: звук, свет, цвет, форму и многое другое, что видят и чувствуют
+            самые маленькие в мире!<br>
           </div>
-          <div class="playbill-text">
-            <h3 class="playbill-text__title">Солдатики</h3>
-            <a class="playbill-text__about playbill-text__about--mobile_hidden" href="soldatiki.html">О спектакле
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="о спектакле">
-            </a>
-          </div>
-          <!-- /.playbill-text -->
-          <img class="playbill-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <div class="playbill-card__text">
-            <div class="playbill-card__director">Режиссёр Виктор Яковлев</div>
-            <div class="playbill-card__title">По пьессе В.Жеребцова “Чморик”</div>
-          </div>
-          <div class="playbill-card__age">16+</div>
-          <div class="playbill-text playbill-text--mobile_visible">
-            <a class="playbill-text__about playbill-text__about--mobile_visible" href="soldatiki.html">О спектакле
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="о спектакле">
-            </a>
-          </div>
-          <!-- /.playbill-text -->
-          <button class="button button-pay">Купить билет</button>
         </div>
-        <!-- /.playbill__card -->
-        <hr class="line">
-        <hr class="line-bottom">
-        <div class="playbill-card">
-          <div class="playbill-date">
-            <div class="playbill-date__day">16 апреля</div>
-            <div class="playbill-date__time">11.00</div>
-          </div>
-          <div class="playbill-text">
-            <h3 class="playbill-text__title">Очень голодная гусеница</h3>
-            <a class="playbill-text__about playbill-text__about--mobile_hidden" href="gusenitsa.html">О спектакле
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="о спектакле">
-            </a>
-          </div>
-          <!-- /.playbill-text -->
-          <img class="playbill-card__image" src="public/assets/img/playbill/02.jpg" alt="постер">
-          <div class="playbill-card__text">
-            <div class="playbill-card__director">По мотивам книги Э.Карла</div>
-            <div class="playbill-card__title">"Очень голодная гусеница"</div>
-          </div>
-          <div class="playbill-card__age">1+</div>
-          <div class="playbill-text playbill-text--mobile_visible">
-            <a class="playbill-text__about playbill-text__about--mobile_visible" href="gusenitsa.html">О спектакле
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="о спектакле">
-            </a>
-          </div>
-          <!-- /.playbill-card__text -->
-          <button class="button button-pay">Купить билет</button>
-        </div>
-        <!-- /.playbill__card -->
-        <hr class="line">
-        <hr class="line-bottom">
-        <div class="playbill-card">
-          <div class="playbill-date">
-            <div class="playbill-date__day">24 апреля</div>
-            <div class="playbill-date__time">20.00</div>
-          </div>
-          <div class="playbill-text">
-            <h3 class="playbill-text__title">Солдатики</h3>
-            <a class="playbill-text__about playbill-text__about--mobile_hidden" href="soldatiki.html">О спектакле
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="о спектакле">
-            </a>
-          </div>
-          <!-- /.playbill-text -->
-          <img class="playbill-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <div class="playbill-card__text">
-            <div class="playbill-card__director">Режиссёр Виктор Яковлев</div>
-            <div class="playbill-card__title">По пьессе В.Жеребцова “Чморик”</div>
-          </div>
-          <div class="playbill-card__age">16+</div>
-          <div class="playbill-text playbill-text--mobile_visible">
-            <a class="playbill-text__about playbill-text__about--mobile_visible" href="soldatiki.html">О спектакле
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="о спектакле">
-            </a>
-          </div>
-          <!-- /.playbill-text -->
-          <button class="button button-pay">Купить билет</button>
-        </div>
-        <!-- /.playbill__card -->
-        <hr class="line">
-        <div class="button-wrapper">
-          <a class="button button-forward" href="#">Далее</a>
-        </div>
+        <!-- /.performance-description -->
       </div>
-      <!-- /.playbill-wrapper -->
+      <!-- /.performance-wrapper -->
+      <!-- <div class="performance-gallery">
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/01.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/01.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/02.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/02.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/03.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/03.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/04.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/04.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/05.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/05.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/06.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/06.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/07.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/07.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery" href="public/assets/img/performance/08.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/08.jpg">
+        </a>
+      </div> -->
+      <!-- performance-gallery -->
+
     </div>
     <!-- /.container -->
   </section>
-  <!-- /.playbill -->
+  <!-- /.performance -->
 
   <footer class="footer">
     <div class="footer-wrapper">

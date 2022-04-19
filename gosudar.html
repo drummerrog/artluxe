@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Репертуар театра Art-Luxe</title>
+  <title>Спектакль "Государь" - театр Art-Luxe</title>
   <!-- Стили -->
   <link rel="stylesheet" href="public/dist/css/style.css">
   <link rel="stylesheet" href="public/assets/fonts/caudex/caudex.css">
+  <link rel="stylesheet" href="public/dist/css/jquery.fancybox.min.css" />
   <!-- Скрипты -->
+  <script src="public/dist/jquery/jquery.fancybox.min.js" defer></script>
   <script src="public/dist/jquery/jquery-3.6.0.min.js" defer></script>
   <script src="public/dist/js/main.js" defer></script>
 </head>
@@ -133,106 +135,42 @@
   </header>
   <!-- /.navbar -->
 
-  <section class="repertoire">
+  <section class="performance">
     <div class="container">
-      <h2 class="title repertoire__title">Репертуар</h2>
-      <div class="wrapper repertoire-wrapper">
-        <div class="repertoire-card">
-          <img class="repertoire-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <h3 class="repertoire-card__title">Солдатики</h3>
-          <span class="repertoire-card__director">Режиссёр<br> Виктор&#160;Яковлев</span>
-          <span class="repertoire-card__text">По пьессе В.Жеребцова “Чморик”</span>
-          <span class="repertoire-card__age">16+</span>
-          <div class="repertoire-text repertoire-text--mobile_visible">
-            <a class="repertoire-text__about" href="soldatiki.html">Подробнее...
-              <img class="repertoire-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
+      <h2 class="title performance__title">Государь</h2>
+      <div class="performance-wrapper">
+        <img class="performance-wrapper__image performance-wrapper__image--mobile_hidden"
+          src="public/assets/img/playbill/04.jpg" alt="афиша">
+        <div class="performance-description">
+          <img class="performance-description__image performance-description__image--mobile_visible"
+            src="public/assets/img/playbill/04.jpg" alt="афиша">
+          <div class="performance-description__text">
+            Сказочная поэма<br>
+            Автор и режиссёр: лауреат премии "Золотой софит" - Николай Яковлев<br><br>
+
+            Я поведаю в поэме<br>
+            О нездешней стороне,<br>
+            Существующей вне времени<br>
+            Человеческой судьбе.<br><br>
+
+            О эпических созданиях,<br>
+            Силах света, силах зла -<br>
+            Государево преданье,<br>
+            Чем жила его душа.<br><br>
+
+            Как, столкнувшись с древним знаньем,<br>
+            Постигая мирозданье,<br>
+            Смысл и тайны бытия -<br>
+            Сказка дивная моя.
           </div>
-          <!-- /.repertoire-text -->
-          <hr class="line line--mobile_visible">
         </div>
-        <!-- /.repertoire__card -->
-        <div class="repertoire-card">
-          <img class="repertoire-card__image" src="public/assets/img/playbill/03.jpg" alt="постер">
-          <h3 class="repertoire-card__title">Открытый Микрофон</h3>
-          <span class="repertoire-card__director">Отборочный тур в новую программу</span>
-          <span class="repertoire-card__text"></span>
-          <span class="repertoire-card__age">18+</span>
-          <div class="repertoire-text repertoire-text--mobile_visible">
-            <a class="repertoire-text__about" href="otkritiy-mikrofon.html">Подробнее...
-              <img class="repertoire-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div>
-          <!-- /.repertoire-text -->
-          <hr class="line line--mobile_visible">
-        </div>
-        <!-- /.repertoire__card -->
-        <div class="repertoire-card">
-          <img class="repertoire-card__image" src="public/assets/img/playbill/04.jpg" alt="постер">
-          <h3 class="repertoire-card__title">Государь</h3>
-          <span class="repertoire-card__director">Режиссёр<br> Николай&#160;Яковлев</span>
-          <span class="repertoire-card__text">Сказочная поэма</span>
-          <span class="repertoire-card__age">12+</span>
-          <div class="repertoire-text repertoire-text--mobile_visible">
-            <a class="repertoire-text__about" href="gosudar.html">Подробнее...
-              <img class="repertoire-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div>
-          <!-- /.repertoire-text -->
-          <hr class="line line--mobile_visible">
-        </div>
-        <!-- /.repertoire__card -->
-        <!-- <div class="repertoire-card">
-          <img class="repertoire-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <h3 class="repertoire-card__title">Солдатики</h3>
-          <span class="repertoire-card__director">Режиссёр<br> Виктор&#160;Яковлев</span>
-          <span class="repertoire-card__text">По пьессе В.Жеребцова “Чморик”</span>
-          <span class="repertoire-card__age">6+</span>
-          <div class="repertoire-text repertoire-text--mobile_visible">
-            <a class="repertoire-text__about" href="#">Подробнее...
-              <img class="repertoire-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div> -->
-        <!-- /.repertoire-text -->
-        <!-- <hr class="line line--mobile_visible">
-        </div> -->
-        <!-- /.repertoire__card -->
-        <!-- <div class="repertoire-card">
-          <img class="repertoire-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <h3 class="repertoire-card__title">Солдатики</h3>
-          <span class="repertoire-card__director">Режиссёр<br> Виктор&#160;Яковлев</span>
-          <span class="repertoire-card__text">По пьессе В.Жеребцова “Чморик”</span>
-          <span class="repertoire-card__age">6+</span>
-          <div class="repertoire-text repertoire-text--mobile_visible">
-            <a class="repertoire-text__about" href="#">Подробнее...
-              <img class="repertoire-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div> -->
-        <!-- /.repertoire-text -->
-        <!-- <hr class="line line--mobile_visible">
-        </div> -->
-        <!-- /.repertoire__card -->
-        <!-- <div class="repertoire-card">
-          <img class="repertoire-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <h3 class="repertoire-card__title">Солдатики</h3>
-          <span class="repertoire-card__director">Режиссёр<br> Виктор&#160;Яковлев</span>
-          <span class="repertoire-card__text">По пьессе В.Жеребцова “Чморик”</span>
-          <span class="repertoire-card__age">6+</span>
-          <div class="repertoire-text repertoire-text--mobile_visible">
-            <a class="repertoire-text__about" href="#">Подробнее...
-              <img class="repertoire-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div> -->
-        <!-- /.repertoire-text -->
-        <!-- <hr class="line line--mobile_visible"> -->
+        <!-- /.performance-description -->
       </div>
-      <!-- /.repertoire__card -->
-    </div>
-    <!-- /.wrapper -->
+      <!-- /.performance-wrapper -->
     </div>
     <!-- /.container -->
   </section>
-  <!-- /.repertoire -->
+  <!-- /.performance -->
 
   <footer class="footer">
     <div class="footer-wrapper">

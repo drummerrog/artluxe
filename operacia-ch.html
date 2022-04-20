@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Театр драмы и комедии Art-Luxe</title>
+  <title>Квест "Операция Ч" - театр Art-Luxe</title>
   <!-- Стили -->
   <link rel="stylesheet" href="public/dist/css/style.css">
   <link rel="stylesheet" href="public/assets/fonts/caudex/caudex.css">
+  <link rel="stylesheet" href="public/dist/css/jquery.fancybox.min.css" />
   <!-- Скрипты -->
+  <script src="public/dist/jquery/jquery.fancybox.min.js" defer></script>
   <script src="public/dist/jquery/jquery-3.6.0.min.js" defer></script>
-  <script src="public/dist/js/swiper-bundle.min.js" defer></script>
   <script src="public/dist/js/main.js" defer></script>
 </head>
 
@@ -126,11 +127,6 @@
         </div>
         <!-- /.navbar-bottom__wrapper -->
         <span class="navbar-bottom__title navbar-bottom__title--mobile_hidden">До счастья всего лишь миг!</span>
-        <p class="navbar-bottom__text">
-          Всем привет!&#160;Вы когда-нибудь были на большом сайте самого маленького театра России? Нет?
-          Тогда, добро пожаловать! Мы
-          очень рады, что вы нас заметили, самое время познакомиться. У нас очень уютно, тепло и хватит места каждому.
-        </p>
       </div>
       <!-- /.container -->
     </div>
@@ -139,218 +135,36 @@
   </header>
   <!-- /.navbar -->
 
-  <section class="playbill">
+  <section class="performance">
     <div class="container">
-      <div class="wrapper playbill-wrapper">
-        <h2 class="title playbill__title">Афиша</h2>
-        <!-- <hr class="line"> -->
-        <!-- <div class="playbill-card">
-          <div class="playbill-date">
-            <div class="playbill-date__day">10 апреля</div>
-            <div class="playbill-date__time">20.00</div>
-          </div>
-          <div class="playbill-text">
-            <h3 class="playbill-text__title">Солдатики</h3>
-            <a class="playbill-text__about playbill-text__about--mobile_hidden" href="soldatiki.html">Подробнее...
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div> -->
-        <!-- /.playbill-text -->
-        <!-- <img class="playbill-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <div class="playbill-card__text">
-            <div class="playbill-card__director">Режиссёр Виктор Яковлев</div>
-            <div class="playbill-card__title">По пьессе В.Жеребцова “Чморик”</div>
-          </div>
-          <div class="playbill-card__age">16+</div>
-          <div class="playbill-text playbill-text--mobile_visible">
-            <a class="playbill-text__about playbill-text__about--mobile_visible" href="soldatiki.html">Подробнее...
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div> -->
-        <!-- /.playbill-card__text -->
-        <!-- <button class="button button-pay">Купить билет</button> -->
-        <!-- <a href="" class="button button-pay">Купить билет</a>
-        </div> -->
-        <!-- /.playbill__card -->
-        <hr class="line">
-        <!-- <hr class="line-bottom"> -->
-        <div class="playbill-card">
-          <div class="playbill-date">
-            <div class="playbill-date__day">24 апреля</div>
-            <div class="playbill-date__time">20.00</div>
-          </div>
-          <div class="playbill-text">
-            <h3 class="playbill-text__title">Солдатики</h3>
-            <a class="playbill-text__about playbill-text__about--mobile_hidden" href="soldatiki.html">Подробнее...
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div>
-          <!-- /.playbill-text -->
-          <img class="playbill-card__image" src="public/assets/img/playbill/01.jpg" alt="постер">
-          <div class="playbill-card__text">
-            <div class="playbill-card__director">Режиссёр Виктор Яковлев</div>
-            <div class="playbill-card__title">По пьессе В.Жеребцова “Чморик”</div>
-          </div>
-          <div class="playbill-card__age">16+</div>
-          <div class="playbill-text playbill-text--mobile_visible">
-            <a class="playbill-text__about playbill-text__about--mobile_visible" href="soldatiki.html">Подробнее...
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div>
-          <!-- /.playbill-card__text -->
-          <button class="button button-pay">Купить билет</button>
-          <!-- <a href="" class="button button-pay">Купить билет</a> -->
-        </div>
-        <!-- /.playbill__card -->
+      <h2 class="title performance__title">Операция "Ч"</h2>
+      <div class="performance-wrapper">
+        <img class="performance-wrapper__image performance-wrapper__image--mobile_hidden"
+          src="public/assets/img/playbill/05.jpg" alt="афиша">
+        <div class="performance-description">
+          <img class="performance-description__image performance-description__image--mobile_visible"
+            src="public/assets/img/playbill/05.jpg" alt="афиша">
+          <div class="performance-description__text">
+            Квест<br><br>
 
-        <hr class="line">
-        <!-- <hr class="line-bottom"> -->
-        <div class="playbill-card">
-          <div class="playbill-date">
-            <div class="playbill-date__day">30 апреля</div>
-            <div class="playbill-date__time">13.00</div>
+            Иммирсивный квест в городе Кудрово.<br>
+            По сюжету Чернобыля.<br><br>
+
+            Тайный агент из будущего перемещается в 1986 год для выполнения спецоперации по ликвидации катастрофы.
+            Мириум появляется
+            в тот момент, когда диверсант в одном из отсеков устанавливает кейс с устройством.<br><br>
+
+            Что то пошло не так...<br>
+            Газ... ничего не вижу...
           </div>
-          <div class="playbill-text">
-            <h3 class="playbill-text__title">Операция "Ч"</h3>
-            <a class="playbill-text__about playbill-text__about--mobile_hidden" href="operacia-ch.html">Подробнее...
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div>
-          <!-- /.playbill-text -->
-          <img class="playbill-card__image" src="public/assets/img/playbill/05.jpg" alt="постер">
-          <div class="playbill-card__text">
-            <!-- <div class="playbill-card__director">Режиссёр</div> -->
-            <div class="playbill-card__title">По сюжету Чернобыля</div>
-          </div>
-          <div class="playbill-card__age">12+</div>
-          <div class="playbill-text playbill-text--mobile_visible">
-            <a class="playbill-text__about playbill-text__about--mobile_visible" href="operacia-ch.html">Подробнее...
-              <img class="playbill-text__arrows" src="public/assets/img/icons/arrows-right.svg" alt="Подробнее...">
-            </a>
-          </div>
-          <!-- /.playbill-card__text -->
-          <button class="button button-pay">Купить билет</button>
-          <!-- <a href="" class="button button-pay">Купить билет</a> -->
         </div>
-        <!-- /.playbill__card -->
-        <hr class="line">
-        <div class="button-wrapper">
-          <a class="button button-forward" href="playbill.html">Далее</a>
-        </div>
+        <!-- /.performance-description -->
       </div>
-      <!-- /.playbill-wrapper -->
+      <!-- /.performance-wrapper -->
     </div>
     <!-- /.container -->
   </section>
-  <!-- /.playbill -->
-
-  <section class="swiper">
-    <div class="wrapper swiper-container mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-01.jpg" alt="Изображение" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-02.jpg" alt="Изображение" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-03.jpg" alt="Изображение" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-04.jpg" alt="Изображение" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-01.jpg" alt="Изображение" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-02.jpg" alt="Изображение" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-03.jpg" alt="Изображение" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-slide__image" src="public/assets/img/swiper/swiper-04.jpg" alt="Изображение" />
-        </div>
-      </div>
-      <!-- swiper-wrapper -->
-      <div class="swiper-buttons">
-        <div class="swiper-button swiper-button-prev">
-          <img class="swiper-button__icon" src="public/assets/img/icons/left-arrow.svg" alt="назад" />
-        </div>
-        <div class="swiper-button swiper-button-next">
-          <img class="swiper-button__icon" src="public/assets/img/icons/right-arrow.svg" alt="вперёд" />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- /.swiper-container -->
-  </section>
-  <!-- /.swiper -->
-
-  <section class="overview">
-    <div class="container">
-      <div class="wrapper overview-wrapper">
-        <h2 class="title overview-wrapper__title">Новости</h2>
-        <div class="overview-container">
-          <div class="overview-card">
-            <div class="overview-card__text">
-              Официальное открытие нашего театра состоялось 1 марта 2022 года. Огромная благодарность всем зрителям и
-              гостям нашего
-              мероприятия за прекрасное настроение и позитивные пожелания в дальнейшем процветании театра. Особая
-              благодарность
-              приглашенным гостям Ирине Митюшкиной, Александре Терских, Денису Рожкову и всей труппе нашего театра!
-            </div>
-            <div class="button-wrapper button-wrapper--left">
-              <a class="button button-read" href="news.html">Читать</a>
-            </div>
-          </div>
-          <!-- /.overview-card -->
-          <hr class="line line-vertical line-vertical--mobile_visible">
-          <div class="overview-card overview-card--mobile_visible">
-            <div class="overview-card__text">
-              Театр "Art-luxe", при поддержке кинокомпании "Триикс-медиа", объявляет о наборе детей в возрасте от 10
-              до 17 лет на
-              обучение актерскому мастерству в нашу киношколу. Дети, обучающиеся у нас, автоматом попадают в актерскую
-              базу и в
-              дальнейшем продвигаются в киноиндустрии.
-            </div>
-            <div class="button-wrapper button-wrapper--left">
-              <a class="button button-read" href="news.html">Читать</a>
-            </div>
-          </div>
-          <!-- /.overview-card -->
-          <hr class="line line-vertical line-vertical--mobile_hidden">
-          <div class="overview-card overview-card--mobile_hidden">
-            <div class="overview-card__text">
-              Труппа театра начала работу над постановкой детского спектакля "Три БУФ - поросёнка". Режиссером
-              спектакля будет
-              Директор киностудии "Аврора", актриса театра и кино Ирина Митюшкина. Роли исполнят Виталий Бисеров,
-              Анастасия Рудиш,
-              Елена Емельянова и Николай Яковлев.
-            </div>
-            <div class="button-wrapper button-wrapper--left">
-              <a class="button button-read" href="news.html">Читать</a>
-            </div>
-          </div>
-          <!-- /.overview-card -->
-          <hr class="line line-vertical line-vertical--mobile_hidden">
-          <div class="overview-card overview-card--mobile_hidden">
-            <div class="overview-card__text">
-              Новость скоро будет добавлена.
-            </div>
-            <div class="button-wrapper button-wrapper--left">
-              <a class="button button-read" href="news.html">Читать</a>
-            </div>
-          </div>
-          <!-- /.overview-card -->
-        </div>
-        <!-- /.overview-container -->
-      </div>
-      <!-- /.overview-wrapper -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.overview -->
+  <!-- /.performance -->
 
   <footer class="footer">
     <div class="footer-wrapper">

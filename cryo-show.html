@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шоу "Крио-шоу" - театр Art-Luxe</title>
+  <!-- Стили -->
+  <link rel="stylesheet" href="public/dist/css/style.css">
+  <link rel="stylesheet" href="public/assets/fonts/caudex/caudex.css">
+  <link rel="stylesheet" href="public/dist/css/jquery.fancybox.min.css" />
+  <!-- Скрипты -->
+  <script src="public/dist/jquery/jquery-3.6.0.min.js" defer></script>
+  <script src="public/dist/jquery/jquery.fancybox.min.js" defer></script>
+  <script src="public/dist/js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-wrapper">
+      <ul class="navbar__menu">
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="index.html" class="navbar__menu-link">Главная</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="playbill.html" class="navbar__menu-link">Афиша</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="repertoire.html" class="navbar__menu-link">Репертуар</a>
+        </li>
+        <li class="dropdown dropdown--mobile_hidden">
+          <button class="dropbtn" onclick="myFunction()">
+            О театре
+            <img class="dropdown__caret" src="public/assets/img/icons/caret-down.svg" alt="каретка" />
+          </button>
+          <div class="dropdown-content" id="first">
+            <a class="dropdown-content__link" href="about.html">О театре</a>
+            <a class="dropdown-content__link" href="troupe.html">Труппа</a>
+            <a class="dropdown-content__link" href="people.html">Люди</a>
+            <a class="dropdown-content__link" href="news.html">Новости</a>
+          </div>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="filmschool.html" class="navbar__menu-link">Школа кино</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="theaterstudio.html" class="navbar__menu-link">Театральная студия</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="job.html" class="navbar__menu-link">Вакансии</a>
+        </li>
+        <li class="navbar__menu-item navbar__menu-item--mobile_hidden">
+          <a href="contact.html" class="navbar__menu-link">Контакты</a>
+        </li>
+      </ul>
+      <!-- navbar__menu -->
+    </div>
+    <!-- /.navbar-wrapper -->
+
+    <div class="navbar-bottom">
+      <div class="container">
+        <div class="navbar-bottom__wrapper">
+          <div class="navbar-logo">
+            <a href="index.html">
+              <img class="navbar-logo__image navbar-logo__image--mobile_hidden" src="public/assets/img/logo.jpg"
+                alt="логотип">
+              <img class="navbar-logo__image navbar-logo__image--mobile_visible" src="public/assets/img/logo_mobile.jpg"
+                alt="логотип">
+            </a>
+          </div>
+          <h1 class="navbar-bottom__title navbar-bottom__title--mobile_visible">До счастья всего лишь миг!</h1>
+          <button class="menu-button navbar-bottom__wrapper-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+          <div class="navbar__menu-burger">
+            <button class="menu-button navbar-bottom__menu-button menu-button--mobile_visible">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+            <ul class="navbar__menu">
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="index.html" class="navbar__menu-link">Главная</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="playbill.html" class="navbar__menu-link">Афиша</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="repertoire.html" class="navbar__menu-link">Репертуар</a>
+              </li>
+              <li class="dropdown dropdown--mobile_visible">
+                <button class="dropbtn" onclick="myFunction()">
+                  О театре
+                  <img class="dropdown__caret" src="public/assets/img/icons/caret-down.svg" alt="каретка" />
+                </button>
+                <div class="dropdown-content" id="first">
+                  <a class="dropdown-content__link" href="about.html">О театре</a>
+                  <a class="dropdown-content__link" href="troupe.html">Труппа</a>
+                  <a class="dropdown-content__link" href="people.html">Люди</a>
+                  <a class="dropdown-content__link" href="news.html">Новости</a>
+                </div>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="filmschool.html" class="navbar__menu-link">Школа кино</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="theaterstudio.html" class="navbar__menu-link">Театральная студия</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="job.html" class="navbar__menu-link">Вакансии</a>
+              </li>
+              <li class="navbar__menu-item navbar__menu-item--mobile_visible">
+                <a href="contact.html" class="navbar__menu-link">Контакты</a>
+              </li>
+            </ul>
+            <!-- navbar__menu -->
+            <button class="menu-button navbar-bottom__menu-button menu-button--mobile_hidden">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+          <!-- /.navbar__menu-burger -->
+        </div>
+        <!-- /.navbar-bottom__wrapper -->
+        <span class="navbar-bottom__title navbar-bottom__title--mobile_hidden">До счастья всего лишь миг!</span>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar-bottom -->
+
+  </header>
+  <!-- /.navbar -->
+
+  <section class="performance">
+    <div class="container">
+      <h2 class="title performance__title">Шоу "Крио-шоу"</h2>
+      <div class="performance-wrapper">
+        <img class="performance-wrapper__image performance-wrapper__image--mobile_hidden"
+          src="public/assets/img/playbill/09.jpg" alt="афиша">
+        <div class="performance-description">
+          <img class="performance-description__image performance-description__image--mobile_visible"
+            src="public/assets/img/playbill/09.jpg" alt="афиша">
+          <div class="performance-description__text">
+            Шоу<br><br>
+
+            Треск и взрывы — шоу с сухим льдом точно вызовет бурю эмоций! В сопровождении «ведущего научного сотрудника»
+            ребята
+            увидят, на что способен замороженный углекислый газ. Им откроется тайна вылетающей пробки и исчезающих
+            чернил.<br><br>
+            Состав программы:<br>
+            ✓ Демонстрация сухого льда. Его температура –78,5С<br>
+            ✓ Вкус сухого льда<br>
+            ✓ Выстрел пробки<br>
+            ✓ Наши краски-индикаторы раскрасят воду в неправильные цвета<br>
+            ✓ Водородный взрыв. Эксперимент безопасен!<br>
+            ✓ Проведем опыты с исчезающими чернилами<br>
+            ✓ Вырастим светящийся кристалл<br>
+            ✓ Дымовая завеса. Создаем туман, как на сцене у звезд<br>
+          </div>
+        </div>
+        <!-- /.performance-description -->
+      </div>
+      <!-- /.performance-wrapper -->
+      <div class="performance-gallery">
+        <a class="performance-gallery__image" data-fancybox="gallery"
+          href="public/assets/img/performance/cryo-show/01.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/cryo-show/01.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery"
+          href="public/assets/img/performance/cryo-show/02.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/cryo-show/02.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery"
+          href="public/assets/img/performance/cryo-show/03.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/cryo-show/03.jpg">
+        </a>
+        <a class="performance-gallery__image" data-fancybox="gallery"
+          href="public/assets/img/performance/cryo-show/04.jpg">
+          <img class="performance-gallery__img" src="public/assets/img/performance/cryo-show/04.jpg">
+        </a>
+      </div>
+      <!-- performance-gallery -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.performance -->
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img class="footer-logo__image footer-logo__image--mobile_hidden" src="public/assets/img/logo.jpg"
+            alt="логотип">
+          <img class="footer-logo__image footer-logo__image--mobile_visible" src="public/assets/img/logo_mobile.jpg"
+            alt="логотип">
+        </a>
+      </div>
+      <ul class="footer__menu">
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="index.html" class="footer__menu-link">Главная</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="playbill.html" class="footer__menu-link">Афиша</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="repertoire.html" class="footer__menu-link">Репертуар</a>
+        </li>
+        <li class="dropdown dropdown--mobile_hidden">
+          <button class="dropbtn" onclick="myFunction()">
+            О театре
+            <img class="dropdown__caret" src="public/assets/img/icons/caret-down.svg" alt="каретка" />
+          </button>
+          <div class="dropdown-content" id="second">
+            <a class="dropdown-content__link" href="about.html">О театре</a>
+            <a class="dropdown-content__link" href="troupe.html">Труппа</a>
+            <a class="dropdown-content__link" href="people.html">Люди</a>
+            <a class="dropdown-content__link" href="news.html">Новости</a>
+          </div>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="filmschool.html" class="footer__menu-link">Школа кино</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="theaterstudio.html" class="footer__menu-link">Театральная студия</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--mobile_hidden">
+          <a href="job.html" class="footer__menu-link">Вакансии</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="contact.html" class="footer__menu-link">Контакты</a>
+        </li>
+      </ul>
+      <!-- /.footer-menu -->
+      <div class="footer-contacts">
+        <div class="footer-social">
+          <a class="footer-social__link" href="https://api.whatsapp.com/send/?phone=79117559093" target="_blank"
+            rel="nofollow noopener">
+            <svg class="footer-social__icon" width="60" height="55" viewBox="0 0 60 55" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M42.4892 35.8759C43.0156 34.5458 43.0156 33.4144 42.8618 33.1752C42.7071 32.9317 42.2845 32.7978 41.6449 32.5097C41.0043 32.2216 37.8884 30.851 37.3026 30.6682C36.7262 30.4736 36.1715 30.5427 35.7357 31.0902C35.1225 31.8568 34.5187 32.6352 34.0329 33.1061C33.6509 33.4709 33.0197 33.5155 32.4981 33.3209C31.7887 33.0614 29.818 32.4406 27.3841 30.5064C25.4993 29.0095 24.2182 27.1444 23.8456 26.5808C23.4777 26.0088 23.8097 25.6761 24.105 25.3678C24.4229 25.0148 24.7314 24.7638 25.054 24.431C25.3719 24.0983 25.5531 23.9281 25.7578 23.5389C25.9757 23.1615 25.821 22.7723 25.6672 22.4842C25.5125 22.2003 24.2314 19.4061 23.705 18.2747C23.2824 17.37 22.9645 17.3338 22.3239 17.3136C22.106 17.3009 21.8608 17.2891 21.5928 17.2891C20.7617 17.2891 19.8901 17.5082 19.3637 17.9866C18.7231 18.5704 17.1336 19.9334 17.1336 22.7235C17.1336 25.5177 19.4127 28.2193 19.7222 28.5959C20.0448 28.9733 24.1682 34.7892 30.5717 37.1572C35.5857 39.0105 37.0715 38.8403 38.211 38.6213C39.878 38.3012 41.9628 37.2019 42.4892 35.8759ZM29.8048 8.38745C41.8213 8.38745 51.6001 17.119 51.6001 27.8537C51.6001 38.5851 41.8213 47.3208 29.8048 47.3208C25.3719 47.3208 21.2617 46.1406 17.8147 44.1045L9.43483 46.4936L12.1508 39.2624C9.53483 36.0587 7.99998 32.1078 7.99998 27.8495C7.99998 22.4842 10.4433 17.6177 14.3903 14.093C18.3364 10.5693 23.7824 8.38745 29.7906 8.38745H29.8048Z"
+                stroke="white" stroke-width="2" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M55 54H5C2.791 54 1 52.3634 1 50.3448V4.65517C1 2.6366 2.791 1 5 1H55C57.209 1 59 2.6366 59 4.65517V50.3448C59 52.3634 57.209 54 55 54Z"
+                stroke="white" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+          </a>
+
+          <a class="footer-social__link" href="https://vk.com/artluxe2021" target="_blank" rel="nofollow noopener">
+            <svg class="footer-social__icon" width="57" height="54" viewBox="0 0 57 54" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_48_22)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.9216 41.5694L32.7657 36.5354C32.5901 36.2659 32.4484 36.111 32.349 36.023L32.239 35.9429L32.1924 36.079L31.4733 40.1307L31.3527 40.9688C31.1496 41.8336 30.7054 42.7171 29.8001 42.9387L29.2438 42.984H25.5951C19.1056 42.984 13.2465 31.3227 9.14506 16.7947L9.11545 16.6585C8.97584 15.7857 8.90604 14.8168 9.24448 14.0375C9.63368 13.138 10.3782 12.8497 11.1587 12.8203L16.7662 12.8684C17.1131 12.8711 17.4198 13.1566 17.5192 13.5757C18.7799 18.8045 20.3282 21.9994 22.2213 25.6428L22.2742 25.7602C22.4794 26.3047 22.9088 26.1499 23.1309 25.7175L23.2662 25.213L23.2684 17.0055C23.2684 15.7991 22.8326 15.6282 21.775 15.4387C21.2906 15.3507 20.9839 14.7341 21.132 14.1469C21.6418 12.1077 23.3149 11.0641 25.6353 11.0641L27.7738 11C29.504 11 31.0714 11.9369 31.0714 14.7288V25.5253L31.2237 25.6321C31.5071 25.7575 32.0634 25.7842 32.514 24.8928C34.4578 21.4336 36.6978 17.3018 37.013 15.1425C37.0257 15.0544 37.0469 14.9716 37.0765 14.8916C37.472 13.8426 38.5529 13.1033 38.9886 12.9351C39.05 12.9111 39.1726 12.8657 39.3165 12.8657L45.1566 12.8711L45.5183 12.8764C45.6558 12.8977 45.7912 12.9351 45.9223 12.9938C46.2734 13.154 46.5209 13.4449 46.6838 13.7759C47.0032 14.4325 46.9588 15.1692 46.9905 15.4628C47.0032 15.5615 47.0032 15.6629 46.9905 15.7644C46.4426 20.0883 42.502 24.9355 40.8458 28.0797C40.4206 28.819 40.4143 29.3715 40.8098 29.9774L46.3073 38.6601C46.9418 39.8051 46.908 41.0569 46.2332 41.9511C45.7933 42.5356 45.1545 42.8612 44.4797 42.96L43.8452 42.984H38.0029L38.1066 42.976C37.3388 43.1041 36.7423 42.7038 36.2938 42.1352L35.9216 41.5694ZM38.0029 40.9822L43.8832 40.9849C44.503 41.0302 44.9197 40.79 45.0847 40.5711C45.1418 40.4964 45.22 40.3763 45.1439 40.1174L45.017 39.8265L39.5767 31.2399C38.6438 29.8066 38.7961 28.2398 39.5407 26.94C41.1165 23.9479 44.5009 19.672 45.2983 16.1434L45.4062 15.5402L45.3787 15.1585L45.3364 14.8675H45.1735H39.4201L39.2319 14.9797C39.0542 15.1051 38.8342 15.2999 38.6777 15.4868L38.519 15.735L38.3223 16.6238C37.6455 19.0127 35.9512 22.2023 34.5065 24.802L33.8106 26.0405L33.3706 26.7238C32.203 28.1571 30.477 27.8955 29.7726 26.6997C29.6055 26.4168 29.485 26.0538 29.485 25.6374V14.7288C29.485 13.4369 29.0196 13.0018 27.7928 13.0018L25.6543 13.0659C24.6242 13.0659 23.922 13.2874 23.4524 13.6077L23.1922 13.8213L23.3762 13.904C24.1589 14.3444 24.8548 15.2039 24.8548 17.0082L24.8484 25.3438C24.6961 27.9462 22.1748 29.0913 21.0474 27.0708L20.8951 26.7398C19.2114 23.5021 17.7413 20.5074 16.5124 16.1274L16.1845 14.8649L11.1736 14.8248C10.6574 14.8409 10.6278 15.017 10.6363 14.9983C10.6024 15.0731 10.5623 15.2759 10.6003 15.727L10.6617 16.1994L11.4443 18.8632C15.5415 32.2462 20.728 40.9822 25.5951 40.9822L29.2777 40.9849C29.7769 41.0169 29.8847 40.3149 29.9101 39.8398L29.9292 39.6957L30.661 35.5612L30.6822 35.4598C30.7837 35.0781 30.9402 34.7071 31.1814 34.4188C31.5092 34.0265 31.9344 33.8503 32.3828 33.925C33.0089 34.0291 33.5567 34.5923 34.0031 35.2783L37.1907 40.371C37.5185 40.9635 37.7343 41.0196 37.8972 40.9929L38.0029 40.9822Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 48.9998V4.26044C0 1.50258 2.29194 -0.739746 5.11603 -0.739746H50.9012C53.723 -0.739746 56.0172 1.50258 56.0172 4.26044V48.9998C56.0172 51.7599 53.723 54 50.9012 54H5.11603C2.29194 54 0 51.7599 0 48.9998ZM54.2668 48.9998V4.26044C54.2668 2.44924 52.7544 0.971086 50.9012 0.971086H5.11603C3.26053 0.971086 1.75047 2.44924 1.75047 4.26044V48.9998C1.75047 50.8133 3.26053 52.2892 5.11603 52.2892H50.9012C52.7544 52.2892 54.2668 50.8133 54.2668 48.9998Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_48_22">
+                  <rect width="57" height="54" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a class="footer-social__link" href="https://www.youtube.com/" target="_blank" rel="nofollow noopener">
+            <svg class="footer-social__icon" width="58" height="54" viewBox="0 0 58 54" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.0227 0C37.4829 0 45.9546 0 54.4148 0C56.6298 0 57.9999 1.27713 57.9999 3.35248C57.9999 18.9974 57.9999 34.6316 57.9999 50.2765C57.9999 52.3838 56.6412 53.6396 54.3806 53.6396C37.4487 53.6396 20.5168 53.6396 3.58492 53.6396C1.35854 53.6396 -0.00012207 52.3625 -0.00012207 50.2872C-0.00012207 34.6423 -0.00012207 19.008 -0.00012207 3.36312C-0.00012207 1.25585 1.35854 0 3.61917 0C12.0908 0 20.5511 0 29.0227 0ZM28.9428 52.1497C37.4144 52.1497 45.8747 52.1497 54.3463 52.1497C55.7507 52.1497 56.4015 51.543 56.4015 50.234C56.4015 34.621 56.4015 19.0187 56.4015 3.40569C56.4015 2.09663 55.7507 1.48999 54.3463 1.48999C37.4487 1.48999 20.5511 1.48999 3.65342 1.48999C2.24909 1.48999 1.5983 2.09663 1.5983 3.40569C1.5983 19.0187 1.5983 34.621 1.5983 50.234C1.5983 51.543 2.24909 52.1497 3.65342 52.1497C12.0794 52.1497 20.5168 52.1497 28.9428 52.1497Z"
+                fill="white" />
+              <path
+                d="M29.1027 14.719C33.1673 14.8574 37.2205 14.9638 41.2622 15.1234C44.0366 15.2405 45.6579 16.5815 46.1031 19.2103C46.3657 20.7428 46.5027 22.3073 46.5598 23.8611C46.6626 26.7879 46.6512 29.7147 46.2516 32.6202C46.0917 33.7909 45.7949 34.9296 44.9842 35.8769C43.9681 37.0476 42.5409 37.3668 41.011 37.4413C34.5716 37.7713 28.1208 37.8564 21.6815 37.6116C19.7976 37.5371 17.9252 37.4413 16.0527 37.2498C14.2374 37.0688 12.9929 36.1216 12.3878 34.472C11.8512 33.0246 11.7827 31.524 11.6799 30.0233C11.4744 26.6921 11.4972 23.3609 11.9083 20.0404C12.011 19.1783 12.285 18.295 12.6618 17.4968C13.4496 15.7939 15.0594 15.1979 16.909 15.1234C20.985 14.9638 25.0496 14.8467 29.1027 14.719ZM25.4834 30.5022C28.6575 28.9697 31.7401 27.4797 34.9142 25.9471C31.7059 24.3826 28.6232 22.8927 25.4834 21.3601C25.4834 24.4252 25.4834 27.4158 25.4834 30.5022Z"
+                fill="white" />
+            </svg>
+          </a>
+
+          <a class="footer-social__link" href="https://t.me/artluxe_spb" target="_blank" rel="nofollow noopener">
+            <svg class="footer-social__icon" width="58" height="54" viewBox="0 0 58 54" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28.9429 53.2211C20.4941 53.2211 12.0453 53.2211 3.60787 53.2211C1.37008 53.2211 0 51.9645 0 49.9159C0 34.372 0 18.8386 0 3.3052C0 1.27773 1.37008 0 3.55079 0C20.5169 0 37.4831 0 54.4606 0C56.6071 0 58 1.27773 58 3.2524C58 18.828 58 34.3931 58 49.9687C58 51.9222 56.6071 53.2211 54.5063 53.2211C45.989 53.2211 37.4602 53.2211 28.9429 53.2211ZM29 1.47836C20.5512 1.47836 12.1024 1.47836 3.65354 1.47836C2.24921 1.47836 1.59843 2.08027 1.59843 3.37912C1.59843 18.8703 1.59843 34.3508 1.59843 49.842C1.59843 51.1408 2.24921 51.7427 3.65354 51.7427C20.5512 51.7427 37.4488 51.7427 54.3465 51.7427C55.7508 51.7427 56.4016 51.1408 56.4016 49.842C56.4016 34.3508 56.4016 18.8703 56.4016 3.37912C56.4016 2.08027 55.7508 1.47836 54.3465 1.47836C45.8976 1.47836 37.4488 1.47836 29 1.47836Z"
+                fill="white" />
+              <path
+                d="M50.0858 9.01168C49.7237 8.73839 49.2829 8.55691 48.811 8.48692C48.3392 8.41692 47.8545 8.46109 47.4094 8.61462L6.97997 22.4875C6.45146 22.6689 6.00439 22.9948 5.70566 23.4166C5.40693 23.8384 5.27261 24.3333 5.32279 24.8274C5.37296 25.3214 5.60495 25.7879 5.98402 26.1572C6.3631 26.5264 6.86888 26.7786 7.42569 26.8758L18.3994 28.7929V40.6239C18.3939 41.0791 18.5459 41.5251 18.8355 41.9035C19.125 42.282 19.5386 42.5753 20.0222 42.7451C20.3461 42.8635 20.6937 42.9249 21.0448 42.9257C21.388 42.9248 21.7276 42.8643 22.0438 42.7479C22.36 42.6314 22.6466 42.4613 22.887 42.2473L29.1513 36.7758L38.3943 43.8802C38.8706 44.2497 39.4853 44.454 40.1223 44.4546C40.3992 44.4543 40.6743 44.4162 40.9378 44.3415C41.3722 44.2212 41.7629 44.0035 42.0709 43.7101C42.3789 43.4167 42.5935 43.0578 42.6931 42.6694L50.9329 11.2646C51.0405 10.8573 51.0184 10.4321 50.8691 10.0349C50.7198 9.63783 50.4489 9.28397 50.0858 9.01168ZM7.06843 24.692C7.04663 24.5267 7.08931 24.3598 7.18956 24.2183C7.28982 24.0767 7.44179 23.9689 7.6209 23.9121L44.6807 11.1954L19.0724 27.3495L7.76936 25.375C7.5816 25.3466 7.41028 25.2638 7.28309 25.1398C7.1559 25.0159 7.08027 24.8582 7.06843 24.692ZM21.6477 41.165C21.5252 41.2721 21.369 41.345 21.1991 41.3745C21.0291 41.404 20.8529 41.3889 20.6928 41.331C20.5327 41.273 20.3959 41.1749 20.2996 41.0491C20.2033 40.9232 20.1519 40.7753 20.1519 40.6239V29.8585L27.8331 35.7625L21.6477 41.165ZM49.2247 10.9226L40.9849 42.3274C40.951 42.4567 40.8792 42.576 40.7766 42.6737C40.6741 42.7714 40.5442 42.8442 40.3997 42.8849C40.2553 42.9255 40.1012 42.9328 39.9526 42.9058C39.8039 42.8788 39.6659 42.8186 39.5519 42.731L20.6788 28.2245L49.083 10.3067C49.1578 10.3936 49.2093 10.4941 49.2338 10.6006C49.2583 10.7072 49.2552 10.8172 49.2247 10.9226Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+        <!-- footer-social -->
+        <span class="footer-contacts__tel">
+          <a href="tel:+79117559093">+7 (911) 755-90-93</a>
+        </span>
+        <span class="footer-contacts__adress footer-contacts__adress--mobile_hidden">Адрес: Ленинградская область,<br>
+          г.
+          Кудрово, ул. Пражская 17А</span>
+      </div>
+      <!-- /.footer-contacts -->
+    </div>
+    <!-- /.footer-wrapper -->
+    <div class="footer-copyrating">
+      <a href="https://vk.com/drummerrog_service" class="footer-copyrating__link">drummerrog service</a> &#169; 2022
+    </div>
+  </footer>
+  <!-- /.footer -->
+
+  <!-- Скрипты -->
+  <script type='text/javascript'>var
+      qt_params = { color: 'ffaa00', align: 'left', indent: 150, width: 26, radius: 12, alias: 'kudrovo-teatr-art-lyuks', image: 'buy-online' }; (function () {
+        var
+          s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://quicktickets.ru/script/button3.js?' + Math.random(); var
+            ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s,
+              ss);
+      })();</script>
+
+</body>
+
+</html>
